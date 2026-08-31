@@ -32,6 +32,24 @@
       flex-direction:column
     }
 
+    .privacy-check{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      font-size:14px;
+      color:#626970
+    }
+
+    .privacy-check input{
+      width:auto;
+      margin-top:4px
+    }
+
+    .privacy-check a{
+      text-decoration:underline;
+      font-weight:700
+    }
+
     @media(max-width:700px){
       .form-grid{
         grid-template-columns:1fr
@@ -159,53 +177,98 @@
 
     <div>
 
-      <form class="form" id="contactForm">
+      <form
+        class="form"
+        id="contactForm"
+        action="https://formsubmit.co/jopurakennus@gmail.com"
+        method="POST"
+      >
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="Uusi tarjouspyyntö - JOPU Rakennus"
+        >
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://jopurakennus.fi/kiitos.html"
+        >
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
+
+        <input
+          type="text"
+          name="_honey"
+          style="display:none"
+          tabindex="-1"
+          autocomplete="off"
+        >
+
 
         <div class="form-grid">
 
           <div class="form-row">
             <label for="name">Nimi *</label>
+
             <input
               id="name"
               required
-              name="name"
-              placeholder="Nimesi">
+              name="Nimi"
+              placeholder="Nimesi"
+            >
           </div>
 
 
           <div class="form-row">
-            <label for="phone">Puhelinnumero</label>
+            <label for="phone">Puhelinnumero *</label>
+
             <input
               id="phone"
+              required
               type="tel"
-              name="phone"
-              placeholder="040 123 4567">
+              name="Puhelin"
+              placeholder="040 123 4567"
+            >
           </div>
 
 
           <div class="form-row">
             <label for="email">Sähköposti</label>
+
             <input
               id="email"
               type="email"
-              name="email"
-              placeholder="nimi@email.fi">
+              name="Sähköposti"
+              placeholder="nimi@email.fi"
+            >
           </div>
 
 
           <div class="form-row">
-            <label for="city">Kohteen paikkakunta</label>
+            <label for="city">Kohteen paikkakunta *</label>
+
             <input
               id="city"
-              name="city"
-              placeholder="Esim. Turku">
+              required
+              name="Paikkakunta"
+              placeholder="Esim. Turku"
+            >
           </div>
 
 
           <div class="form-row">
             <label for="service">Työn tyyppi</label>
 
-            <select id="service" name="service">
+            <select
+              id="service"
+              name="Palvelu"
+            >
               <option value="">Valitse palvelu</option>
               <option>Sisäremontti</option>
               <option>Tasoitus- ja maalaustyö</option>
@@ -219,10 +282,12 @@
 
           <div class="form-row">
             <label for="timing">Toivottu ajankohta</label>
+
             <input
               id="timing"
-              name="timing"
-              placeholder="Esim. syyskuu / mahdollisimman pian">
+              name="Toivottu ajankohta"
+              placeholder="Esim. syyskuu / mahdollisimman pian"
+            >
           </div>
 
 
@@ -232,8 +297,28 @@
             <textarea
               id="message"
               required
-              name="message"
-              placeholder="Kerro mahdollisimman tarkasti mitä pitäisi tehdä, kohteen koko ja muut tärkeät tiedot..."></textarea>
+              name="Työn kuvaus"
+              placeholder="Kerro mahdollisimman tarkasti mitä pitäisi tehdä, kohteen koko ja muut tärkeät tiedot..."
+            ></textarea>
+          </div>
+
+
+          <div class="full privacy-check">
+
+            <input
+              type="checkbox"
+              id="privacy"
+              required
+            >
+
+            <label for="privacy">
+              Hyväksyn, että antamiani tietoja käytetään
+              tarjouspyyntöni käsittelyyn.
+              <a href="tietosuoja.html">
+                Lue tietosuojaseloste
+              </a>.
+            </label>
+
           </div>
 
         </div>
@@ -245,7 +330,8 @@
 
 
         <div class="notice">
-          Tarjouspyyntö avaa tällä hetkellä sähköpostisovelluksen valmiiksi täytetyllä viestillä.
+          Lähettämällä lomakkeen tiedot toimitetaan
+          JOPU Rakennukselle tarjouspyynnön käsittelyä varten.
         </div>
 
       </form>
@@ -349,6 +435,12 @@
       <p>
         <a href="index.html#ukk">
           UKK
+        </a>
+      </p>
+
+      <p>
+        <a href="tietosuoja.html">
+          Tietosuoja
         </a>
       </p>
     </div>
