@@ -1,4 +1,363 @@
-<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yhteystiedot | JOPU Rakennus</title><meta name="description" content="Pyydä tarjous rakennus- ja remonttitöistä Turun seudulla."><link rel="stylesheet" href="style.css"><script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script></head><body><header class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brandmark"></span><span>JOPU<small>RAKENNUS</small></span></a><nav class="links"><a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="referenssit.html">Referenssit</a><a href="meista.html">Meistä</a><a href="yhteystiedot.html">Yhteystiedot</a></nav><a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a><button class="hamb" aria-label="Avaa valikko">☰</button></div><div class="mobile-menu"><a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="referenssit.html">Referenssit</a><a href="meista.html">Meistä</a><a href="yhteystiedot.html">Yhteystiedot</a></div></header><main><section class="subhero"><div class="container"><div class="eyebrow">JOPU Rakennus</div><h1>Yhteystiedot</h1><p class="lead">Kerro projektistasi, niin tehdään siitä selkeä suunnitelma.</p></div></section><section class="section"><div class="container contact-grid"><div class="contact-card"><div class="eyebrow">Ota yhteyttä</div><h2>Pyydä maksuton tarjous</h2><p>Kerro lyhyesti mitä pitäisi tehdä, missä kohde sijaitsee ja milloin työn olisi tarkoitus alkaa.</p><p><strong>Puhelin</strong><br><a href="tel:+358400464551">0400464551</a></p><p><strong>Sähköposti</strong><br><a href="mailto:jopurakennus@gmail.com">jopurakennus@gmail.com</a></p><p><strong>Osoite</strong><br>Pirttivuorenkuja 11 C 12, 20900 Turku</p><p><strong>Palvelualue</strong><br>Turku ja lähialueet</p></div><div><form class="form" id="contactForm"><input required name="name" placeholder="Nimi"><input name="phone" placeholder="Puhelinnumero"><input type="email" name="email" placeholder="Sähköposti"><select name="service"><option value="">Valitse palvelu</option><option>Sisäremontti</option><option>Ulko- ja kattomaalaus</option><option>Terassi / pihatyö</option><option>Muu rakennustyö</option></select><textarea required name="message" placeholder="Kerro työstä..."></textarea><button class="btn" type="submit">Lähetä tarjouspyyntö →</button><div class="notice">Tässä versiossa painike avaa puhelimen tai tietokoneen sähköpostisovelluksen. Ennen julkaisua voidaan tehdä myös suoraan verkkosivulta lähettävä lomake.</div></form></div></div></section></main><footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brandmark"></span><span>JOPU<small>RAKENNUS</small></span></a><p>Rakentamista ja remontointia Turun seudulla.</p></div><div><h4>Yhteys</h4><p><a href="tel:+358400464551">0400464551</a></p><p><a href="mailto:jopurakennus@gmail.com">jopurakennus@gmail.com</a></p><p>Pirttivuorenkuja 11 C 12, 20900 Turku</p></div><div><h4>Palvelualue</h4><p>Turku ja lähialueet</p></div><div><h4>Sivut</h4><p><a href="palvelut.html">Palvelut</a></p><p><a href="referenssit.html">Referenssit</a></p></div></div></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Yhteystiedot | JOPU Rakennus Turku</title>
+  <meta name="description" content="Pyydä maksuton tarjous rakennus-, remontti- ja maalaustöistä Turussa ja lähialueilla.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .form-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px
+    }
+
+    .form-grid .full{
+      grid-column:1/-1
+    }
+
+    .form label{
+      font-weight:700;
+      font-size:14px;
+      margin-bottom:5px;
+      display:block
+    }
+
+    .form-row{
+      display:flex;
+      flex-direction:column
+    }
+
+    @media(max-width:700px){
+      .form-grid{
+        grid-template-columns:1fr
+      }
+
+      .form-grid .full{
+        grid-column:auto
+      }
+    }
+  </style>
+
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      <span class="brandmark"></span>
+      <span>
+        JOPU
+        <small>RAKENNUS</small>
+      </span>
+    </a>
+
+    <nav class="links">
+      <a href="index.html">Etusivu</a>
+      <a href="palvelut.html">Palvelut</a>
+      <a href="referenssit.html">Referenssit</a>
+      <a href="meista.html">Meistä</a>
+      <a href="index.html#ukk">UKK</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+
+    <a class="btn" href="yhteystiedot.html">
+      Pyydä tarjous →
+    </a>
+
+    <button class="hamb" aria-label="Avaa valikko">
+      ☰
+    </button>
+
+  </div>
+
+  <div class="mobile-menu">
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="referenssit.html">Referenssit</a>
+    <a href="meista.html">Meistä</a>
+    <a href="index.html#ukk">UKK</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
+  </div>
+</header>
+
+
+<main>
+
+<section class="subhero">
+  <div class="container">
+
+    <div class="eyebrow">
+      JOPU Rakennus
+    </div>
+
+    <h1>Yhteystiedot</h1>
+
+    <p class="lead">
+      Kerro projektistasi, niin tehdään siitä selkeä suunnitelma.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <div class="contact-card">
+
+      <div class="eyebrow">
+        Ota yhteyttä
+      </div>
+
+      <h2>Pyydä maksuton tarjous</h2>
+
+      <p>
+        Kerro mitä pitäisi tehdä, missä kohde sijaitsee
+        ja milloin työn olisi tarkoitus alkaa.
+      </p>
+
+      <p>
+        <strong>Puhelin</strong><br>
+        <a href="tel:+358400464551">
+          0400464551
+        </a>
+      </p>
+
+      <p>
+        <strong>Sähköposti</strong><br>
+        <a href="mailto:jopurakennus@gmail.com">
+          jopurakennus@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Paikkakunta</strong><br>
+        Turku
+      </p>
+
+      <p>
+        <strong>Palvelualue</strong><br>
+        Turku ja lähialueet
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <form class="form" id="contactForm">
+
+        <div class="form-grid">
+
+          <div class="form-row">
+            <label for="name">Nimi *</label>
+            <input
+              id="name"
+              required
+              name="name"
+              placeholder="Nimesi">
+          </div>
+
+
+          <div class="form-row">
+            <label for="phone">Puhelinnumero</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="040 123 4567">
+          </div>
+
+
+          <div class="form-row">
+            <label for="email">Sähköposti</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="nimi@email.fi">
+          </div>
+
+
+          <div class="form-row">
+            <label for="city">Kohteen paikkakunta</label>
+            <input
+              id="city"
+              name="city"
+              placeholder="Esim. Turku">
+          </div>
+
+
+          <div class="form-row">
+            <label for="service">Työn tyyppi</label>
+
+            <select id="service" name="service">
+              <option value="">Valitse palvelu</option>
+              <option>Sisäremontti</option>
+              <option>Tasoitus- ja maalaustyö</option>
+              <option>Ulko- ja kattomaalaus</option>
+              <option>Terassi / pihatyö</option>
+              <option>Korjaustyö</option>
+              <option>Muu rakennustyö</option>
+            </select>
+          </div>
+
+
+          <div class="form-row">
+            <label for="timing">Toivottu ajankohta</label>
+            <input
+              id="timing"
+              name="timing"
+              placeholder="Esim. syyskuu / mahdollisimman pian">
+          </div>
+
+
+          <div class="form-row full">
+            <label for="message">Kerro työstä *</label>
+
+            <textarea
+              id="message"
+              required
+              name="message"
+              placeholder="Kerro mahdollisimman tarkasti mitä pitäisi tehdä, kohteen koko ja muut tärkeät tiedot..."></textarea>
+          </div>
+
+        </div>
+
+
+        <button class="btn" type="submit">
+          Lähetä tarjouspyyntö →
+        </button>
+
+
+        <div class="notice">
+          Tarjouspyyntö avaa tällä hetkellä sähköpostisovelluksen valmiiksi täytetyllä viestillä.
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="cta">
+  <div class="container">
+
+    <div>
+      <div class="eyebrow">
+        Voit myös soittaa
+      </div>
+
+      <h2>Kysy työstä suoraan</h2>
+
+      <p>
+        Myös pienemmät rakennus- ja korjaustyöt ovat tervetulleita.
+      </p>
+    </div>
+
+    <a class="btn" href="tel:+358400464551">
+      Soita 0400464551 →
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <a class="brand" href="index.html">
+
+        <span class="brandmark"></span>
+
+        <span>
+          JOPU
+          <small>RAKENNUS</small>
+        </span>
+
+      </a>
+
+      <p>
+        Rakentamista ja remontointia Turun seudulla.
+      </p>
+    </div>
+
+
+    <div>
+      <h4>Yhteys</h4>
+
+      <p>
+        <a href="tel:+358400464551">
+          0400464551
+        </a>
+      </p>
+
+      <p>
+        <a href="mailto:jopurakennus@gmail.com">
+          jopurakennus@gmail.com
+        </a>
+      </p>
+
+      <p>Turku</p>
+    </div>
+
+
+    <div>
+      <h4>Palvelualue</h4>
+
+      <p>
+        Turku ja lähialueet
+      </p>
+    </div>
+
+
+    <div>
+      <h4>Sivut</h4>
+
+      <p>
+        <a href="palvelut.html">
+          Palvelut
+        </a>
+      </p>
+
+      <p>
+        <a href="referenssit.html">
+          Referenssit
+        </a>
+      </p>
+
+      <p>
+        <a href="index.html#ukk">
+          UKK
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
