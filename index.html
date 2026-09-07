@@ -4,9 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>JOPU Rakennus | Remontit, maalaus ja rakennustyöt Turku</title>
+  <title>Remontti Turku | JOPU Rakennus – rakennus- ja maalaustyöt</title>
 
-  <meta name="description" content="JOPU Rakennus tarjoaa remontit, sisämaalaukset, ulko- ja kattomaalaukset, terassit sekä muut rakennustyöt Turussa ja lähialueilla. Pyydä maksuton tarjous.">
+  <meta
+    name="description"
+    content="JOPU Rakennus tarjoaa remontit, sisäremontit, tasoitus- ja maalaustyöt, ulko- ja kattomaalaukset sekä terassit Turussa ja lähialueilla. Pyydä maksuton tarjous."
+  >
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.jopurakennus.fi/">
+
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JOPU Rakennus | Remontit ja rakennustyöt Turku">
+  <meta
+    property="og:description"
+    content="Luotettavat remontti-, rakennus- ja maalaustyöt Turussa ja lähialueilla. Pyydä maksuton tarjous."
+  >
+  <meta property="og:url" content="https://www.jopurakennus.fi/">
+  <meta property="og:site_name" content="JOPU Rakennus">
 
   <link rel="stylesheet" href="style.css">
 
@@ -113,6 +130,34 @@
     }
   </style>
 
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"JOPU Rakennus",
+    "url":"https://www.jopurakennus.fi/",
+    "telephone":"+358400464551",
+    "description":"Remontti-, rakennus- ja maalauspalvelut Turussa ja lähialueilla.",
+    "areaServed":[
+      {
+        "@type":"City",
+        "name":"Turku"
+      },
+      {
+        "@type":"AdministrativeArea",
+        "name":"Varsinais-Suomi"
+      }
+    ],
+    "serviceType":[
+      "Sisäremontit",
+      "Tasoitus- ja maalaustyöt",
+      "Ulko- ja kattomaalaukset",
+      "Terassit ja pihatyöt",
+      "Rakennustyöt"
+    ]
+  }
+  </script>
+
   <script>
     window.va = window.va || function () {
       (window.vaq = window.vaq || []).push(arguments);
@@ -127,7 +172,7 @@
 <header class="topbar">
   <div class="container nav">
 
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu">
       <span class="brandmark"></span>
       <span>
         JOPU
@@ -135,7 +180,7 @@
       </span>
     </a>
 
-    <nav class="links">
+    <nav class="links" aria-label="Päävalikko">
       <a href="index.html">Etusivu</a>
       <a href="palvelut.html">Palvelut</a>
       <a href="referenssit.html">Referenssit</a>
@@ -148,7 +193,12 @@
       Pyydä tarjous →
     </a>
 
-    <button class="hamb" aria-label="Avaa valikko">
+    <button
+      class="hamb"
+      type="button"
+      aria-label="Avaa valikko"
+      aria-expanded="false"
+    >
       ☰
     </button>
 
@@ -172,19 +222,20 @@
 
     <div>
       <div class="eyebrow">
-        Laadukasta rakentamista – Turussa ja lähialueilla
+        Remontit ja rakennustyöt – Turku ja lähialueet
       </div>
 
       <h1>
-        RAKENNAMME
-        <span>UNELMASI</span>
-        TODEKSI
+        REMONTIT JA
+        <span>RAKENNUSTYÖT</span>
+        TURUSSA
       </h1>
 
       <p>
-        Luotettava rakennusalan kumppani remontteihin,
-        maalaustöihin ja rakentamiseen.
-        Laadulla ja sovitussa aikataulussa.
+        JOPU Rakennus tarjoaa luotettavat sisäremontit,
+        tasoitus- ja maalaustyöt, ulko- ja kattomaalaukset
+        sekä muut rakennustyöt Turussa ja lähialueilla.
+        Työt tehdään huolellisesti ja sovitussa aikataulussa.
       </p>
 
       <div class="actions">
@@ -217,12 +268,13 @@
       <div>
         <div class="eyebrow">Palvelumme</div>
 
-        <h2>Monipuoliset rakennuspalvelut</h2>
+        <h2>Remontti- ja rakennuspalvelut Turussa</h2>
 
         <p class="lead">
-          Tarjoamme rakennus- ja remonttipalvelut
+          Tarjoamme monipuoliset rakennus- ja remonttipalvelut
           yksityisille ja yrityksille Turussa sekä lähialueilla.
-          Myös pienemmät työt ovat tervetulleita.
+          Toteutamme niin pienemmät korjaustyöt kuin laajemmat
+          remontti- ja maalauskokonaisuudet.
         </p>
       </div>
 
@@ -236,14 +288,18 @@
     <div class="services">
 
       <article class="card">
-        <img src="service1.jpg" alt="Sisäremontti Turku">
+        <img
+          src="service1.jpg"
+          alt="Sisäremontti Turussa"
+          loading="lazy"
+        >
 
         <div class="card-body">
           <h3>Sisäremontit</h3>
 
           <p>
-            Kodit, huoneistot ja liiketilat
-            huolellisella työnjäljellä.
+            Sisäremontit koteihin, huoneistoihin ja liiketiloihin
+            Turussa ja lähialueilla huolellisella työnjäljellä.
           </p>
 
           <a class="more" href="palvelut.html">
@@ -254,14 +310,18 @@
 
 
       <article class="card">
-        <img src="service2.jpg" alt="Tasoitus ja maalaustyöt Turku">
+        <img
+          src="service2.jpg"
+          alt="Tasoitus- ja maalaustyöt Turussa"
+          loading="lazy"
+        >
 
         <div class="card-body">
           <h3>Tasoitus- ja maalaustyöt</h3>
 
           <p>
-            Seinien ja kattojen tasoitukset sekä
-            sisämaalaukset huolellisella viimeistelyllä.
+            Seinien ja kattojen tasoitukset sekä sisämaalaukset
+            huolellisella pohjatyöllä ja viimeistelyllä.
           </p>
 
           <a class="more" href="palvelut.html">
@@ -272,14 +332,18 @@
 
 
       <article class="card">
-        <img src="service3.jpg" alt="Ulko- ja kattomaalaus Turku">
+        <img
+          src="service3.jpg"
+          alt="Ulko- ja kattomaalaus Turussa"
+          loading="lazy"
+        >
 
         <div class="card-body">
           <h3>Ulko- ja kattomaalaukset</h3>
 
           <p>
-            Rakennusten ulkopintojen ja kattojen
-            maalaustyöt ammattitaidolla.
+            Talojen ulkomaalaukset ja kattomaalaukset
+            Turun seudulla ammattitaitoisesti ja huolellisesti.
           </p>
 
           <a class="more" href="palvelut.html">
@@ -290,11 +354,260 @@
 
 
       <article class="card">
-        <img src="service4.jpg" alt="Terassin rakentaminen Turku">
+        <img
+          src="service4.jpg"
+          alt="Terassin rakentaminen Turussa"
+          loading="lazy"
+        >
 
         <div class="card-body">
           <h3>Terassit ja pihatyöt</h3>
 
           <p>
-            Terassit, aidat ja muut
-            ulkor
+            Terassien, aitojen ja muiden pihan puurakenteiden
+            rakentaminen sekä erilaiset pienet rakennustyöt.
+          </p>
+
+          <a class="more" href="palvelut.html">
+            Lue lisää →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section dark-section">
+  <div class="container">
+
+    <div class="eyebrow">
+      Miksi JOPU Rakennus?
+    </div>
+
+    <h2>Miksi valita meidät remonttiin?</h2>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="icon">✓</div>
+        <h3>Huolellinen työnjälki</h3>
+        <p>
+          Työt tehdään siististi ja hyvää rakennustapaa noudattaen.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">✓</div>
+        <h3>Selkeä sopiminen</h3>
+        <p>
+          Sovimme työn sisällöstä, aikataulusta ja hinnasta selkeästi.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">✓</div>
+        <h3>Paikallinen palvelu</h3>
+        <p>
+          Palvelemme Turussa ja muualla lähialueilla.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">✓</div>
+        <h3>Myös pienet työt</h3>
+        <p>
+          Meille myös pienemmät remontti- ja rakennustyöt ovat tervetulleita.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="eyebrow">
+      Asiakaspalautteet
+    </div>
+
+    <h2>Asiakkaidemme kokemuksia</h2>
+
+    <div class="reviews">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-placeholder">
+          Asiakaspalautteita lisätään tähän myöhemmin.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-placeholder">
+          Asiakaspalautteita lisätään tähän myöhemmin.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-placeholder">
+          Asiakaspalautteita lisätään tähän myöhemmin.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="ukk">
+  <div class="container">
+
+    <div class="eyebrow">
+      Usein kysytyt kysymykset
+    </div>
+
+    <h2>Remontti Turussa – usein kysyttyä</h2>
+
+    <div class="faq">
+
+      <details>
+        <summary>Mitä rakennus- ja remonttitöitä teette?</summary>
+        <p>
+          Teemme muun muassa sisäremontteja, tasoitus- ja maalaustöitä,
+          ulko- ja kattomaalauksia, terasseja sekä erilaisia pienempiä
+          rakennus- ja korjaustöitä.
+        </p>
+      </details>
+
+      <details>
+        <summary>Millä alueella JOPU Rakennus toimii?</summary>
+        <p>
+          Pääasiallinen toiminta-alueemme on Turku ja sen lähialueet.
+          Työkohteen sijainnista voidaan sopia tapauskohtaisesti.
+        </p>
+      </details>
+
+      <details>
+        <summary>Voiko teiltä pyytää tarjouksen pienestä työstä?</summary>
+        <p>
+          Kyllä. Myös pienemmät remontti-, maalaus- ja korjaustyöt
+          ovat tervetulleita.
+        </p>
+      </details>
+
+      <details>
+        <summary>Miten remontista saa tarjouksen?</summary>
+        <p>
+          Ota yhteyttä ja kerro mahdollisimman tarkasti työn sisällöstä.
+          Tarvittaessa sovimme kohteen katselmuksen ennen tarjousta.
+        </p>
+      </details>
+
+      <details>
+        <summary>Onko tarjouspyyntö maksuton?</summary>
+        <p>
+          Kyllä. Voit ottaa yhteyttä ja pyytää maksuttoman tarjouksen
+          ilman sitoumusta.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section local-seo">
+  <div class="container">
+
+    <div class="eyebrow">
+      Rakennuspalvelut Turku
+    </div>
+
+    <h2>Luotettava remonttitekijä Turussa</h2>
+
+    <p>
+      Etsitkö tekijää remonttiin Turussa? JOPU Rakennus palvelee
+      yksityisasiakkaita ja yrityksiä Turussa sekä lähialueilla.
+      Palveluihimme kuuluvat sisäremontit, tasoitus- ja maalaustyöt,
+      ulkomaalaukset, kattomaalaukset, terassien rakentaminen ja
+      muut rakennustyöt.
+    </p>
+
+    <p>
+      Tavoitteemme on tarjota selkeästi sovittu, huolellisesti toteutettu
+      ja laadukas rakennuspalvelu. Olipa kyseessä pieni korjaustyö,
+      huoneiston pintaremontti, maalaustyö tai terassin rakentaminen,
+      voit pyytää meiltä tarjouksen.
+    </p>
+
+    <a class="btn" href="yhteystiedot.html">
+      Pyydä maksuton tarjous →
+    </a>
+
+  </div>
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div>
+      <strong>JOPU Rakennus</strong>
+      <p>
+        Remontit, maalaustyöt ja rakennuspalvelut
+        Turussa ja lähialueilla.
+      </p>
+    </div>
+
+    <div>
+      <strong>Palvelut</strong>
+      <p>
+        <a href="palvelut.html">Katso palvelut</a>
+      </p>
+    </div>
+
+    <div>
+      <strong>Yhteystiedot</strong>
+      <p>
+        <a href="tel:+358400464551">040 046 4551</a>
+      </p>
+      <p>
+        <a href="yhteystiedot.html">Pyydä tarjous</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+  const hamb = document.querySelector(".hamb");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (hamb && mobileMenu) {
+    hamb.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+
+      const isOpen = mobileMenu.classList.contains("open");
+      hamb.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        hamb.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
