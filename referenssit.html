@@ -6,28 +6,119 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>Referenssit | JOPU Rakennus</title>
-  <meta name="description" content="JOPU Rakennuksen referenssejä ja toteutettuja rakennus- ja remonttitöitä.">
+  <meta name="description" content="Tutustu JOPU Rakennuksen rakennus- ja remonttitöihin Turussa ja lähialueilla.">
 
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Referenssisivun kirkas taustakuva */
-    .subhero {
-      background: url('hero.jpg') center center / cover no-repeat;
+    /* Referenssisivun uusi otsake */
+    .references-hero {
+      background: linear-gradient(115deg, #101316, #22272b);
       color: #fff;
-      padding: 100px 0 70px;
-      position: relative;
+      padding: 62px 0;
+      border-bottom: 3px solid #f6bd22;
     }
 
-    .subhero::before,
-    .subhero::after {
-      display: none !important;
-      content: none !important;
+    .references-hero h1 {
+      color: #fff;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.1;
+      margin: 0 0 12px;
+      letter-spacing: -1px;
     }
 
-    .subhero h1 {
-      color: #fff;
-      text-shadow: 0 2px 8px rgba(0,0,0,.65);
+    .references-hero p {
+      color: #e0e0e0;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 650px;
+    }
+
+    /* Referenssikortit */
+    .references-section {
+      padding: 48px 0 70px;
+      background: #f8f9fa;
+    }
+
+    .references-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .reference-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+    }
+
+    .reference-card img {
+      display: block;
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+    }
+
+    .reference-content {
+      padding: 22px;
+    }
+
+    .reference-content h2 {
+      font-size: 23px;
+      line-height: 1.3;
+      margin: 0 0 10px;
+      color: #141414;
+    }
+
+    .reference-content p {
+      font-size: 16px;
+      color: #555d63;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .reference-card:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,.10);
+    }
+
+    @media (max-width: 700px) {
+      .references-hero {
+        padding: 45px 0;
+      }
+
+      .references-hero h1 {
+        font-size: 42px;
+      }
+
+      .references-hero p {
+        font-size: 16px;
+      }
+
+      .references-section {
+        padding: 28px 0 55px;
+      }
+
+      .references-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .reference-card img {
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+      }
+
+      .reference-content {
+        padding: 20px;
+      }
+
+      .reference-content h2 {
+        font-size: 21px;
+      }
     }
   </style>
 
@@ -82,78 +173,89 @@
 
 <main>
 
-<section class="subhero">
-  <div class="container">
+  <!-- Uusi tumma otsake -->
+  <section class="references-hero">
+    <div class="container">
+      <h1>Referenssit</h1>
+      <p>
+        Rakennus- ja remonttitöitä Turun seudulla.
+      </p>
+    </div>
+  </section>
 
-    <h1>Referenssit</h1>
+  <!-- Referenssikuvat -->
+  <section class="references-section">
+    <div class="container">
 
-  </div>
-</section>
+      <div class="references-grid">
 
-<section class="section">
-  <div class="container">
+        <article class="reference-card">
+          <img src="before-after.jpg"
+               alt="Huoneistoremontin ennen ja jälkeen -kuvat"
+               loading="lazy">
 
-    <div class="gallery">
+          <div class="reference-content">
+            <h2>Huoneistoremontti</h2>
+            <p>
+              Vanhojen pintojen purku, tasoitus,
+              maalaus, lattian uusiminen ja viimeistely.
+            </p>
+          </div>
+        </article>
 
-      <div class="item">
-        <img src="before-after.jpg" alt="Huoneistoremontti">
+        <article class="reference-card">
+          <img src="service4.jpg"
+               alt="Terassi ja piharakenteet"
+               loading="lazy">
 
-        <div class="caption">
-          <h3>Huoneistoremontti</h3>
-          <p>
-            Vanhojen pintojen purku, tasoitus, maalaus,
-            lattia ja viimeistely.
-          </p>
-        </div>
-      </div>
+          <div class="reference-content">
+            <h2>Terassi ja piharakenteet</h2>
+            <p>
+              Terassien rakentaminen, kunnostaminen
+              ja ulkorakenteiden viimeistely.
+            </p>
+          </div>
+        </article>
 
-      <div class="item">
-        <img src="service4.jpg" alt="Terassityö">
+        <article class="reference-card">
+          <img src="service3.jpg"
+               alt="Ulko- ja kattomaalaus"
+               loading="lazy">
 
-        <div class="caption">
-          <h3>Terassi ja piharakenteet</h3>
-          <p>
-            Uusi terassi ja viimeistelty ulkorakenne.
-          </p>
-        </div>
-      </div>
+          <div class="reference-content">
+            <h2>Ulko- ja kattomaalaus</h2>
+            <p>
+              Ulko- ja kattopintojen huolellinen
+              puhdistus, pohjatyöt ja maalaus.
+            </p>
+          </div>
+        </article>
 
-      <div class="item">
-        <img src="service3.jpg" alt="Ulko- ja kattomaalaus">
+        <article class="reference-card">
+          <img src="service2.jpg"
+               alt="Rakennustyöt"
+               loading="lazy">
 
-        <div class="caption">
-          <h3>Ulko- ja kattomaalaus</h3>
-          <p>
-            Ulko- ja kattopintojen huolellinen kunnostus
-            ja maalaus.
-          </p>
-        </div>
-      </div>
+          <div class="reference-content">
+            <h2>Rakennustyöt</h2>
+            <p>
+              Runkotyöt, levytykset ja muut
+              rakennusvaiheet ammattitaidolla.
+            </p>
+          </div>
+        </article>
 
-      <div class="item">
-        <img src="service2.jpg" alt="Rakennustyö">
-
-        <div class="caption">
-          <h3>Rakennustyöt</h3>
-          <p>
-            Runkotyöt, levytykset ja muut rakennusvaiheet.
-          </p>
-        </div>
       </div>
 
     </div>
-
-  </div>
-</section>
+  </section>
 
 </main>
 
 <footer class="footer">
-
   <div class="container footer-grid">
 
     <div>
-
       <a class="brand" href="index.html">
         <span class="brandmark"></span>
         <span>
@@ -165,16 +267,14 @@
       <p>
         Rakentamista ja remontointia Turun seudulla.
       </p>
-
     </div>
 
     <div>
-
       <h4>Yhteys</h4>
 
       <p>
         <a href="tel:+358400464551">
-          0400464551
+          040 046 4551
         </a>
       </p>
 
@@ -183,41 +283,29 @@
           jopurakennus@gmail.com
         </a>
       </p>
-
     </div>
 
     <div>
-
       <h4>Palvelualue</h4>
-
-      <p>
-        Turku ja lähialueet
-      </p>
-
+      <p>Turku ja lähialueet</p>
     </div>
 
     <div>
-
       <h4>Sivut</h4>
 
       <p>
-        <a href="palvelut.html">
-          Palvelut
-        </a>
+        <a href="palvelut.html">Palvelut</a>
       </p>
 
       <p>
-        <a href="referenssit.html">
-          Referenssit
-        </a>
+        <a href="referenssit.html">Referenssit</a>
       </p>
-
     </div>
 
   </div>
-
 </footer>
 
+<!-- Nykyinen WhatsApp-toiminto ja mobiilivalikko -->
 <script src="app.js"></script>
 
 </body>
