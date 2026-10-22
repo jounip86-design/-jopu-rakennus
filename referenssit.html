@@ -3,7 +3,7 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Referenssit | JOPU Rakennus</title>
   <meta name="description" content="Tutustu JOPU Rakennuksen rakennus- ja remonttitöihin Turussa ja lähialueilla.">
@@ -11,28 +11,53 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Referenssisivun uusi otsake */
+    /* Uusi referenssisivun kuvallinen yläosa */
     .references-hero {
-      background: linear-gradient(115deg, #101316, #22272b);
+      position: relative;
+      min-height: 370px;
+      display: flex;
+      align-items: flex-end;
+      background-color: #171a1d;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,.72) 0%,
+          rgba(0,0,0,.38) 55%,
+          rgba(0,0,0,.12) 100%
+        ),
+        url("referenssit-hero.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-bottom: 4px solid #f6bd22;
       color: #fff;
-      padding: 62px 0;
-      border-bottom: 3px solid #f6bd22;
+    }
+
+    .references-hero .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding-top: 70px;
+      padding-bottom: 55px;
     }
 
     .references-hero h1 {
-      color: #fff;
-      font-size: clamp(38px, 6vw, 58px);
-      line-height: 1.1;
       margin: 0 0 12px;
+      color: #fff;
+      font-size: clamp(42px, 7vw, 68px);
+      font-weight: 800;
+      line-height: 1.1;
       letter-spacing: -1px;
+      text-shadow: 0 2px 10px rgba(0,0,0,.3);
     }
 
     .references-hero p {
-      color: #e0e0e0;
-      font-size: 18px;
-      line-height: 1.6;
       margin: 0;
+      color: #f2f2f2;
+      font-size: clamp(16px, 2.5vw, 21px);
+      line-height: 1.5;
       max-width: 650px;
+      text-shadow: 0 2px 8px rgba(0,0,0,.4);
     }
 
     /* Referenssikortit */
@@ -49,9 +74,9 @@
 
     .reference-card {
       background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
       border: 1px solid #e5e5e5;
+      border-radius: 13px;
+      overflow: hidden;
       box-shadow: 0 4px 18px rgba(0,0,0,.06);
     }
 
@@ -67,26 +92,33 @@
     }
 
     .reference-content h2 {
-      font-size: 23px;
-      line-height: 1.3;
       margin: 0 0 10px;
       color: #141414;
+      font-size: 23px;
+      line-height: 1.3;
     }
 
     .reference-content p {
-      font-size: 16px;
-      color: #555d63;
-      line-height: 1.6;
       margin: 0;
+      color: #555d63;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     .reference-card:hover {
-      box-shadow: 0 8px 25px rgba(0,0,0,.10);
+      box-shadow: 0 8px 25px rgba(0,0,0,.1);
     }
 
+    /* Puhelimen näkymä */
     @media (max-width: 700px) {
       .references-hero {
-        padding: 45px 0;
+        min-height: 320px;
+        background-position: center;
+      }
+
+      .references-hero .container {
+        padding-top: 65px;
+        padding-bottom: 45px;
       }
 
       .references-hero h1 {
@@ -122,12 +154,12 @@
     }
   </style>
 
+  <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () {
       (window.vaq = window.vaq || []).push(arguments);
     };
   </script>
-
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
@@ -173,7 +205,7 @@
 
 <main>
 
-  <!-- Uusi tumma otsake -->
+  <!-- Kuvallinen otsake -->
   <section class="references-hero">
     <div class="container">
       <h1>Referenssit</h1>
@@ -183,16 +215,18 @@
     </div>
   </section>
 
-  <!-- Referenssikuvat -->
+  <!-- Referenssikortit -->
   <section class="references-section">
     <div class="container">
 
       <div class="references-grid">
 
         <article class="reference-card">
-          <img src="before-after.jpg"
-               alt="Huoneistoremontin ennen ja jälkeen -kuvat"
-               loading="lazy">
+          <img
+            src="before-after.jpg"
+            alt="Huoneistoremontin ennen ja jälkeen -kuvat"
+            loading="lazy"
+          >
 
           <div class="reference-content">
             <h2>Huoneistoremontti</h2>
@@ -204,9 +238,11 @@
         </article>
 
         <article class="reference-card">
-          <img src="service4.jpg"
-               alt="Terassi ja piharakenteet"
-               loading="lazy">
+          <img
+            src="service4.jpg"
+            alt="Terassi ja piharakenteet"
+            loading="lazy"
+          >
 
           <div class="reference-content">
             <h2>Terassi ja piharakenteet</h2>
@@ -218,9 +254,11 @@
         </article>
 
         <article class="reference-card">
-          <img src="service3.jpg"
-               alt="Ulko- ja kattomaalaus"
-               loading="lazy">
+          <img
+            src="service3.jpg"
+            alt="Ulko- ja kattomaalaus"
+            loading="lazy"
+          >
 
           <div class="reference-content">
             <h2>Ulko- ja kattomaalaus</h2>
@@ -232,9 +270,11 @@
         </article>
 
         <article class="reference-card">
-          <img src="service2.jpg"
-               alt="Rakennustyöt"
-               loading="lazy">
+          <img
+            src="service2.jpg"
+            alt="Rakennustyöt"
+            loading="lazy"
+          >
 
           <div class="reference-content">
             <h2>Rakennustyöt</h2>
@@ -305,7 +345,7 @@
   </div>
 </footer>
 
-<!-- Nykyinen WhatsApp-toiminto ja mobiilivalikko -->
+<!-- Mobiilivalikko ja WhatsApp -->
 <script src="app.js"></script>
 
 </body>
