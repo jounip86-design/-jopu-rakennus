@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fi">
 <head>
@@ -8,6 +9,27 @@
   <meta name="description" content="JOPU Rakennuksen referenssejä ja toteutettuja rakennus- ja remonttitöitä.">
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Referenssisivun kirkas taustakuva */
+    .subhero {
+      background: url('hero.jpg') center center / cover no-repeat;
+      color: #fff;
+      padding: 100px 0 70px;
+      position: relative;
+    }
+
+    .subhero::before,
+    .subhero::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    .subhero h1 {
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,.65);
+    }
+  </style>
 
   <script>
     window.va = window.va || function () {
@@ -58,25 +80,15 @@
   </div>
 </header>
 
-
 <main>
 
 <section class="subhero">
   <div class="container">
 
-    <div class="eyebrow">
-      JOPU Rakennus
-    </div>
-
     <h1>Referenssit</h1>
-
-    <p class="lead">
-      Tähän lisätään oikeat työmaakuvasi ja ennen/jälkeen-kuvat ennen julkaisua.
-    </p>
 
   </div>
 </section>
-
 
 <section class="section">
   <div class="container">
@@ -95,7 +107,6 @@
         </div>
       </div>
 
-
       <div class="item">
         <img src="service4.jpg" alt="Terassityö">
 
@@ -106,7 +117,6 @@
           </p>
         </div>
       </div>
-
 
       <div class="item">
         <img src="service3.jpg" alt="Ulko- ja kattomaalaus">
@@ -119,7 +129,6 @@
           </p>
         </div>
       </div>
-
 
       <div class="item">
         <img src="service2.jpg" alt="Rakennustyö">
@@ -138,7 +147,6 @@
 </section>
 
 </main>
-
 
 <footer class="footer">
 
@@ -160,7 +168,6 @@
 
     </div>
 
-
     <div>
 
       <h4>Yhteys</h4>
@@ -179,7 +186,6 @@
 
     </div>
 
-
     <div>
 
       <h4>Palvelualue</h4>
@@ -189,7 +195,6 @@
       </p>
 
     </div>
-
 
     <div>
 
@@ -212,7 +217,6 @@
   </div>
 
 </footer>
-
 
 <script src="app.js"></script>
 
