@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Remontti Turku | Talon maalaus ja kattomaalaus | JOPU Rakennus</title>
   <meta name="description" content="Tarvitsetko remonttia Turussa? JOPU Rakennus Oy tekee sisäremontit, tasoitus- ja maalaustyöt, talon ulkomaalaukset sekä kattomaalaukset Turun seudulla. Pyydä maksuton tarjous.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://www.jopurakennus.fi/">
   <link rel="stylesheet" href="style.css">
   <meta name="theme-color" content="#0b0e10">
+
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fi_FI">
   <meta property="og:site_name" content="JOPU Rakennus Oy">
@@ -17,85 +19,435 @@
   <meta property="og:description" content="Sisäremontit, tasoitus- ja maalaustyöt sekä talon ulko- ja kattomaalaukset Turussa ja lähialueilla. Pyydä maksuton tarjous.">
   <meta property="og:url" content="https://www.jopurakennus.fi/">
   <meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
+
   <style>
-    body {background:#0b0e10;color:#f5f5f5}
-    .j-hero {position:relative;min-height:590px;background:linear-gradient(90deg,rgba(6,9,12,.96) 0%,rgba(6,9,12,.83) 40%,rgba(6,9,12,.23) 100%),url('hero.jpg') center/cover;color:#fff;display:flex;align-items:center}
-    .j-hero .container {padding-top:85px;padding-bottom:80px}
-    .j-hero h1 {max-width:810px;font-size:clamp(39px,5.7vw,72px);letter-spacing:-1.8px;line-height:1.08;margin:16px 0}
-    .j-hero h1 em,.j-section h2 em,.j-cta h2 em {font-style:normal;color:#ffcf24}
-    .j-hero p {font-size:19px;color:#e7e9ea;max-width:620px}
-    .j-hero .eyebrow {color:#ffcf24}
-    .j-actions {display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
-    .j-outline {display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #c5c9cc;background:rgba(8,10,12,.7);color:white;border-radius:7px;padding:14px 22px;font-weight:800;text-decoration:none}
-    .j-outline:hover {background:#25292c}
-    .j-highlights {display:flex;gap:25px;flex-wrap:wrap;margin-top:30px;color:#f5f5f5;font-weight:700;font-size:14px}
-    .j-highlights span:before {content:'✓';display:inline-grid;place-items:center;color:#101214;border-radius:50%;width:24px;height:24px;background:#ffcf24;margin-right:9px}
-    .j-section {padding:70px 0}
-    .j-section h2 {font-size:clamp(30px,3.6vw,43px);line-height:1.12;margin:8px 0 18px}
-    .j-intro {max-width:760px;color:#bfc4c9;font-size:17px}
-    .j-service-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;margin-top:32px}
-    .j-service {background:#111619;border:1px solid #31383d;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-    .j-service img {display:block;width:100%;height:210px;object-fit:cover}
-    .j-service-body {padding:23px;flex:1;display:flex;flex-direction:column}
-    .j-service h3 {font-size:22px;margin:0 0 10px}
-    .j-service p {color:#bfc5c9;margin:0 0 20px;flex:1}
-    .j-service a {color:#ffcf24;font-weight:800}
-    .j-trust {border-block:1px solid #30363b;background:#090c0e}
-    .j-trust .container {display:grid;grid-template-columns:repeat(4,1fr);gap:22px;padding-top:28px;padding-bottom:28px}
-    .j-trust article {display:flex;gap:13px;align-items:flex-start}
-    .j-trust b {font-size:28px;color:#ffcf24}
-    .j-trust strong {display:block;font-size:15px}
-    .j-trust small {display:block;color:#b8bec3;margin-top:5px}
-    .j-ref {background:linear-gradient(120deg,#292f33,#131719)}
-    .j-ref .container {display:grid;grid-template-columns:.85fr 1.15fr;gap:38px;align-items:center}
-    .j-ref img {display:block;width:100%;border-radius:12px;max-height:340px;object-fit:cover}
-    .j-ref p {color:#d0d4d7;font-size:17px}
-    .j-reviews {background:#0d1114;border-top:1px solid #30363b;border-bottom:1px solid #30363b}
-    .j-review-panel {margin-top:28px;padding:32px;border:1px solid #353d42;background:#151b1f;border-radius:12px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
-    .j-review-panel h3 {font-size:24px;margin:0 0 10px;color:#fff}
-    .j-review-panel p {margin:0;color:#c5ccd0;max-width:650px}
-    .j-review-actions {display:flex;flex-direction:column;gap:12px}
-    .j-review-actions a {white-space:nowrap;text-align:center}
-    .j-cta {background:linear-gradient(90deg,rgba(4,7,9,.94),rgba(4,7,9,.57)),url('cta.jpg') center/cover;padding:78px 0}
-    .j-cta h2 {font-size:clamp(30px,4vw,46px);margin:0 0 10px}
-    .j-cta p {font-size:18px;color:#e0e4e6}
-    .j-faq {border-top:1px solid #30363b}
-    .j-faq details {max-width:850px;padding:18px 0;border-bottom:1px solid #343a40}
-    .j-faq summary {font-weight:800;cursor:pointer}
-    .j-faq details p {color:#c0c7cb}
-    .j-footer {background:#080a0c;border-top:1px solid #24292d;padding:42px 0 24px;color:#c7ccd0}
-    .j-footer-grid {display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
-    .j-footer strong {color:#fff}
-    .j-footer a {color:#c7ccd0}
-    .j-footer a:hover {color:#ffcf24}
-    .j-footer .company {text-align:center;font-size:13px;color:#aeb4b9;margin:35px 0 0}
-    .j-area {background:#101518;border-block:1px solid #30363b}
-    .j-area p {color:#c7cdd0;max-width:790px;font-size:17px}
-    .j-area a {color:#ffcf24;font-weight:700}
-    @media(max-width:800px) {
-      .j-service-grid {grid-template-columns:1fr 1fr}
-      .j-trust .container {grid-template-columns:1fr 1fr}
-      .j-ref .container,.j-review-panel {grid-template-columns:1fr}
-      .j-review-actions {align-items:flex-start}
-      .j-footer-grid {grid-template-columns:1fr 1fr}
+    body {
+      background:#0b0e10;
+      color:#f5f5f5;
     }
+
+    .j-hero {
+      position:relative;
+      min-height:590px;
+      background:
+        linear-gradient(90deg,rgba(6,9,12,.96) 0%,rgba(6,9,12,.83) 40%,rgba(6,9,12,.23) 100%),
+        url('hero.jpg') center/cover;
+      color:#fff;
+      display:flex;
+      align-items:center;
+    }
+
+    .j-hero .container {
+      padding-top:85px;
+      padding-bottom:80px;
+    }
+
+    .j-hero h1 {
+      max-width:810px;
+      font-size:clamp(39px,5.7vw,72px);
+      letter-spacing:-1.8px;
+      line-height:1.08;
+      margin:16px 0;
+    }
+
+    .j-hero h1 em,
+    .j-section h2 em,
+    .j-cta h2 em {
+      font-style:normal;
+      color:#ffcf24;
+    }
+
+    .j-hero p {
+      font-size:19px;
+      color:#e7e9ea;
+      max-width:620px;
+    }
+
+    .j-hero .eyebrow {
+      color:#ffcf24;
+    }
+
+    .j-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:28px 0;
+    }
+
+    .j-outline {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      border:1px solid #c5c9cc;
+      background:rgba(8,10,12,.7);
+      color:white;
+      border-radius:7px;
+      padding:14px 22px;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .j-outline:hover {
+      background:#25292c;
+    }
+
+    .j-highlights {
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+      margin-top:30px;
+      color:#f5f5f5;
+      font-weight:700;
+      font-size:14px;
+    }
+
+    .j-highlights span:before {
+      content:'✓';
+      display:inline-grid;
+      place-items:center;
+      color:#101214;
+      border-radius:50%;
+      width:24px;
+      height:24px;
+      background:#ffcf24;
+      margin-right:9px;
+    }
+
+    .j-section {
+      padding:70px 0;
+    }
+
+    .j-section h2 {
+      font-size:clamp(30px,3.6vw,43px);
+      line-height:1.12;
+      margin:8px 0 18px;
+    }
+
+    .j-intro {
+      max-width:760px;
+      color:#bfc4c9;
+      font-size:17px;
+    }
+
+    .j-service-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:19px;
+      margin-top:32px;
+    }
+
+    .j-service {
+      background:#111619;
+      border:1px solid #31383d;
+      border-radius:10px;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .j-service img {
+      display:block;
+      width:100%;
+      height:210px;
+      object-fit:cover;
+    }
+
+    .j-service-body {
+      padding:23px;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .j-service h3 {
+      font-size:22px;
+      margin:0 0 10px;
+    }
+
+    .j-service p {
+      color:#bfc5c9;
+      margin:0 0 20px;
+      flex:1;
+    }
+
+    .j-service a {
+      color:#ffcf24;
+      font-weight:800;
+    }
+
+    .j-trust {
+      border-block:1px solid #30363b;
+      background:#090c0e;
+    }
+
+    .j-trust .container {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px;
+      padding-top:28px;
+      padding-bottom:28px;
+    }
+
+    .j-trust article {
+      display:flex;
+      gap:13px;
+      align-items:flex-start;
+    }
+
+    .j-trust b {
+      font-size:28px;
+      color:#ffcf24;
+    }
+
+    .j-trust strong {
+      display:block;
+      font-size:15px;
+    }
+
+    .j-trust small {
+      display:block;
+      color:#b8bec3;
+      margin-top:5px;
+    }
+
+    .j-ref {
+      background:linear-gradient(120deg,#292f33,#131719);
+    }
+
+    .j-ref .container {
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:38px;
+      align-items:center;
+    }
+
+    .j-ref img {
+      display:block;
+      width:100%;
+      border-radius:12px;
+      max-height:340px;
+      object-fit:cover;
+    }
+
+    .j-ref p {
+      color:#d0d4d7;
+      font-size:17px;
+    }
+
+    .j-reviews {
+      background:#0d1114;
+      border-top:1px solid #30363b;
+      border-bottom:1px solid #30363b;
+    }
+
+    .j-review-panel {
+      margin-top:28px;
+      padding:32px;
+      border:1px solid #353d42;
+      background:#151b1f;
+      border-radius:12px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:28px;
+      align-items:center;
+    }
+
+    .j-review-panel h3 {
+      font-size:24px;
+      margin:0 0 10px;
+      color:#fff;
+    }
+
+    .j-review-panel p {
+      margin:0;
+      color:#c5ccd0;
+      max-width:650px;
+    }
+
+    .j-review-actions {
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .j-review-actions a {
+      white-space:nowrap;
+      text-align:center;
+    }
+
+    .j-area {
+      background:#101518;
+      border-block:1px solid #30363b;
+    }
+
+    .j-area p {
+      color:#c7cdd0;
+      max-width:790px;
+      font-size:17px;
+    }
+
+    .j-area a {
+      color:#ffcf24;
+      font-weight:700;
+    }
+
+    .j-cta {
+      background:
+        linear-gradient(90deg,rgba(4,7,9,.94),rgba(4,7,9,.57)),
+        url('cta.jpg') center/cover;
+      padding:78px 0;
+    }
+
+    .j-cta h2 {
+      font-size:clamp(30px,4vw,46px);
+      margin:0 0 10px;
+    }
+
+    .j-cta p {
+      font-size:18px;
+      color:#e0e4e6;
+    }
+
+    .j-faq {
+      border-top:1px solid #30363b;
+    }
+
+    .j-faq details {
+      max-width:850px;
+      padding:18px 0;
+      border-bottom:1px solid #343a40;
+    }
+
+    .j-faq summary {
+      font-weight:800;
+      cursor:pointer;
+    }
+
+    .j-faq details p {
+      color:#c0c7cb;
+    }
+
+    .j-footer {
+      background:#080a0c;
+      border-top:1px solid #24292d;
+      padding:42px 0 24px;
+      color:#c7ccd0;
+    }
+
+    .j-footer-grid {
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr;
+      gap:28px;
+    }
+
+    .j-footer strong {
+      color:#fff;
+    }
+
+    .j-footer a {
+      color:#c7ccd0;
+    }
+
+    .j-footer a:hover {
+      color:#ffcf24;
+    }
+
+    .j-footer .company {
+      text-align:center;
+      font-size:13px;
+      color:#aeb4b9;
+      margin:35px 0 0;
+    }
+
+    @media(max-width:800px) {
+      .j-service-grid {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .j-trust .container {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .j-ref .container,
+      .j-review-panel {
+        grid-template-columns:1fr;
+      }
+
+      .j-review-actions {
+        align-items:flex-start;
+      }
+
+      .j-footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
     @media(max-width:600px) {
-      .j-hero {min-height:auto;background-position:65% center}
-      .j-hero .container {padding-top:66px;padding-bottom:66px}
-      .j-hero p {font-size:17px}
-      .j-hero h1 {font-size:40px}
-      .j-actions .btn,.j-actions .j-outline {width:100%;box-sizing:border-box}
-      .j-service-grid {grid-template-columns:1fr}
-      .j-service img {height:210px}
-      .j-trust .container {gap:22px}
-      .j-trust article {display:block}
-      .j-trust b {display:block}
-      .j-review-panel {padding:24px}
-      .j-review-actions,.j-review-actions a {width:100%;box-sizing:border-box}
-      .j-footer-grid {grid-template-columns:1fr}
-      .j-section {padding:54px 0}
+      .j-hero {
+        min-height:auto;
+        background-position:65% center;
+      }
+
+      .j-hero .container {
+        padding-top:66px;
+        padding-bottom:66px;
+      }
+
+      .j-hero p {
+        font-size:17px;
+      }
+
+      .j-hero h1 {
+        font-size:40px;
+      }
+
+      .j-actions .btn,
+      .j-actions .j-outline {
+        width:100%;
+        box-sizing:border-box;
+      }
+
+      .j-service-grid {
+        grid-template-columns:1fr;
+      }
+
+      .j-service img {
+        height:210px;
+      }
+
+      .j-trust .container {
+        gap:22px;
+      }
+
+      .j-trust article {
+        display:block;
+      }
+
+      .j-trust b {
+        display:block;
+      }
+
+      .j-review-panel {
+        padding:24px;
+      }
+
+      .j-review-actions,
+      .j-review-actions a {
+        width:100%;
+        box-sizing:border-box;
+      }
+
+      .j-footer-grid {
+        grid-template-columns:1fr;
+      }
+
+      .j-section {
+        padding:54px 0;
+      }
     }
   </style>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -105,95 +457,501 @@
     "url":"https://www.jopurakennus.fi/",
     "telephone":"+358400464551",
     "description":"Sisäremontit, tasoitus- ja maalaustyöt, talojen ulkomaalaukset ja kattomaalaukset Turun seudulla.",
-    "areaServed":[{"@type":"City","name":"Turku"},{"@type":"AdministrativeArea","name":"Varsinais-Suomi"}],
-    "hasOfferCatalog":{"@type":"OfferCatalog","name":"Rakennus- ja remonttipalvelut","itemListElement":[
-      {"@type":"OfferCatalog","name":"Sisäremontit"},
-      {"@type":"OfferCatalog","name":"Tasoitus- ja maalaustyöt"},
-      {"@type":"OfferCatalog","name":"Talon ulkomaalaus"},
-      {"@type":"OfferCatalog","name":"Kattomaalaus"}
-    ]}
+    "areaServed":[
+      {"@type":"City","name":"Turku"},
+      {"@type":"AdministrativeArea","name":"Varsinais-Suomi"}
+    ],
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Rakennus- ja remonttipalvelut",
+      "itemListElement":[
+        {"@type":"OfferCatalog","name":"Sisäremontit"},
+        {"@type":"OfferCatalog","name":"Tasoitus- ja maalaustyöt"},
+        {"@type":"OfferCatalog","name":"Talon ulkomaalaus"},
+        {"@type":"OfferCatalog","name":"Kattomaalaus"}
+      ]
+    }
   }
   </script>
-  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+
+  <script>
+    window.va=window.va||function(){
+      (window.vaq=window.vaq||[]).push(arguments);
+    };
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
+
 <body>
+
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu"><span class="brandmark"></span><span>JOPU<small>RAKENNUS</small></span></a>
+
+    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu">
+      <span class="brandmark"></span>
+      <span>JOPU<small>RAKENNUS</small></span>
+    </a>
+
     <nav class="links" aria-label="Päävalikko">
-      <a href="index.html" aria-current="page">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="referenssit.html">Referenssit</a><a href="arvostelut.html">Arvostelut</a><a href="meista.html">Meistä</a><a href="yhteystiedot.html">Yhteystiedot</a>
+      <a href="index.html" aria-current="page">Etusivu</a>
+      <a href="palvelut.html">Palvelut</a>
+      <a href="referenssit.html">Referenssit</a>
+      <a href="arvostelut.html">Arvostelut</a>
+      <a href="meista.html">Meistä</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
+
     <a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a>
-    <button class="hamb" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+
+    <button class="hamb" type="button"
+      aria-label="Avaa valikko"
+      aria-expanded="false"
+      aria-controls="mobile-menu">☰</button>
   </div>
+
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="referenssit.html">Referenssit</a><a href="arvostelut.html">Arvostelut</a><a href="meista.html">Meistä</a><a href="yhteystiedot.html">Yhteystiedot</a>
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="referenssit.html">Referenssit</a>
+    <a href="arvostelut.html">Arvostelut</a>
+    <a href="meista.html">Meistä</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
   </div>
 </header>
+
 <main>
-  <section class="j-hero"><div class="container">
-    <div class="eyebrow">REMONTIT JA MAALAUSTYÖT – TURKU JA LÄHIALUEET</div>
-    <h1>Remontit ja <em>maalaustyöt Turussa</em> ammattitaidolla</h1>
-    <p>JOPU Rakennus Oy toteuttaa sisäremontit, seinien tasoitus- ja maalaustyöt sekä talojen ulkomaalaukset ja kattomaalaukset Turussa ja lähialueilla. Kysy tarjous omaan kohteeseesi.</p>
-    <div class="j-actions"><a class="btn" href="yhteystiedot.html">✉ Pyydä maksuton tarjous →</a><a class="j-outline" href="https://wa.me/358400464551" target="_blank" rel="noopener noreferrer">Ota yhteyttä WhatsAppissa ↗</a></div>
-    <div class="j-highlights"><span>Huolellinen työnjälki</span><span>Selkeä sopiminen</span><span>Turku ja lähialueet</span></div>
-  </div></section>
-  <section class="j-section" id="palvelut"><div class="container">
-    <div class="eyebrow">PALVELUMME TURUN SEUDULLA</div>
-    <h2>Sisäremontit, <em>talon maalaus</em> ja kattomaalaus</h2>
-    <p class="j-intro">Etsitkö remonttitekijää Turusta? Teemme kodin pintaremontit, tasoitus- ja maalaustyöt sekä rakennusten ulkopintojen kunnostukset. Työn sisältö ja aikataulu sovitaan kohteen mukaan.</p>
-    <div class="j-service-grid">
-      <article class="j-service"><img src="service1.jpg" alt="Kodin sisäremontti ja pintojen uudistaminen Turun seudulla" loading="lazy" width="640" height="420"><div class="j-service-body"><h3>Sisäremontit Turussa</h3><p>Huoneistojen ja omakotitalojen pintaremontit, sisätilojen uudistukset sekä erilaiset korjaustyöt. Suunnitellaan remontin toteutus tarpeesi mukaan.</p><a href="palvelut.html">Tutustu remonttipalveluihin →</a></div></article>
-      <article class="j-service"><img src="service2.jpg" alt="Seinien ja kattojen tasoitus sekä sisämaalaus" loading="lazy" width="640" height="420"><div class="j-service-body"><h3>Tasoitus- ja maalaustyöt</h3><p>Seinien ja kattojen pohjatyöt, tasoitukset ja sisämaalaukset. Huolelliset pohjatyöt auttavat saamaan siistin ja kestävän lopputuloksen.</p><a href="palvelut.html">Lue tasoitus- ja maalaustöistä →</a></div></article>
-      <article class="j-service"><img src="service3.jpg" alt="Omakotitalon ulkomaalaus ja katon huoltomaalaus" loading="lazy" width="640" height="420"><div class="j-service-body"><h3>Talon ulkomaalaus ja kattomaalaus</h3><p>Omakotitalojen ulkomaalaukset sekä kattojen pesut ja huoltomaalaukset Turun seudulla. Työhön kuuluvat kohteen mukaan tarvittavat puhdistukset ja pohjatyöt.</p><a href="palvelut.html">Tutustu ulko- ja kattomaalauksiin →</a></div></article>
+
+  <section class="j-hero">
+    <div class="container">
+
+      <div class="eyebrow">REMONTIT JA MAALAUSTYÖT – TURKU JA LÄHIALUEET</div>
+
+      <h1>
+        Remontit ja <em>maalaustyöt Turussa</em>
+        ammattitaidolla
+      </h1>
+
+      <p>
+        JOPU Rakennus Oy toteuttaa sisäremontit,
+        seinien tasoitus- ja maalaustyöt sekä
+        talojen ulkomaalaukset ja kattomaalaukset
+        Turussa ja lähialueilla.
+        Kysy tarjous omaan kohteeseesi.
+      </p>
+
+      <div class="j-actions">
+        <a class="btn" href="yhteystiedot.html">
+          ✉ Pyydä maksuton tarjous →
+        </a>
+
+        <a class="j-outline"
+           href="https://wa.me/358400464551"
+           target="_blank"
+           rel="noopener noreferrer">
+          Ota yhteyttä WhatsAppissa ↗
+        </a>
+      </div>
+
+      <div class="j-highlights">
+        <span>Huolellinen työnjälki</span>
+        <span>Selkeä sopiminen</span>
+        <span>Turku ja lähialueet</span>
+      </div>
+
     </div>
-  </div></section>
-  <section class="j-trust" aria-label="Miksi valita JOPU Rakennus"><div class="container">
-    <article><b>◇</b><div><strong>Kokenut ammattilainen</strong><small>Pitkä kokemus rakennusalalta</small></div></article>
-    <article><b>⬡</b><div><strong>Luotettava yhteistyö</strong><small>Sovituista asioista pidetään kiinni</small></div></article>
-    <article><b>✓</b><div><strong>Laadukas työnjälki</strong><small>Siisti ja huolellinen lopputulos</small></div></article>
-    <article><b>⌖</b><div><strong>Paikallinen palvelu</strong><small>Turku ja lähialueet</small></div></article>
-  </div></section>
-  <section class="j-section j-ref"><div class="container">
-    <div><div class="eyebrow">REFERENSSIT</div><h2>Tutustu työnjälkeen</h2><p>Keräämme sivuille kuvia valmistuneista remonteista ja maalaustöistä. Ensimmäiset kohdekuvat lisätään pian.</p><a class="btn" href="referenssit.html">Katso referenssisivu →</a></div>
-    <img src="referenssit-hero.jpg" alt="Havainnekuva modernista keittiöstä" loading="lazy" width="800" height="530">
-  </div></section>
-  <section class="j-section j-area"><div class="container">
-    <div class="eyebrow">PALVELUALUE</div><h2>Remonttipalvelut <em>Turussa ja lähialueilla</em></h2>
-    <p>JOPU Rakennus palvelee Turun seudulla ja muualla Varsinais-Suomessa sopimuksen mukaan. Olipa suunnitteilla omakotitalon ulkomaalaus, kattomaalaus tai kodin sisäremontti, voit kysyä tarjousta suoraan meiltä.</p>
-    <p><a href="yhteystiedot.html">Kysy remontista tai maalausurakasta →</a></p>
-  </div></section>
-  <section class="j-section j-reviews" id="arvostelut"><div class="container">
-    <div class="eyebrow">ASIAKASPALAUTTEET</div><h2>Asiakkaidemme <em>kokemuksia</em></h2>
-    <p class="j-intro">Asiakkaiden kokemukset kertovat työn laadusta ja yhteistyön sujuvuudesta. Tutustu JOPU Rakennuksen Google-arvosteluihin.</p>
-    <div class="j-review-panel"><div><h3>JOPU Rakennus Googlessa</h3><p>Lue asiakkaidemme antamia arvosteluja Google-yritysprofiilistamme. Oletko ollut asiakkaamme? Voit myös jättää palautteesi Googlessa.</p></div><div class="j-review-actions"><a class="btn" href="arvostelut.html">Tutustu arvosteluihin →</a><a class="j-outline" href="https://share.google/8LqddV3fN2uLMQb4i" target="_blank" rel="noopener noreferrer">Avaa Google-profiili ↗</a></div></div>
-  </div></section>
-  <section class="j-cta"><div class="container">
-    <h2>Onko sinulla <em>remonttisuunnitelmia?</em></h2><p>Kerro kohteestasi ja pyydä maksuton tarjous ilman sitoumusta.</p>
-    <div class="j-actions"><a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a><a class="j-outline" href="https://wa.me/358400464551" target="_blank" rel="noopener noreferrer">Ota yhteyttä WhatsAppissa ↗</a></div>
-  </div></section>
-  <section class="j-section j-faq" id="ukk"><div class="container">
-    <div class="eyebrow">USEIN KYSYTTYÄ</div><h2>Remontti ja maalaus Turussa – usein kysyttyä</h2>
-    <details><summary>Mitä remonttitöitä JOPU Rakennus tekee Turussa?</summary><p>Teemme sisäremontteja, tasoitus- ja maalaustöitä, talojen ulkomaalauksia, kattomaalauksia sekä muita rakennus- ja korjaustöitä sopimuksen mukaan.</p></details>
-    <details><summary>Mitä talon ulkomaalaukseen kuuluu?</summary><p>Työ suunnitellaan rakennuksen kunnon mukaan. Ulkomaalaus voi sisältää pintojen puhdistuksen, irtoavan maalin poistamisen, tarvittavat pohjatyöt ja maalauksen. Tarkka sisältö sovitaan tarjouksessa.</p></details>
-    <details><summary>Voiko JOPU Rakennukselta tilata kattomaalauksen?</summary><p>Kyllä. Toteutamme kattojen pesuja ja huoltomaalauksia kohteen materiaalin, kunnon ja työmenetelmien soveltuvuuden mukaan.</p></details>
-    <details><summary>Millä alueella palvelette?</summary><p>Turussa ja lähialueilla sekä muualla Varsinais-Suomessa sopimuksen mukaan.</p></details>
-    <details><summary>Onko remontin tarjouspyyntö maksuton?</summary><p>Kyllä, voit pyytää tarjouksen maksutta ja ilman sitoumusta.</p></details>
-  </div></section>
+  </section>
+
+  <section class="j-section" id="palvelut">
+    <div class="container">
+
+      <div class="eyebrow">PALVELUMME TURUN SEUDULLA</div>
+
+      <h2>
+        Sisäremontit, <em>talon maalaus</em>
+        ja kattomaalaus
+      </h2>
+
+      <p class="j-intro">
+        Etsitkö remonttitekijää Turusta?
+        Teemme kodin pintaremontit,
+        tasoitus- ja maalaustyöt sekä
+        rakennusten ulkopintojen kunnostukset.
+        Työn sisältö ja aikataulu sovitaan
+        kohteen mukaan.
+      </p>
+
+      <div class="j-service-grid">
+
+        <article class="j-service">
+          <img src="service1.jpg"
+               alt="Kodin sisäremontti ja pintojen uudistaminen Turun seudulla"
+               loading="lazy"
+               width="640" height="420">
+
+          <div class="j-service-body">
+            <h3>Sisäremontit Turussa</h3>
+            <p>
+              Huoneistojen ja omakotitalojen
+              pintaremontit, sisätilojen uudistukset
+              sekä erilaiset korjaustyöt.
+              Suunnitellaan remontin toteutus
+              tarpeesi mukaan.
+            </p>
+            <a href="palvelut.html">
+              Tutustu remonttipalveluihin →
+            </a>
+          </div>
+        </article>
+
+        <article class="j-service">
+          <img src="service2.jpg"
+               alt="Seinien ja kattojen tasoitus sekä sisämaalaus"
+               loading="lazy"
+               width="640" height="420">
+
+          <div class="j-service-body">
+            <h3>Tasoitus- ja maalaustyöt</h3>
+            <p>
+              Seinien ja kattojen pohjatyöt,
+              tasoitukset ja sisämaalaukset.
+              Huolelliset pohjatyöt auttavat
+              saamaan siistin ja kestävän
+              lopputuloksen.
+            </p>
+            <a href="palvelut.html">
+              Lue tasoitus- ja maalaustöistä →
+            </a>
+          </div>
+        </article>
+
+        <article class="j-service">
+          <img src="service3.jpg"
+               alt="Omakotitalon ulkomaalaus ja katon huoltomaalaus"
+               loading="lazy"
+               width="640" height="420">
+
+          <div class="j-service-body">
+            <h3>Talon ulkomaalaus ja kattomaalaus</h3>
+            <p>
+              Omakotitalojen ulkomaalaukset sekä
+              kattojen pesut ja huoltomaalaukset
+              Turun seudulla. Työhön kuuluvat
+              kohteen mukaan tarvittavat
+              puhdistukset ja pohjatyöt.
+            </p>
+
+            <a href="kattomaalaus.html">
+              Tutustu kattomaalauksiin →
+            </a>
+
+            <a href="palvelut.html" style="margin-top:12px">
+              Muut maalauspalvelut →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="j-trust" aria-label="Miksi valita JOPU Rakennus">
+    <div class="container">
+
+      <article>
+        <b>◇</b>
+        <div>
+          <strong>Kokenut ammattilainen</strong>
+          <small>Pitkä kokemus rakennusalalta</small>
+        </div>
+      </article>
+
+      <article>
+        <b>⬡</b>
+        <div>
+          <strong>Luotettava yhteistyö</strong>
+          <small>Sovituista asioista pidetään kiinni</small>
+        </div>
+      </article>
+
+      <article>
+        <b>✓</b>
+        <div>
+          <strong>Laadukas työnjälki</strong>
+          <small>Siisti ja huolellinen lopputulos</small>
+        </div>
+      </article>
+
+      <article>
+        <b>⌖</b>
+        <div>
+          <strong>Paikallinen palvelu</strong>
+          <small>Turku ja lähialueet</small>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="j-section j-ref">
+    <div class="container">
+
+      <div>
+        <div class="eyebrow">REFERENSSIT</div>
+        <h2>Tutustu työnjälkeen</h2>
+
+        <p>
+          Keräämme sivuille kuvia valmistuneista
+          remonteista ja maalaustöistä.
+          Ensimmäiset kohdekuvat lisätään pian.
+        </p>
+
+        <a class="btn" href="referenssit.html">
+          Katso referenssisivu →
+        </a>
+      </div>
+
+      <img src="referenssit-hero.jpg"
+           alt="Havainnekuva modernista keittiöstä"
+           loading="lazy"
+           width="800" height="530">
+
+    </div>
+  </section>
+
+  <section class="j-section j-area">
+    <div class="container">
+
+      <div class="eyebrow">PALVELUALUE</div>
+
+      <h2>
+        Remonttipalvelut <em>Turussa ja lähialueilla</em>
+      </h2>
+
+      <p>
+        JOPU Rakennus palvelee Turun seudulla
+        ja muualla Varsinais-Suomessa
+        sopimuksen mukaan.
+        Olipa suunnitteilla omakotitalon ulkomaalaus,
+        kattomaalaus tai kodin sisäremontti,
+        voit kysyä tarjousta suoraan meiltä.
+      </p>
+
+      <p>
+        <a href="kattomaalaus.html">
+          Lue lisää kattomaalauksista Turussa →
+        </a>
+      </p>
+
+      <p>
+        <a href="yhteystiedot.html">
+          Kysy remontista tai maalausurakasta →
+        </a>
+      </p>
+
+    </div>
+  </section>
+
+  <section class="j-section j-reviews" id="arvostelut">
+    <div class="container">
+
+      <div class="eyebrow">ASIAKASPALAUTTEET</div>
+      <h2>Asiakkaidemme <em>kokemuksia</em></h2>
+
+      <p class="j-intro">
+        Asiakkaiden kokemukset kertovat työn
+        laadusta ja yhteistyön sujuvuudesta.
+        Tutustu JOPU Rakennuksen Google-arvosteluihin.
+      </p>
+
+      <div class="j-review-panel">
+
+        <div>
+          <h3>JOPU Rakennus Googlessa</h3>
+          <p>
+            Lue asiakkaidemme antamia arvosteluja
+            Google-yritysprofiilistamme.
+            Oletko ollut asiakkaamme?
+            Voit myös jättää palautteesi Googlessa.
+          </p>
+        </div>
+
+        <div class="j-review-actions">
+          <a class="btn" href="arvostelut.html">
+            Tutustu arvosteluihin →
+          </a>
+
+          <a class="j-outline"
+             href="https://share.google/8LqddV3fN2uLMQb4i"
+             target="_blank"
+             rel="noopener noreferrer">
+            Avaa Google-profiili ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="j-cta">
+    <div class="container">
+
+      <h2>
+        Onko sinulla <em>remonttisuunnitelmia?</em>
+      </h2>
+
+      <p>
+        Kerro kohteestasi ja pyydä maksuton tarjous
+        ilman sitoumusta.
+      </p>
+
+      <div class="j-actions">
+        <a class="btn" href="yhteystiedot.html">
+          Pyydä tarjous →
+        </a>
+
+        <a class="j-outline"
+           href="https://wa.me/358400464551"
+           target="_blank"
+           rel="noopener noreferrer">
+          Ota yhteyttä WhatsAppissa ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="j-section j-faq" id="ukk">
+    <div class="container">
+
+      <div class="eyebrow">USEIN KYSYTTYÄ</div>
+
+      <h2>Remontti ja maalaus Turussa – usein kysyttyä</h2>
+
+      <details>
+        <summary>Mitä remonttitöitä JOPU Rakennus tekee Turussa?</summary>
+        <p>
+          Teemme sisäremontteja, tasoitus- ja
+          maalaustöitä, talojen ulkomaalauksia,
+          kattomaalauksia sekä muita rakennus-
+          ja korjaustöitä sopimuksen mukaan.
+        </p>
+      </details>
+
+      <details>
+        <summary>Mitä talon ulkomaalaukseen kuuluu?</summary>
+        <p>
+          Työ suunnitellaan rakennuksen kunnon mukaan.
+          Ulkomaalaus voi sisältää pintojen puhdistuksen,
+          irtoavan maalin poistamisen, tarvittavat
+          pohjatyöt ja maalauksen.
+          Tarkka sisältö sovitaan tarjouksessa.
+        </p>
+      </details>
+
+      <details>
+        <summary>Voiko JOPU Rakennukselta tilata kattomaalauksen?</summary>
+        <p>
+          Kyllä. Toteutamme kattojen pesuja ja
+          huoltomaalauksia kohteen materiaalin,
+          kunnon ja työmenetelmien soveltuvuuden mukaan.
+          <a href="kattomaalaus.html" style="color:#ffcf24">
+            Tutustu kattomaalauspalveluun.
+          </a>
+        </p>
+      </details>
+
+      <details>
+        <summary>Millä alueella palvelette?</summary>
+        <p>
+          Turussa ja lähialueilla sekä muualla
+          Varsinais-Suomessa sopimuksen mukaan.
+        </p>
+      </details>
+
+      <details>
+        <summary>Onko remontin tarjouspyyntö maksuton?</summary>
+        <p>
+          Kyllä, voit pyytää tarjouksen
+          maksutta ja ilman sitoumusta.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
 </main>
-<footer class="j-footer"><div class="container"><div class="j-footer-grid">
-  <div><strong>JOPU Rakennus Oy</strong><p>Sisäremontit, tasoitus- ja maalaustyöt sekä talojen ulko- ja kattomaalaukset Turussa ja lähialueilla.</p></div>
-  <div><strong>Palvelut</strong><p><a href="palvelut.html">Kaikki palvelut</a></p><p><a href="referenssit.html">Referenssit</a></p><p><a href="arvostelut.html">Arvostelut</a></p></div>
-  <div><strong>Yhteystiedot</strong><p><a href="tel:+358400464551">040 046 4551</a></p><p><a href="yhteystiedot.html">Pyydä tarjous</a></p><p><a href="tietosuoja.html">Tietosuoja</a></p></div>
-</div><p class="company">JOPU Rakennus Oy | Y-tunnus: 3663775-9</p></div></footer>
+
+<footer class="j-footer">
+  <div class="container">
+
+    <div class="j-footer-grid">
+
+      <div>
+        <strong>JOPU Rakennus Oy</strong>
+        <p>
+          Sisäremontit, tasoitus- ja maalaustyöt
+          sekä talojen ulko- ja kattomaalaukset
+          Turussa ja lähialueilla.
+        </p>
+      </div>
+
+      <div>
+        <strong>Palvelut</strong>
+        <p><a href="palvelut.html">Kaikki palvelut</a></p>
+        <p><a href="kattomaalaus.html">Kattomaalaus Turku</a></p>
+        <p><a href="referenssit.html">Referenssit</a></p>
+        <p><a href="arvostelut.html">Arvostelut</a></p>
+      </div>
+
+      <div>
+        <strong>Yhteystiedot</strong>
+
+        <p>
+          <a href="tel:+358400464551">
+            040 046 4551
+          </a>
+        </p>
+
+        <p>
+          <a href="yhteystiedot.html">
+            Pyydä tarjous
+          </a>
+        </p>
+
+        <p>
+          <a href="tietosuoja.html">
+            Tietosuoja
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <p class="company">
+      JOPU Rakennus Oy | Y-tunnus: 3663775-9
+    </p>
+
+  </div>
+</footer>
+
 <script>
   const hamb=document.querySelector('.hamb');
   const menu=document.querySelector('.mobile-menu');
+
   if(hamb&&menu){
-    hamb.addEventListener('click',()=>{const open=menu.classList.toggle('open');hamb.setAttribute('aria-expanded',String(open));});
-    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');hamb.setAttribute('aria-expanded','false');}));
+    hamb.addEventListener('click',()=>{
+      const open=menu.classList.toggle('open');
+      hamb.setAttribute('aria-expanded',String(open));
+    });
+
+    menu.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click',()=>{
+        menu.classList.remove('open');
+        hamb.setAttribute('aria-expanded','false');
+      });
+    });
   }
 </script>
+
 </body>
 </html>
