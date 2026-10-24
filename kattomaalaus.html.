@@ -1,0 +1,571 @@
+
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kattomaalaus Turku | Katon pesu ja maalaus | JOPU Rakennus</title>
+
+  <meta name="description" content="Kattomaalaus Turussa ja lähialueilla. JOPU Rakennus Oy toteuttaa kattojen pesut, pohjatyöt ja huoltomaalaukset. Pyydä maksuton tarjous kattomaalauksesta.">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.jopurakennus.fi/kattomaalaus.html">
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:title" content="Kattomaalaus Turku | JOPU Rakennus Oy">
+  <meta property="og:description" content="Katon pesu ja huoltomaalaus Turussa ja lähialueilla. Kysy tarjous kattomaalauksesta.">
+  <meta property="og:url" content="https://www.jopurakennus.fi/kattomaalaus.html">
+
+  <style>
+    body {
+      background:#0b0e10;
+      color:#f5f5f5;
+    }
+
+    .roof-hero {
+      background:
+        linear-gradient(90deg,rgba(5,8,10,.96),rgba(5,8,10,.65)),
+        url('service3.jpg') center/cover;
+      padding:105px 0;
+    }
+
+    .roof-hero h1 {
+      font-size:clamp(38px,5vw,64px);
+      line-height:1.12;
+      max-width:850px;
+      margin:15px 0;
+    }
+
+    .roof-hero h1 em,
+    .roof-section h2 em,
+    .roof-cta h2 em {
+      color:#ffcf24;
+      font-style:normal;
+    }
+
+    .roof-hero p {
+      max-width:650px;
+      font-size:19px;
+      color:#e1e5e8;
+    }
+
+    .roof-section {
+      padding:75px 0;
+    }
+
+    .roof-section h2 {
+      font-size:clamp(29px,3.5vw,42px);
+      margin:10px 0 20px;
+    }
+
+    .roof-intro {
+      max-width:850px;
+      color:#c5ccd0;
+      font-size:18px;
+      line-height:1.75;
+    }
+
+    .roof-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:20px;
+      margin-top:35px;
+    }
+
+    .roof-card {
+      background:#151b1f;
+      border:1px solid #343b40;
+      border-radius:12px;
+      padding:28px;
+    }
+
+    .roof-card b {
+      color:#ffcf24;
+      font-size:30px;
+    }
+
+    .roof-card h3 {
+      font-size:23px;
+      margin:15px 0;
+    }
+
+    .roof-card p {
+      color:#c3c9cd;
+      line-height:1.7;
+    }
+
+    .roof-dark {
+      background:#101518;
+      border-block:1px solid #30363b;
+    }
+
+    .roof-list {
+      max-width:850px;
+      padding-left:24px;
+      color:#c5ccd0;
+      line-height:2;
+    }
+
+    .roof-price {
+      background:#151b1f;
+      border:1px solid #343b40;
+      border-radius:12px;
+      padding:32px;
+      margin-top:25px;
+      max-width:850px;
+    }
+
+    .roof-price p {
+      color:#c5ccd0;
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .roof-actions {
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+
+    .roof-outline {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid #bfc5c9;
+      color:#fff;
+      padding:14px 22px;
+      border-radius:7px;
+      text-decoration:none;
+      font-weight:800;
+      background:rgba(0,0,0,.45);
+    }
+
+    .roof-cta {
+      background:
+        linear-gradient(90deg,rgba(5,8,10,.95),rgba(5,8,10,.7)),
+        url('cta.jpg') center/cover;
+      padding:85px 0;
+    }
+
+    .roof-cta h2 {
+      font-size:clamp(30px,4vw,46px);
+    }
+
+    .roof-cta p {
+      font-size:18px;
+      color:#e0e4e6;
+      max-width:650px;
+    }
+
+    .roof-faq details {
+      max-width:850px;
+      border-bottom:1px solid #343a40;
+      padding:19px 0;
+    }
+
+    .roof-faq summary {
+      cursor:pointer;
+      font-weight:800;
+      font-size:17px;
+    }
+
+    .roof-faq details p {
+      color:#c5ccd0;
+      line-height:1.7;
+    }
+
+    .roof-footer {
+      background:#080a0c;
+      border-top:1px solid #30363b;
+      padding:40px 0;
+      color:#c7ccd0;
+    }
+
+    .roof-footer a {
+      color:#ffcf24;
+    }
+
+    @media(max-width:800px) {
+      .roof-grid {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+      .roof-hero {
+        padding:75px 0;
+      }
+
+      .roof-section {
+        padding:55px 0;
+      }
+
+      .roof-actions .btn,
+      .roof-actions .roof-outline {
+        width:100%;
+        box-sizing:border-box;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Kattomaalaus Turku",
+    "serviceType":"Katon pesu ja huoltomaalaus",
+    "description":"Kattojen pesut, pohjatyöt ja huoltomaalaukset Turussa ja lähialueilla.",
+    "areaServed":[
+      {"@type":"City","name":"Turku"},
+      {"@type":"AdministrativeArea","name":"Varsinais-Suomi"}
+    ],
+    "provider":{
+      "@type":"HomeAndConstructionBusiness",
+      "name":"JOPU Rakennus Oy",
+      "url":"https://www.jopurakennus.fi/",
+      "telephone":"+358400464551"
+    }
+  }
+  </script>
+
+  <script>
+    window.va=window.va||function(){
+      (window.vaq=window.vaq||[]).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      <span class="brandmark"></span>
+      <span>JOPU<small>RAKENNUS</small></span>
+    </a>
+
+    <nav class="links" aria-label="Päävalikko">
+      <a href="index.html">Etusivu</a>
+      <a href="palvelut.html">Palvelut</a>
+      <a href="referenssit.html">Referenssit</a>
+      <a href="arvostelut.html">Arvostelut</a>
+      <a href="meista.html">Meistä</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+
+    <a class="btn" href="yhteystiedot.html">
+      Pyydä tarjous →
+    </a>
+
+    <button class="hamb" type="button"
+      aria-label="Avaa valikko"
+      aria-expanded="false"
+      aria-controls="mobile-menu">☰</button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="referenssit.html">Referenssit</a>
+    <a href="arvostelut.html">Arvostelut</a>
+    <a href="meista.html">Meistä</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="roof-hero">
+    <div class="container">
+
+      <div class="eyebrow">KATTOMAALAUS TURKU JA LÄHIALUEET</div>
+
+      <h1>
+        Kattomaalaus <em>Turussa</em> –
+        katon pesu ja huoltomaalaus
+      </h1>
+
+      <p>
+        Tarvitseeko talosi katto pesua tai uutta maalipintaa?
+        JOPU Rakennus Oy toteuttaa kattojen pesut,
+        tarvittavat pohjatyöt ja huoltomaalaukset
+        Turussa ja lähialueilla.
+      </p>
+
+      <div class="roof-actions">
+        <a class="btn" href="yhteystiedot.html">
+          Pyydä maksuton tarjous →
+        </a>
+
+        <a class="roof-outline"
+           href="https://wa.me/358400464551?text=Hei%2C%20haluaisin%20tarjouksen%20kattomaalauksesta."
+           target="_blank"
+           rel="noopener noreferrer">
+          Kysy WhatsAppissa ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="roof-section">
+    <div class="container">
+
+      <div class="eyebrow">KATON HUOLTOMAALAUS</div>
+
+      <h2>Miksi <em>katto kannattaa maalata?</em></h2>
+
+      <p class="roof-intro">
+        Katto altistuu vuosien aikana sateelle,
+        auringonvalolle, pakkaselle ja likaantumiselle.
+        Oikein toteutettu huoltomaalaus voi auttaa
+        suojaamaan katon pintaa ja pidentämään
+        sen käyttöikää.
+      </p>
+
+      <p class="roof-intro">
+        Ennen maalausta katon kunto ja materiaalin
+        soveltuvuus huoltomaalaukseen on tarkistettava.
+        Kaikkia kattoja ei kannata maalata, jos
+        kattomateriaali on jo liian huonossa kunnossa.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="roof-section roof-dark">
+    <div class="container">
+
+      <div class="eyebrow">TYÖVAIHEET</div>
+
+      <h2>Mitä <em>kattomaalaukseen kuuluu?</em></h2>
+
+      <div class="roof-grid">
+
+        <article class="roof-card">
+          <b>01</b>
+          <h3>Katon pesu</h3>
+          <p>
+            Katon pinnalta poistetaan lika ja irtonainen
+            aines kattomateriaalille sopivilla menetelmillä.
+            Samalla arvioidaan katon pinnan kuntoa.
+          </p>
+        </article>
+
+        <article class="roof-card">
+          <b>02</b>
+          <h3>Pohjatyöt</h3>
+          <p>
+            Tarvittavat pohjatyöt tehdään katon
+            materiaalin ja kunnon mukaan.
+            Tavoitteena on saada maalille
+            mahdollisimman hyvä tartuntapinta.
+          </p>
+        </article>
+
+        <article class="roof-card">
+          <b>03</b>
+          <h3>Katon maalaus</h3>
+          <p>
+            Katto maalataan soveltuvalla tuotteella
+            valmistajan ohjeiden ja sääolosuhteiden
+            mukaan. Maalauskertojen määrä
+            sovitaan kohdekohtaisesti.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="roof-section">
+    <div class="container">
+
+      <div class="eyebrow">KATTOMAALAUKSEN HINTA</div>
+
+      <h2>Paljonko <em>kattomaalaus maksaa?</em></h2>
+
+      <p class="roof-intro">
+        Kattomaalauksen hinta riippuu katon pinta-alasta,
+        materiaalista, kunnosta, jyrkkyydestä,
+        tarvittavista pohjatöistä ja
+        turvallisesta työskentelytavasta.
+      </p>
+
+      <div class="roof-price">
+        <h3>Pyydä tarjous omaan kohteeseesi</h3>
+
+        <p>
+          Kerro katon arvioitu pinta-ala, kattomateriaali
+          ja kohteen sijainti. Voit myös lähettää
+          kuvia katosta WhatsAppilla.
+          Näiden tietojen avulla voimme aloittaa
+          urakan arvioinnin.
+        </p>
+
+        <a class="btn" href="yhteystiedot.html">
+          Pyydä kattomaalaustarjous →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="roof-section roof-dark">
+    <div class="container">
+
+      <div class="eyebrow">PALVELUALUE</div>
+
+      <h2>Kattomaalaukset <em>Turun seudulla</em></h2>
+
+      <p class="roof-intro">
+        JOPU Rakennus toteuttaa kattomaalauksia
+        Turussa ja lähialueilla sekä muualla
+        Varsinais-Suomessa sopimuksen mukaan.
+      </p>
+
+      <p class="roof-intro">
+        Tarjoamme myös
+        <a href="palvelut.html" style="color:#ffcf24">
+          talojen ulkomaalauksia ja muita remonttipalveluita
+        </a>.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="roof-section roof-faq">
+    <div class="container">
+
+      <div class="eyebrow">USEIN KYSYTTYÄ</div>
+
+      <h2>Kattomaalaus – usein kysytyt kysymykset</h2>
+
+      <details>
+        <summary>Kuinka kauan kattomaalaus kestää?</summary>
+        <p>
+          Työn kesto riippuu katon pinta-alasta,
+          kunnosta, tarvittavista työvaiheista
+          ja sääolosuhteista. Työlle arvioidaan
+          aikataulu tarjouksen yhteydessä.
+        </p>
+      </details>
+
+      <details>
+        <summary>Voiko vanhan katon maalata?</summary>
+        <p>
+          Monia kattoja voidaan huoltomaalata,
+          jos kattomateriaali ja katon kunto
+          soveltuvat siihen. Soveltuvuus
+          arvioidaan ennen työn aloittamista.
+        </p>
+      </details>
+
+      <details>
+        <summary>Sisältyvätkö maalit tarjoukseen?</summary>
+        <p>
+          Maalien ja muiden tarvikkeiden sisältyminen
+          urakkaan sovitaan tarjouksessa.
+        </p>
+      </details>
+
+      <details>
+        <summary>Onko tarjouspyyntö maksuton?</summary>
+        <p>
+          Kyllä. Voit pyytää tarjouksen
+          maksutta ja ilman sitoumusta.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <section class="roof-cta">
+    <div class="container">
+
+      <h2>
+        Onko katon <em>huoltomaalaus ajankohtainen?</em>
+      </h2>
+
+      <p>
+        Ota yhteyttä ja kerro kohteestasi.
+        Voit lähettää myös kuvia katosta,
+        jolloin urakan arviointi on helpompaa.
+      </p>
+
+      <div class="roof-actions">
+        <a class="btn" href="yhteystiedot.html">
+          Pyydä maksuton tarjous →
+        </a>
+
+        <a class="roof-outline"
+           href="https://wa.me/358400464551?text=Hei%2C%20haluaisin%20tarjouksen%20kattomaalauksesta."
+           target="_blank"
+           rel="noopener noreferrer">
+          Lähetä WhatsApp-viesti ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="roof-footer">
+  <div class="container">
+
+    <strong>JOPU Rakennus Oy</strong>
+
+    <p>
+      Kattomaalaukset, talojen ulkomaalaukset
+      ja remonttipalvelut Turussa ja lähialueilla.
+    </p>
+
+    <p>
+      Puhelin:
+      <a href="tel:+358400464551">040 046 4551</a>
+    </p>
+
+    <p>
+      <a href="index.html">Etusivu</a> |
+      <a href="palvelut.html">Palvelut</a> |
+      <a href="referenssit.html">Referenssit</a> |
+      <a href="yhteystiedot.html">Yhteystiedot</a> |
+      <a href="tietosuoja.html">Tietosuoja</a>
+    </p>
+
+    <p>
+      JOPU Rakennus Oy | Y-tunnus: 3663775-9
+    </p>
+
+  </div>
+</footer>
+
+<script>
+  const hamb=document.querySelector('.hamb');
+  const menu=document.querySelector('.mobile-menu');
+
+  if(hamb&&menu){
+    hamb.addEventListener('click',()=>{
+      const open=menu.classList.toggle('open');
+      hamb.setAttribute('aria-expanded',String(open));
+    });
+
+    menu.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click',()=>{
+        menu.classList.remove('open');
+        hamb.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
