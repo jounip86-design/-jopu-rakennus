@@ -1,35 +1,344 @@
+
 <!doctype html>
 <html lang="fi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Yhteystiedot | JOPU Rakennus Turku</title>
-  <meta name="description" content="Pyydä maksuton tarjous rakennus-, remontti- ja maalaustöistä Turussa ja lähialueilla.">
+  <title>Pyydä remonttitarjous Turku | Yhteystiedot | JOPU Rakennus Oy</title>
 
+  <meta name="description" content="Pyydä maksuton remonttitarjous JOPU Rakennus Oy:ltä. Sisäremontit, tasoitustyöt, maalaukset ja kattomaalaukset Turussa ja lähialueilla. Soita 040 046 4551.">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <link rel="canonical" href="https://www.jopurakennus.fi/yhteystiedot.html">
+  <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:title" content="Pyydä maksuton remonttitarjous | JOPU Rakennus Oy">
+  <meta property="og:description" content="Remontti- ja maalaustyöt Turussa ja lähialueilla. Rakennusalan kokemusta 20 vuotta.">
+  <meta property="og:url" content="https://www.jopurakennus.fi/yhteystiedot.html">
+  <meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://www.jopurakennus.fi/#yritys",
+        "name": "JOPU Rakennus Oy",
+        "url": "https://www.jopurakennus.fi/",
+        "telephone": "+358400464551",
+        "email": "jopurakennus@gmail.com",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Y-tunnus",
+          "value": "3663775-9"
+        },
+        "description": "Turun seudulla toimiva remontti- ja rakennusalan yritys. Sisäremontit, tasoitustyöt, sisämaalaukset, ulkomaalaukset ja kattomaalaukset. Yrityksen taustalla on 20 vuoden rakennusalan kokemus.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Turku",
+          "addressRegion": "Varsinais-Suomi",
+          "addressCountry": "FI"
+        },
+        "areaServed": [
+          "Turku",
+          "Kaarina",
+          "Raisio",
+          "Naantali",
+          "Lieto",
+          "Rusko",
+          "Masku",
+          "Nousiainen",
+          "Paimio",
+          "Parainen",
+          "Piikkiö",
+          "Aura"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+358400464551",
+          "email": "jopurakennus@gmail.com",
+          "contactType": "customer service",
+          "availableLanguage": "Finnish",
+          "areaServed": "FI"
+        },
+        "sameAs": [
+          "https://share.google/8LqddV3fN2uLMQb4i",
+          "https://www.facebook.com/profile.php?id=61596050117806"
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.jopurakennus.fi/yhteystiedot.html#webpage",
+        "url": "https://www.jopurakennus.fi/yhteystiedot.html",
+        "name": "JOPU Rakennus Oy – Yhteystiedot ja tarjouspyyntö",
+        "description": "Pyydä maksuton tarjous remontti- ja maalaustöistä Turussa ja lähialueilla.",
+        "inLanguage": "fi",
+        "mainEntity": {
+          "@id": "https://www.jopurakennus.fi/#yritys"
+        },
+        "isPartOf": {
+          "@id": "https://www.jopurakennus.fi/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Etusivu",
+            "item": "https://www.jopurakennus.fi/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Yhteystiedot",
+            "item": "https://www.jopurakennus.fi/yhteystiedot.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
+
+    body{
+      background:#0b0e10;
+      color:#f5f5f5;
+    }
+
+    .contact-hero{
+      background:
+        linear-gradient(105deg,rgba(5,8,10,.94),rgba(5,8,10,.60)),
+        url('hero.jpg') center/cover;
+      padding:90px 0 80px;
+      border-bottom:3px solid #ffcf24;
+    }
+
+    .contact-hero h1{
+      font-size:clamp(38px,6vw,65px);
+      line-height:1.12;
+      margin:15px 0;
+      color:#fff;
+    }
+
+    .contact-yellow{
+      color:#ffcf24;
+    }
+
+    .contact-hero p{
+      max-width:720px;
+      color:#d2d7da;
+      font-size:19px;
+      line-height:1.7;
+    }
+
+    .contact-section{
+      padding:60px 0;
+    }
+
+    .contact-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);
+      gap:30px;
+      align-items:start;
+    }
+
+    .contact-panel{
+      background:#14191d;
+      border:1px solid #343a40;
+      border-radius:14px;
+      padding:30px;
+    }
+
+    .contact-panel h2{
+      color:#fff;
+      font-size:28px;
+      margin:12px 0 18px;
+    }
+
+    .contact-panel p{
+      color:#c5cbd0;
+      line-height:1.7;
+    }
+
+    .contact-detail{
+      border-bottom:1px solid #343a40;
+      padding:16px 0;
+    }
+
+    .contact-detail:last-child{
+      border-bottom:0;
+    }
+
+    .contact-detail small{
+      display:block;
+      color:#aeb6bb;
+      font-size:13px;
+      margin-bottom:7px;
+    }
+
+    .contact-detail strong{
+      color:#fff;
+      font-size:18px;
+    }
+
+    .contact-detail a{
+      color:#ffcf24;
+      font-size:18px;
+      font-weight:700;
+      overflow-wrap:anywhere;
+    }
+
+    .contact-buttons{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin:25px 0;
+    }
+
+    .contact-buttons a{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:14px 18px;
+      border-radius:7px;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .whatsapp-button{
+      background:#168b48;
+      color:#fff;
+    }
+
+    .whatsapp-button:hover{
+      background:#11753c;
+    }
+
+    .contact-outline{
+      border:1px solid #ffcf24;
+      color:#ffcf24;
+    }
+
+    .contact-rating{
+      background:#0b0e10;
+      border:1px solid #343a40;
+      border-radius:10px;
+      padding:22px;
+      margin-top:25px;
+      text-align:center;
+    }
+
+    .contact-stars{
+      color:#ffcf24;
+      font-size:27px;
+      letter-spacing:3px;
+    }
+
+    .contact-rating strong{
+      display:block;
+      font-size:28px;
+      margin:8px 0;
+    }
+
+    .contact-rating p{
+      font-size:14px;
+      margin:8px 0;
+    }
+
+    .contact-rating a{
+      color:#ffcf24;
+      font-weight:700;
+    }
+
+    .contact-form-panel{
+      background:#14191d;
+      border:1px solid #343a40;
+      border-radius:14px;
+      padding:30px;
+    }
+
+    .contact-form-panel h2{
+      color:#fff;
+      margin:10px 0 15px;
+      font-size:30px;
+    }
+
+    .contact-form-panel > p{
+      color:#c5cbd0;
+      line-height:1.7;
+      margin-bottom:25px;
+    }
+
+    .contact-form-panel .form{
+      background:transparent;
+      color:#fff;
+      padding:0;
+      border:0;
+      box-shadow:none;
+    }
+
     .form-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
     }
 
     .form-grid .full{
-      grid-column:1/-1
+      grid-column:1/-1;
     }
 
     .form label{
       font-weight:700;
       font-size:14px;
-      margin-bottom:5px;
-      display:block
+      margin-bottom:7px;
+      display:block;
+      color:#f5f5f5;
     }
 
     .form-row{
       display:flex;
-      flex-direction:column
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .form input:not([type="checkbox"]):not([type="hidden"]),
+    .form select,
+    .form textarea{
+      width:100%;
+      box-sizing:border-box;
+      border:1px solid #41494f;
+      border-radius:7px;
+      background:#0b0e10;
+      color:#fff;
+      padding:14px;
+      font-size:16px;
+    }
+
+    .form input::placeholder,
+    .form textarea::placeholder{
+      color:#a0a8ae;
+    }
+
+    .form input:focus,
+    .form select:focus,
+    .form textarea:focus{
+      outline:2px solid #ffcf24;
+      outline-offset:1px;
+    }
+
+    .form textarea{
+      min-height:170px;
+      resize:vertical;
     }
 
     .privacy-check{
@@ -37,37 +346,261 @@
       gap:10px;
       align-items:flex-start;
       font-size:14px;
-      color:#626970
+      color:#c5cbd0;
+      margin:10px 0;
     }
 
     .privacy-check input{
-      width:auto;
-      margin-top:4px
+      width:18px;
+      height:18px;
+      flex-shrink:0;
+      margin-top:4px;
+      accent-color:#ffcf24;
+    }
+
+    .privacy-check label{
+      font-weight:400;
+      line-height:1.6;
     }
 
     .privacy-check a{
+      color:#ffcf24;
       text-decoration:underline;
-      font-weight:700
+      font-weight:700;
     }
 
-    @media(max-width:700px){
+    .contact-form-panel .form button{
+      width:100%;
+      margin-top:15px;
+      padding:16px;
+      font-size:17px;
+      cursor:pointer;
+    }
+
+    .form-notice{
+      color:#aeb6bb;
+      font-size:13px;
+      line-height:1.6;
+      margin-top:15px;
+    }
+
+    .area-section{
+      background:#14191d;
+      padding:60px 0;
+      border-top:1px solid #343a40;
+      border-bottom:1px solid #343a40;
+    }
+
+    .area-section h2,
+    .process-section h2,
+    .contact-services h2{
+      color:#fff;
+      font-size:clamp(28px,4vw,40px);
+      margin:12px 0 20px;
+    }
+
+    .area-section p,
+    .process-section p,
+    .contact-services p{
+      color:#c5cbd0;
+      line-height:1.7;
+    }
+
+    .area-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+      margin:25px 0;
+    }
+
+    .area-item{
+      background:#0b0e10;
+      border:1px solid #343a40;
+      border-radius:8px;
+      padding:17px 10px;
+      text-align:center;
+      font-weight:700;
+    }
+
+    .area-item span{
+      color:#ffcf24;
+      margin-right:5px;
+    }
+
+    .process-section{
+      padding:60px 0;
+    }
+
+    .process-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .process-card{
+      background:#14191d;
+      border:1px solid #343a40;
+      border-radius:12px;
+      padding:25px;
+    }
+
+    .process-number{
+      width:46px;
+      height:46px;
+      border-radius:50%;
+      background:#ffcf24;
+      color:#111;
+      font-size:22px;
+      font-weight:900;
+      display:grid;
+      place-items:center;
+      margin-bottom:18px;
+    }
+
+    .process-card h3{
+      color:#fff;
+      font-size:22px;
+    }
+
+    .contact-services{
+      padding:55px 0;
+      background:#14191d;
+      border-top:1px solid #343a40;
+    }
+
+    .contact-service-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:25px 0;
+    }
+
+    .contact-service-links a{
+      background:#0b0e10;
+      color:#ffcf24;
+      border:1px solid #343a40;
+      border-radius:7px;
+      padding:13px 18px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .contact-service-links a:hover{
+      border-color:#ffcf24;
+    }
+
+    .contact-social{
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:25px;
+    }
+
+    .contact-social a{
+      color:#ffcf24;
+      font-weight:700;
+    }
+
+    .contact-bottom{
+      padding:60px 0;
+      text-align:center;
+      border-top:1px solid #343a40;
+    }
+
+    .contact-bottom h2{
+      color:#fff;
+      font-size:clamp(28px,4vw,40px);
+    }
+
+    .contact-bottom p{
+      color:#c5cbd0;
+      line-height:1.7;
+    }
+
+    .bottom-buttons{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:25px;
+    }
+
+    .bottom-buttons a{
+      padding:14px 22px;
+      border-radius:7px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    @media(max-width:850px){
+
+      .contact-layout{
+        grid-template-columns:1fr;
+      }
+
+      .process-grid{
+        grid-template-columns:1fr;
+      }
+
+      .area-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .contact-hero{
+        padding:65px 0;
+      }
+
+      .contact-hero p{
+        font-size:17px;
+      }
+
+      .contact-section,
+      .area-section,
+      .process-section,
+      .contact-services{
+        padding:40px 0;
+      }
+
+      .contact-panel,
+      .contact-form-panel{
+        padding:22px;
+      }
+
       .form-grid{
-        grid-template-columns:1fr
+        grid-template-columns:1fr;
       }
 
       .form-grid .full{
-        grid-column:auto
+        grid-column:auto;
       }
+
+      .area-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .bottom-buttons a{
+        width:100%;
+        box-sizing:border-box;
+      }
+
     }
+
   </style>
 
+  <!-- Vercel Analytics -->
   <script>
-    window.va = window.va || function () {
-      (window.vaq = window.vaq || []).push(arguments);
+    window.va=window.va||function(){
+      (window.vaq=window.vaq||[]).push(arguments);
     };
   </script>
 
   <script defer src="/_vercel/insights/script.js"></script>
+
 </head>
 
 <body>
@@ -77,115 +610,211 @@
 
     <a class="brand" href="index.html">
       <span class="brandmark"></span>
-      <span>
-        JOPU
-        <small>RAKENNUS</small>
-      </span>
+      <span>JOPU<small>RAKENNUS</small></span>
     </a>
 
-    <nav class="links">
+    <nav class="links" aria-label="Päävalikko">
+
       <a href="index.html">Etusivu</a>
       <a href="palvelut.html">Palvelut</a>
       <a href="referenssit.html">Referenssit</a>
+      <a href="arvostelut.html">Arvostelut</a>
       <a href="meista.html">Meistä</a>
-      <a href="index.html#ukk">UKK</a>
-      <a href="yhteystiedot.html">Yhteystiedot</a>
+      <a href="yhteystiedot.html" aria-current="page" style="color:#ffcf24">Yhteystiedot</a>
+
     </nav>
 
-    <a class="btn" href="yhteystiedot.html">
+    <a class="btn" href="#tarjouspyynto">
       Pyydä tarjous →
     </a>
 
-    <button class="hamb" aria-label="Avaa valikko">
+    <button class="hamb" type="button"
+      aria-label="Avaa valikko"
+      aria-expanded="false"
+      aria-controls="mobile-menu">
       ☰
     </button>
 
   </div>
 
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu">
+
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
     <a href="referenssit.html">Referenssit</a>
+    <a href="arvostelut.html">Arvostelut</a>
     <a href="meista.html">Meistä</a>
-    <a href="index.html#ukk">UKK</a>
     <a href="yhteystiedot.html">Yhteystiedot</a>
+
   </div>
 </header>
 
-
 <main>
 
-<section class="subhero">
+<section class="contact-hero">
   <div class="container">
 
     <div class="eyebrow">
-      JOPU Rakennus
+      JOPU RAKENNUS OY – TURKU
     </div>
 
-    <h1>Yhteystiedot</h1>
+    <h1>
+      Pyydä maksuton
+      <span class="contact-yellow">remonttitarjous</span>
+    </h1>
 
-    <p class="lead">
-      Kerro projektistasi, niin tehdään siitä selkeä suunnitelma.
+    <p>
+      Suunnitteletko sisäremonttia, tasoitustöitä,
+      maalausta tai muuta rakennustyötä?
+      Ota yhteyttä JOPU Rakennus Oy:hyn.
+      Palvelemme Turussa ja lähialueilla
+      20 vuoden rakennusalan kokemuksella.
     </p>
+
+    <a class="btn" href="#tarjouspyynto">
+      Kerro projektistasi →
+    </a>
 
   </div>
 </section>
 
+<section class="contact-section">
+  <div class="container contact-layout">
 
-<section class="section">
-  <div class="container contact-grid">
+    <div class="contact-panel">
 
-    <div class="contact-card">
+      <div class="eyebrow">OTA YHTEYTTÄ</div>
 
-      <div class="eyebrow">
-        Ota yhteyttä
+      <h2>JOPU Rakennus Oy</h2>
+
+      <p>
+        Ota yhteyttä puhelimitse, sähköpostitse,
+        WhatsAppissa tai tarjouspyyntölomakkeella.
+        Tarjouksen pyytäminen on maksutonta
+        eikä sido sinua tilaukseen.
+      </p>
+
+      <div class="contact-detail">
+
+        <small>Puhelinnumero</small>
+
+        <a href="tel:+358400464551">
+          040 046 4551
+        </a>
+
       </div>
 
-      <h2>Pyydä maksuton tarjous</h2>
+      <div class="contact-detail">
+
+        <small>Sähköposti</small>
+
+        <a href="mailto:jopurakennus@gmail.com">
+          jopurakennus@gmail.com
+        </a>
+
+      </div>
+
+      <div class="contact-detail">
+
+        <small>Yrityksen virallinen nimi</small>
+
+        <strong>JOPU Rakennus Oy</strong>
+
+      </div>
+
+      <div class="contact-detail">
+
+        <small>Y-tunnus</small>
+
+        <strong>3663775-9</strong>
+
+      </div>
+
+      <div class="contact-detail">
+
+        <small>Kotipaikka</small>
+
+        <strong>Turku, Varsinais-Suomi</strong>
+
+      </div>
+
+      <div class="contact-detail">
+
+        <small>Rakennusalan kokemus</small>
+
+        <strong>20 vuotta</strong>
+
+      </div>
+
+      <div class="contact-buttons">
+
+        <a class="btn" href="tel:+358400464551">
+          Soita meille →
+        </a>
+
+        <a class="whatsapp-button"
+          href="https://wa.me/358400464551"
+          target="_blank"
+          rel="noopener noreferrer">
+          Lähetä WhatsApp-viesti →
+        </a>
+
+        <a class="contact-outline"
+          href="mailto:jopurakennus@gmail.com">
+          Lähetä sähköpostia →
+        </a>
+
+      </div>
+
+      <div class="contact-rating">
+
+        <div class="contact-stars"
+          aria-label="5 tähteä viidestä">
+          ★★★★★
+        </div>
+
+        <strong>5,0 / 5</strong>
+
+        <p>3 Google-asiakasarvostelua</p>
+
+        <p>Tilanne 27.11.2026</p>
+
+        <a href="arvostelut.html">
+          Lue asiakkaidemme kokemuksia →
+        </a>
+
+      </div>
+
+      <div class="contact-social">
+
+        <a href="https://www.facebook.com/profile.php?id=61596050117806"
+          target="_blank"
+          rel="noopener noreferrer">
+          Facebook ↗
+        </a>
+
+        <a href="https://share.google/8LqddV3fN2uLMQb4i"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google-yritysprofiili ↗
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="contact-form-panel" id="tarjouspyynto">
+
+      <div class="eyebrow">MAKSUTON TARJOUSPYYNTÖ</div>
+
+      <h2>Kerro remontistasi</h2>
 
       <p>
         Kerro mitä pitäisi tehdä, missä kohde sijaitsee
         ja milloin työn olisi tarkoitus alkaa.
+        Otamme sinuun yhteyttä ja sovimme tarvittaessa
+        kohteen tarkemmasta kartoituksesta.
       </p>
-
-      <p>
-        <strong>Puhelin</strong><br>
-        <a href="tel:+358400464551">
-          0400464551
-        </a>
-      </p>
-
-      <p>
-        <strong>Sähköposti</strong><br>
-        <a href="mailto:jopurakennus@gmail.com">
-          jopurakennus@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <strong>Yritys</strong><br>
-        JOPU Rakennus Oy
-      </p>
-
-      <p>
-        <strong>Y-tunnus</strong><br>
-        3663775-9
-      </p>
-
-      <p>
-        <strong>Paikkakunta</strong><br>
-        Turku
-      </p>
-
-      <p>
-        <strong>Palvelualue</strong><br>
-        Turku ja lähialueet
-      </p>
-
-    </div>
-
-
-    <div>
 
       <form
         class="form"
@@ -218,24 +847,27 @@
           style="display:none"
           tabindex="-1"
           autocomplete="off"
+          aria-hidden="true"
         >
-
 
         <div class="form-grid">
 
           <div class="form-row">
+
             <label for="name">Nimi *</label>
 
             <input
               id="name"
               required
               name="Nimi"
+              autocomplete="name"
               placeholder="Nimesi"
             >
+
           </div>
 
-
           <div class="form-row">
+
             <label for="phone">Puhelinnumero *</label>
 
             <input
@@ -243,24 +875,28 @@
               required
               type="tel"
               name="Puhelin"
+              autocomplete="tel"
               placeholder="040 123 4567"
             >
+
           </div>
 
-
           <div class="form-row">
+
             <label for="email">Sähköposti</label>
 
             <input
               id="email"
               type="email"
               name="Sähköposti"
+              autocomplete="email"
               placeholder="nimi@email.fi"
             >
+
           </div>
 
-
           <div class="form-row">
+
             <label for="city">Kohteen paikkakunta *</label>
 
             <input
@@ -269,55 +905,93 @@
               name="Paikkakunta"
               placeholder="Esim. Turku"
             >
+
           </div>
 
+          <div class="form-row">
+
+            <label for="customer">Asiakastyyppi</label>
+
+            <select id="customer" name="Asiakastyyppi">
+
+              <option value="">Valitse asiakastyyppi</option>
+              <option>Yksityisasiakas</option>
+              <option>Taloyhtiö</option>
+              <option>Yritys</option>
+              <option>Rakennusliike</option>
+              <option>Muu</option>
+
+            </select>
+
+          </div>
 
           <div class="form-row">
+
             <label for="service">Työn tyyppi</label>
 
-            <select
-              id="service"
-              name="Palvelu"
-            >
+            <select id="service" name="Palvelu">
+
               <option value="">Valitse palvelu</option>
+              <option>Huoneistoremontti</option>
               <option>Sisäremontti</option>
-              <option>Tasoitus- ja maalaustyö</option>
-              <option>Ulko- ja kattomaalaus</option>
-              <option>Terassi / pihatyö</option>
-              <option>Korjaustyö</option>
+              <option>Keittiöremontti</option>
+              <option>Tasoitustyöt</option>
+              <option>Sisämaalaus</option>
+              <option>Talon ulkomaalaus</option>
+              <option>Kattomaalaus</option>
+              <option>Terassi ja piharakenteet</option>
+              <option>Purku- ja korjaustyöt</option>
+              <option>Aliurakointi</option>
               <option>Muu rakennustyö</option>
+
             </select>
+
           </div>
 
+          <div class="form-row">
+
+            <label for="size">Kohteen koko</label>
+
+            <input
+              id="size"
+              name="Kohteen koko"
+              placeholder="Esim. 60 m²"
+            >
+
+          </div>
 
           <div class="form-row">
+
             <label for="timing">Toivottu ajankohta</label>
 
             <input
               id="timing"
               name="Toivottu ajankohta"
-              placeholder="Esim. syyskuu / mahdollisimman pian"
+              placeholder="Esim. kevät 2027"
             >
+
           </div>
 
-
           <div class="form-row full">
+
             <label for="message">Kerro työstä *</label>
 
             <textarea
               id="message"
               required
               name="Työn kuvaus"
-              placeholder="Kerro mahdollisimman tarkasti mitä pitäisi tehdä, kohteen koko ja muut tärkeät tiedot..."
+              placeholder="Kerro mitä pitäisi tehdä, kohteen nykyinen kunto ja muut tärkeät tiedot..."
             ></textarea>
-          </div>
 
+          </div>
 
           <div class="full privacy-check">
 
             <input
               type="checkbox"
               id="privacy"
+              name="Tietosuojaseloste hyväksytty"
+              value="Kyllä"
               required
             >
 
@@ -333,16 +1007,16 @@
 
         </div>
 
-
         <button class="btn" type="submit">
-          Lähetä tarjouspyyntö →
+          Lähetä maksuton tarjouspyyntö →
         </button>
 
-
-        <div class="notice">
-          Lähettämällä lomakkeen tiedot toimitetaan
-          JOPU Rakennukselle tarjouspyynnön käsittelyä varten.
-        </div>
+        <p class="form-notice">
+          Tarjouspyyntö on maksuton eikä sido tilaukseen.
+          Lomakkeen tiedot toimitetaan FormSubmit-palvelun
+          kautta JOPU Rakennus Oy:lle tarjouspyynnön
+          käsittelyä varten.
+        </p>
 
       </form>
 
@@ -351,60 +1025,200 @@
   </div>
 </section>
 
-
-<section class="cta">
+<section class="area-section">
   <div class="container">
 
-    <div>
-      <div class="eyebrow">
-        Voit myös soittaa
-      </div>
+    <div class="eyebrow">PALVELUALUEEMME</div>
 
-      <h2>Kysy työstä suoraan</h2>
+    <h2>
+      Remonttipalvelut
+      <span class="contact-yellow">Turun seudulla</span>
+    </h2>
 
-      <p>
-        Myös pienemmät rakennus- ja korjaustyöt ovat tervetulleita.
-      </p>
+    <p>
+      JOPU Rakennus Oy toteuttaa remontti-,
+      rakennus- ja maalaustöitä Turussa
+      sekä ympäröivillä paikkakunnilla.
+    </p>
+
+    <div class="area-grid">
+
+      <div class="area-item"><span>✓</span> Turku</div>
+      <div class="area-item"><span>✓</span> Kaarina</div>
+      <div class="area-item"><span>✓</span> Raisio</div>
+      <div class="area-item"><span>✓</span> Naantali</div>
+      <div class="area-item"><span>✓</span> Lieto</div>
+      <div class="area-item"><span>✓</span> Rusko</div>
+      <div class="area-item"><span>✓</span> Masku</div>
+      <div class="area-item"><span>✓</span> Nousiainen</div>
+      <div class="area-item"><span>✓</span> Paimio</div>
+      <div class="area-item"><span>✓</span> Parainen</div>
+      <div class="area-item"><span>✓</span> Piikkiö</div>
+      <div class="area-item"><span>✓</span> Aura</div>
+
     </div>
 
-    <a class="btn" href="tel:+358400464551">
-      Soita 0400464551 →
-    </a>
+    <p>
+      Toteutamme töitä myös muualla Varsinais-Suomessa
+      erikseen sovittaessa. Kysy rohkeasti,
+      vaikka paikkakuntasi ei olisi listalla.
+    </p>
+
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="container">
+
+    <div class="eyebrow">HELPPO YHTEYDENOTTO</div>
+
+    <h2>Näin remontti etenee</h2>
+
+    <div class="process-grid">
+
+      <article class="process-card">
+
+        <div class="process-number">1</div>
+
+        <h3>Ota yhteyttä</h3>
+
+        <p>
+          Kerro remonttitarpeestasi puhelimitse,
+          WhatsAppissa tai tarjouspyyntölomakkeella.
+        </p>
+
+      </article>
+
+      <article class="process-card">
+
+        <div class="process-number">2</div>
+
+        <h3>Kartoitus ja tarjous</h3>
+
+        <p>
+          Käymme läpi työn sisällön, kohteen
+          lähtötilanteen ja aikataulun.
+          Tarvittaessa sovimme kohdekäynnistä.
+        </p>
+
+      </article>
+
+      <article class="process-card">
+
+        <div class="process-number">3</div>
+
+        <h3>Remontin toteutus</h3>
+
+        <p>
+          Kun tarjous on hyväksytty,
+          sovimme työn aloittamisesta ja
+          toteutamme remontin sovitun
+          työn sisällön mukaisesti.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-services">
+  <div class="container">
+
+    <div class="eyebrow">PALVELUMME</div>
+
+    <h2>Mihin tarvitset remonttiapua?</h2>
+
+    <p>
+      Palvelemme yksityisasiakkaita, taloyhtiöitä,
+      yrityksiä ja rakennusliikkeitä.
+      Tutustu tarkemmin remontti- ja maalauspalveluihimme.
+    </p>
+
+    <div class="contact-service-links">
+
+      <a href="sisaremontit.html">Sisäremontit →</a>
+      <a href="tasoitustyot.html">Tasoitustyöt →</a>
+      <a href="sisamaalaus.html">Sisämaalaus →</a>
+      <a href="ulkomaalaus.html">Talon ulkomaalaus →</a>
+      <a href="kattomaalaus.html">Kattomaalaus →</a>
+      <a href="palvelut.html">Kaikki palvelut →</a>
+
+    </div>
+
+    <h3>Kotitalousvähennys</h3>
+
+    <p>
+      Yksityisasiakkaana voit saada remontti- ja
+      maalaustöiden työn osuudesta kotitalousvähennystä
+      Verohallinnon voimassa olevien ehtojen mukaisesti.
+      Työn ja materiaalien osuudet eritellään laskulla.
+    </p>
+
+  </div>
+</section>
+
+<section class="contact-bottom">
+  <div class="container">
+
+    <div class="eyebrow">TUTUSTU TYÖNJÄLKEEMME</div>
+
+    <h2>
+      Luotettava remonttikumppani
+      <span class="contact-yellow">Turussa</span>
+    </h2>
+
+    <p>
+      Tutustu toteuttamiimme remonttikohteisiin,
+      aitoihin ennen ja jälkeen -kuviin
+      sekä asiakkaidemme Google-arvosteluihin.
+    </p>
+
+    <div class="bottom-buttons">
+
+      <a class="btn" href="referenssit.html">
+        Katso referenssit →
+      </a>
+
+      <a class="contact-outline" href="arvostelut.html">
+        Lue asiakasarvostelut →
+      </a>
+
+      <a class="contact-outline" href="meista.html">
+        Tutustu yritykseen →
+      </a>
+
+    </div>
 
   </div>
 </section>
 
 </main>
 
-
 <footer class="footer">
-
   <div class="container footer-grid">
 
     <div>
+
       <a class="brand" href="index.html">
-
         <span class="brandmark"></span>
-
-        <span>
-          JOPU
-          <small>RAKENNUS</small>
-        </span>
-
+        <span>JOPU<small>RAKENNUS</small></span>
       </a>
 
-      <p>
-        Rakentamista ja remontointia Turun seudulla.
-      </p>
+      <p>JOPU Rakennus Oy</p>
+      <p>Y-tunnus: 3663775-9</p>
+      <p>20 vuoden rakennusalan kokemus.</p>
+
     </div>
 
-
     <div>
-      <h4>Yhteys</h4>
+
+      <h4>Yhteystiedot</h4>
 
       <p>
         <a href="tel:+358400464551">
-          0400464551
+          040 046 4551
         </a>
       </p>
 
@@ -414,50 +1228,54 @@
         </a>
       </p>
 
-      <p>Turku</p>
+      <p>Turku, Varsinais-Suomi</p>
+
+      <p>
+        <a href="https://wa.me/358400464551"
+          target="_blank"
+          rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </p>
+
     </div>
 
-
     <div>
-      <h4>Palvelualue</h4>
 
-      <p>
-        Turku ja lähialueet
-      </p>
+      <h4>Palvelut</h4>
+
+      <p><a href="sisaremontit.html">Sisäremontit</a></p>
+      <p><a href="tasoitustyot.html">Tasoitustyöt</a></p>
+      <p><a href="sisamaalaus.html">Sisämaalaus</a></p>
+      <p><a href="ulkomaalaus.html">Ulkomaalaus</a></p>
+      <p><a href="kattomaalaus.html">Kattomaalaus</a></p>
+
     </div>
 
-
     <div>
-      <h4>Sivut</h4>
+
+      <h4>Yritys</h4>
+
+      <p><a href="meista.html">Meistä</a></p>
+      <p><a href="referenssit.html">Referenssit</a></p>
+      <p><a href="arvostelut.html">Arvostelut</a></p>
+      <p><a href="yhteystiedot.html">Yhteystiedot</a></p>
+      <p><a href="index.html#ukk">UKK</a></p>
+      <p><a href="tietosuoja.html">Tietosuoja</a></p>
 
       <p>
-        <a href="palvelut.html">
-          Palvelut
+        <a href="https://g.page/r/CecbtLW5gdQGEAE/review"
+          target="_blank"
+          rel="noopener noreferrer">
+          Jätä Google-arvostelu
         </a>
       </p>
 
-      <p>
-        <a href="referenssit.html">
-          Referenssit
-        </a>
-      </p>
-
-      <p>
-        <a href="index.html#ukk">
-          UKK
-        </a>
-      </p>
-
-      <p>
-        <a href="tietosuoja.html">
-          Tietosuoja
-        </a>
-      </p>
     </div>
 
   </div>
 
-  <p style="text-align:center; margin:18px 0 0; padding:0 16px 16px; font-size:14px;">
+  <p style="text-align:center;margin:18px 0 0;padding:0 16px 16px;font-size:14px;">
     JOPU Rakennus Oy | Y-tunnus: 3663775-9
   </p>
 
