@@ -7,8 +7,10 @@
 
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
 
-  <title>Remontti Turku | Talon maalaus ja kattomaalaus | JOPU Rakennus</title>
-  <meta name="description" content="Tarvitsetko remonttia Turussa? JOPU Rakennus Oy tekee sisäremontit, tasoitus- ja maalaustyöt, talon ulkomaalaukset sekä kattomaalaukset Turun seudulla. Pyydä maksuton tarjous.">
+  <title>Remontti Turku | Maalaus, tasoitus ja kattomaalaus | JOPU Rakennus Oy</title>
+
+  <meta name="description" content="JOPU Rakennus Oy on Turun seudulla toimiva remonttiyritys. Sisäremontit, tasoitus- ja maalaustyöt, talon ulkomaalaukset ja kattomaalaukset. Pyydä maksuton tarjous.">
+
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://www.jopurakennus.fi/">
   <link rel="stylesheet" href="style.css">
@@ -17,8 +19,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fi_FI">
   <meta property="og:site_name" content="JOPU Rakennus Oy">
-  <meta property="og:title" content="Remontit, talon maalaukset ja kattomaalaukset Turussa | JOPU Rakennus">
-  <meta property="og:description" content="Sisäremontit, tasoitus- ja maalaustyöt sekä talon ulko- ja kattomaalaukset Turussa ja lähialueilla. Pyydä maksuton tarjous.">
+  <meta property="og:title" content="Remontit ja maalaustyöt Turussa | JOPU Rakennus Oy">
+  <meta property="og:description" content="Paikallinen remonttiyritys. Sisäremontit, tasoitustyöt, maalaukset ja kattomaalaukset Turussa ja lähialueilla. Pyydä maksuton tarjous.">
   <meta property="og:url" content="https://www.jopurakennus.fi/">
   <meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
 
@@ -294,6 +296,40 @@
       font-weight:700;
     }
 
+    .j-area-list {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:25px 0;
+      padding:0;
+      list-style:none;
+    }
+
+    .j-area-list li {
+      padding:9px 16px;
+      border:1px solid #353d42;
+      background:#151b1f;
+      border-radius:6px;
+      color:#e7e9ea;
+      font-size:15px;
+    }
+
+    .j-about {
+      background:#0d1114;
+    }
+
+    .j-about p {
+      max-width:850px;
+      color:#c7cdd0;
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .j-about a {
+      color:#ffcf24;
+      font-weight:700;
+    }
+
     .j-cta {
       background:
         linear-gradient(90deg,rgba(4,7,9,.94),rgba(4,7,9,.57)),
@@ -328,6 +364,11 @@
 
     .j-faq details p {
       color:#c0c7cb;
+      line-height:1.7;
+    }
+
+    .j-faq a {
+      color:#ffcf24;
     }
 
     .j-footer {
@@ -452,27 +493,128 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"HomeAndConstructionBusiness",
-    "@id":"https://www.jopurakennus.fi/#yritys",
-    "name":"JOPU Rakennus Oy",
-    "url":"https://www.jopurakennus.fi/",
-    "telephone":"+358400464551",
-    "description":"Sisäremontit, tasoitus- ja maalaustyöt, talojen ulkomaalaukset ja kattomaalaukset Turun seudulla.",
-    "areaServed":[
-      {"@type":"City","name":"Turku"},
-      {"@type":"AdministrativeArea","name":"Varsinais-Suomi"}
-    ],
-    "hasOfferCatalog":{
-      "@type":"OfferCatalog",
-      "name":"Rakennus- ja remonttipalvelut",
-      "itemListElement":[
-        {"@type":"OfferCatalog","name":"Sisäremontit"},
-        {"@type":"OfferCatalog","name":"Tasoitus- ja maalaustyöt"},
-        {"@type":"OfferCatalog","name":"Talon ulkomaalaus"},
-        {"@type":"OfferCatalog","name":"Kattomaalaus"}
-      ]
-    }
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://www.jopurakennus.fi/#yritys",
+        "name": "JOPU Rakennus Oy",
+        "legalName": "JOPU Rakennus Oy",
+        "alternateName": "JOPU Rakennus",
+        "url": "https://www.jopurakennus.fi/",
+        "image": "https://www.jopurakennus.fi/hero.jpg",
+        "telephone": "+358400464551",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Y-tunnus",
+          "value": "3663775-9"
+        },
+        "description": "JOPU Rakennus Oy on Turun seudulla toimiva remontti- ja rakennusalan yritys. Palveluihin kuuluvat sisäremontit, tasoitus- ja maalaustyöt, talojen ulkomaalaukset sekä kattomaalaukset.",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61596050117806",
+          "https://share.google/8LqddV3fN2uLMQb4i"
+        ],
+        "areaServed": [
+          {"@type":"City","name":"Turku"},
+          {"@type":"City","name":"Kaarina"},
+          {"@type":"City","name":"Raisio"},
+          {"@type":"City","name":"Naantali"},
+          {"@type":"AdministrativeArea","name":"Lieto"},
+          {"@type":"AdministrativeArea","name":"Rusko"},
+          {"@type":"AdministrativeArea","name":"Masku"},
+          {"@type":"AdministrativeArea","name":"Nousiainen"},
+          {"@type":"City","name":"Paimio"},
+          {"@type":"City","name":"Parainen"},
+          {"@type":"Place","name":"Piikkiö, Kaarina"},
+          {"@type":"AdministrativeArea","name":"Aura"},
+          {"@type":"AdministrativeArea","name":"Varsinais-Suomi"}
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+358400464551",
+          "contactType": "customer service",
+          "availableLanguage": "Finnish",
+          "url": "https://www.jopurakennus.fi/yhteystiedot.html"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Remontti- ja maalauspalvelut",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sisäremontit",
+                "description": "Huoneistojen ja omakotitalojen pintaremontit, sisätilojen uudistukset ja korjaustyöt.",
+                "url": "https://www.jopurakennus.fi/palvelut.html",
+                "provider": {
+                  "@id": "https://www.jopurakennus.fi/#yritys"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Tasoitus- ja maalaustyöt",
+                "description": "Seinien ja kattojen tasoitukset, pohjatyöt ja sisämaalaukset.",
+                "url": "https://www.jopurakennus.fi/palvelut.html",
+                "provider": {
+                  "@id": "https://www.jopurakennus.fi/#yritys"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Talon ulkomaalaus",
+                "description": "Omakotitalojen ulkomaalaukset, pintojen puhdistukset ja tarvittavat pohjatyöt.",
+                "url": "https://www.jopurakennus.fi/palvelut.html",
+                "provider": {
+                  "@id": "https://www.jopurakennus.fi/#yritys"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Kattomaalaus",
+                "description": "Kattojen pesut ja huoltomaalaukset kohteen materiaalin ja kunnon mukaan.",
+                "url": "https://www.jopurakennus.fi/kattomaalaus.html",
+                "provider": {
+                  "@id": "https://www.jopurakennus.fi/#yritys"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.jopurakennus.fi/#website",
+        "url": "https://www.jopurakennus.fi/",
+        "name": "JOPU Rakennus Oy",
+        "inLanguage": "fi",
+        "publisher": {
+          "@id": "https://www.jopurakennus.fi/#yritys"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.jopurakennus.fi/#webpage",
+        "url": "https://www.jopurakennus.fi/",
+        "name": "Remontit ja maalaustyöt Turussa",
+        "inLanguage": "fi",
+        "isPartOf": {
+          "@id": "https://www.jopurakennus.fi/#website"
+        },
+        "about": {
+          "@id": "https://www.jopurakennus.fi/#yritys"
+        }
+      }
+    ]
   }
   </script>
 
@@ -481,6 +623,7 @@
       (window.vaq=window.vaq||[]).push(arguments);
     };
   </script>
+
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
@@ -509,6 +652,7 @@
       aria-label="Avaa valikko"
       aria-expanded="false"
       aria-controls="mobile-menu">☰</button>
+
   </div>
 
   <div class="mobile-menu" id="mobile-menu">
@@ -526,7 +670,9 @@
   <section class="j-hero">
     <div class="container">
 
-      <div class="eyebrow">REMONTIT JA MAALAUSTYÖT – TURKU JA LÄHIALUEET</div>
+      <div class="eyebrow">
+        REMONTIT JA MAALAUSTYÖT – TURKU JA LÄHIALUEET
+      </div>
 
       <h1>
         Remontit ja <em>maalaustyöt Turussa</em>
@@ -534,11 +680,11 @@
       </h1>
 
       <p>
-        JOPU Rakennus Oy toteuttaa sisäremontit,
-        seinien tasoitus- ja maalaustyöt sekä
-        talojen ulkomaalaukset ja kattomaalaukset
-        Turussa ja lähialueilla.
-        Kysy tarjous omaan kohteeseesi.
+        JOPU Rakennus Oy on paikallinen remonttiyritys,
+        joka toteuttaa sisäremontit, seinien tasoitus-
+        ja maalaustyöt sekä talojen ulkomaalaukset
+        ja kattomaalaukset Turussa ja lähialueilla.
+        Pyydä maksuton tarjous omaan kohteeseesi.
       </p>
 
       <div class="j-actions">
@@ -575,11 +721,10 @@
 
       <p class="j-intro">
         Etsitkö remonttitekijää Turusta?
-        Teemme kodin pintaremontit,
-        tasoitus- ja maalaustyöt sekä
-        rakennusten ulkopintojen kunnostukset.
-        Työn sisältö ja aikataulu sovitaan
-        kohteen mukaan.
+        Teemme kodin pintaremontit, tasoitus- ja
+        maalaustyöt sekä rakennusten ulkopintojen
+        kunnostukset. Työn sisältö ja aikataulu
+        sovitaan kohteen mukaan.
       </p>
 
       <div class="j-service-grid">
@@ -592,6 +737,7 @@
 
           <div class="j-service-body">
             <h3>Sisäremontit Turussa</h3>
+
             <p>
               Huoneistojen ja omakotitalojen
               pintaremontit, sisätilojen uudistukset
@@ -599,6 +745,7 @@
               Suunnitellaan remontin toteutus
               tarpeesi mukaan.
             </p>
+
             <a href="palvelut.html">
               Tutustu remonttipalveluihin →
             </a>
@@ -613,6 +760,7 @@
 
           <div class="j-service-body">
             <h3>Tasoitus- ja maalaustyöt</h3>
+
             <p>
               Seinien ja kattojen pohjatyöt,
               tasoitukset ja sisämaalaukset.
@@ -620,6 +768,7 @@
               saamaan siistin ja kestävän
               lopputuloksen.
             </p>
+
             <a href="palvelut.html">
               Lue tasoitus- ja maalaustöistä →
             </a>
@@ -634,6 +783,7 @@
 
           <div class="j-service-body">
             <h3>Talon ulkomaalaus ja kattomaalaus</h3>
+
             <p>
               Omakotitalojen ulkomaalaukset sekä
               kattojen pesut ja huoltomaalaukset
@@ -694,17 +844,58 @@
     </div>
   </section>
 
+  <section class="j-section j-about" id="yritys">
+    <div class="container">
+
+      <div class="eyebrow">PAIKALLINEN REMONTTIYRITYS</div>
+
+      <h2>
+        JOPU Rakennus Oy – <em>remonttikumppanisi Turussa</em>
+      </h2>
+
+      <p>
+        JOPU Rakennus Oy on suomalainen rakennus-
+        ja remonttialan osakeyhtiö, joka toimii
+        Turussa ja muualla Varsinais-Suomessa.
+        Yrityksen palveluihin kuuluvat sisäremontit,
+        tasoitus- ja maalaustyöt, talojen ulkomaalaukset
+        sekä kattomaalaukset.
+      </p>
+
+      <p>
+        Meiltä voit kysyä tarjousta niin pienempiin
+        korjaustöihin kuin laajempiin remontteihin.
+        Jokaisen kohteen työn sisältö, aikataulu
+        ja hinnoittelu sovitaan erikseen.
+      </p>
+
+      <p>
+        Yrityksen Y-tunnus on 3663775-9.
+        Tavoitat meidät puhelimitse numerosta
+        <a href="tel:+358400464551">040 046 4551</a>
+        tai verkkosivujen yhteydenottolomakkeella.
+      </p>
+
+      <a href="meista.html">
+        Tutustu JOPU Rakennukseen →
+      </a>
+
+    </div>
+  </section>
+
   <section class="j-section j-ref">
     <div class="container">
 
       <div>
         <div class="eyebrow">REFERENSSIT</div>
+
         <h2>Tutustu työnjälkeen</h2>
 
         <p>
-          Keräämme sivuille kuvia valmistuneista
-          remonteista ja maalaustöistä.
-          Ensimmäiset kohdekuvat lisätään pian.
+          Keräämme referenssisivulle kuvia
+          valmistuneista remonteista ja maalaustöistä.
+          Tutustu referensseihimme ja kysy lisää
+          toteutettavista töistä.
         </p>
 
         <a class="btn" href="referenssit.html">
@@ -720,7 +911,7 @@
     </div>
   </section>
 
-  <section class="j-section j-area">
+  <section class="j-section j-area" id="palvelualue">
     <div class="container">
 
       <div class="eyebrow">PALVELUALUE</div>
@@ -730,12 +921,32 @@
       </h2>
 
       <p>
-        JOPU Rakennus palvelee Turun seudulla
-        ja muualla Varsinais-Suomessa
-        sopimuksen mukaan.
-        Olipa suunnitteilla omakotitalon ulkomaalaus,
-        kattomaalaus tai kodin sisäremontti,
-        voit kysyä tarjousta suoraan meiltä.
+        JOPU Rakennus Oy tarjoaa remontti- ja
+        maalauspalveluita seuraavilla paikkakunnilla
+        ja alueilla:
+      </p>
+
+      <ul class="j-area-list">
+        <li>Turku</li>
+        <li>Kaarina</li>
+        <li>Raisio</li>
+        <li>Naantali</li>
+        <li>Lieto</li>
+        <li>Rusko</li>
+        <li>Masku</li>
+        <li>Nousiainen</li>
+        <li>Paimio</li>
+        <li>Parainen</li>
+        <li>Piikkiö</li>
+        <li>Aura</li>
+      </ul>
+
+      <p>
+        Palvelemme myös muualla Varsinais-Suomessa
+        sopimuksen mukaan. Olipa suunnitteilla
+        omakotitalon ulkomaalaus, kattomaalaus,
+        seinien tasoitus tai kodin sisäremontti,
+        voit pyytää tarjousta suoraan meiltä.
       </p>
 
       <p>
@@ -757,6 +968,7 @@
     <div class="container">
 
       <div class="eyebrow">ASIAKASPALAUTTEET</div>
+
       <h2>Asiakkaidemme <em>kokemuksia</em></h2>
 
       <p class="j-intro">
@@ -769,6 +981,7 @@
 
         <div>
           <h3>JOPU Rakennus Googlessa</h3>
+
           <p>
             Lue asiakkaidemme antamia arvosteluja
             Google-yritysprofiilistamme.
@@ -778,6 +991,7 @@
         </div>
 
         <div class="j-review-actions">
+
           <a class="btn" href="arvostelut.html">
             Tutustu arvosteluihin →
           </a>
@@ -788,8 +1002,8 @@
              rel="noopener noreferrer">
             Avaa Google-profiili ↗
           </a>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -807,6 +1021,7 @@
       </p>
 
       <div class="j-actions">
+
         <a class="btn" href="yhteystiedot.html">
           Pyydä tarjous →
         </a>
@@ -817,8 +1032,8 @@
            rel="noopener noreferrer">
           Ota yhteyttä WhatsAppissa ↗
         </a>
-      </div>
 
+      </div>
     </div>
   </section>
 
@@ -830,12 +1045,46 @@
       <h2>Remontti ja maalaus Turussa – usein kysyttyä</h2>
 
       <details>
+        <summary>Mikä on JOPU Rakennus Oy?</summary>
+        <p>
+          JOPU Rakennus Oy on Turun seudulla toimiva
+          rakennus- ja remonttialan yritys.
+          Yrityksen palveluihin kuuluvat sisäremontit,
+          tasoitus- ja maalaustyöt, talojen ulkomaalaukset
+          sekä kattomaalaukset.
+          Yrityksen Y-tunnus on 3663775-9.
+        </p>
+      </details>
+
+      <details>
         <summary>Mitä remonttitöitä JOPU Rakennus tekee Turussa?</summary>
         <p>
           Teemme sisäremontteja, tasoitus- ja
           maalaustöitä, talojen ulkomaalauksia,
           kattomaalauksia sekä muita rakennus-
           ja korjaustöitä sopimuksen mukaan.
+        </p>
+      </details>
+
+      <details>
+        <summary>Kuinka paljon remontti maksaa Turussa?</summary>
+        <p>
+          Remontin hinta riippuu kohteen koosta,
+          nykyisestä kunnosta, materiaaleista
+          ja tarvittavista työvaiheista.
+          JOPU Rakennus Oy antaa kohdekohtaisen
+          tarjouksen sovitun työn sisällön perusteella.
+          Tarjouspyyntö on maksuton.
+        </p>
+      </details>
+
+      <details>
+        <summary>Voiko tilata pelkän tasoitus- tai maalaustyön?</summary>
+        <p>
+          Kyllä. Meiltä voi tilata seinien ja kattojen
+          tasoitustyöt, pohjatyöt ja maalaukset
+          myös erillisinä työurakoina.
+          Työn laajuus sovitaan kohteen mukaan.
         </p>
       </details>
 
@@ -856,7 +1105,7 @@
           Kyllä. Toteutamme kattojen pesuja ja
           huoltomaalauksia kohteen materiaalin,
           kunnon ja työmenetelmien soveltuvuuden mukaan.
-          <a href="kattomaalaus.html" style="color:#ffcf24">
+          <a href="kattomaalaus.html">
             Tutustu kattomaalauspalveluun.
           </a>
         </p>
@@ -865,8 +1114,28 @@
       <details>
         <summary>Millä alueella palvelette?</summary>
         <p>
-          Turussa ja lähialueilla sekä muualla
+          Palvelemme Turussa, Kaarinassa, Raisiossa,
+          Naantalissa, Liedossa, Ruskolla, Maskussa,
+          Nousiaisissa, Paimiossa, Paraisilla,
+          Piikkiössä ja Aurassa sekä muualla
           Varsinais-Suomessa sopimuksen mukaan.
+        </p>
+      </details>
+
+      <details>
+        <summary>Saako remontista kotitalousvähennystä?</summary>
+        <p>
+          Kotona tai vapaa-ajan asunnolla tehtävä
+          remonttityö voi oikeuttaa kotitalousvähennykseen
+          Verohallinnon ehtojen mukaisesti.
+          Työn osuus eritellään laskulla.
+          Materiaalit eivät oikeuta kotitalousvähennykseen.
+          Ajantasaiset ehdot voi tarkistaa
+          <a href="https://www.vero.fi/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verohallinnon verkkosivuilta.
+          </a>
         </p>
       </details>
 
@@ -875,6 +1144,27 @@
         <p>
           Kyllä, voit pyytää tarjouksen
           maksutta ja ilman sitoumusta.
+        </p>
+      </details>
+
+      <details>
+        <summary>Mistä löydän JOPU Rakennuksen asiakasarvostelut?</summary>
+        <p>
+          Asiakasarvosteluja voit lukea
+          <a href="arvostelut.html">arvostelusivultamme</a>
+          ja yrityksen Google-yritysprofiilista.
+        </p>
+      </details>
+
+      <details>
+        <summary>Miten saan yhteyden JOPU Rakennukseen?</summary>
+        <p>
+          Voit soittaa numeroon
+          <a href="tel:+358400464551">040 046 4551</a>,
+          lähettää viestin WhatsAppissa tai käyttää
+          <a href="yhteystiedot.html">
+            verkkosivujen yhteydenottolomaketta.
+          </a>
         </p>
       </details>
 
@@ -890,19 +1180,38 @@
 
       <div>
         <strong>JOPU Rakennus Oy</strong>
+
         <p>
+          Paikallinen remonttiyritys Turun seudulla.
           Sisäremontit, tasoitus- ja maalaustyöt
-          sekä talojen ulko- ja kattomaalaukset
-          Turussa ja lähialueilla.
+          sekä talojen ulko- ja kattomaalaukset.
+        </p>
+
+        <p>Y-tunnus: 3663775-9</p>
+
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=61596050117806"
+             target="_blank"
+             rel="noopener noreferrer">
+            Facebook
+          </a>
+          |
+          <a href="https://share.google/8LqddV3fN2uLMQb4i"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google-yritysprofiili
+          </a>
         </p>
       </div>
 
       <div>
         <strong>Palvelut</strong>
+
         <p><a href="palvelut.html">Kaikki palvelut</a></p>
         <p><a href="kattomaalaus.html">Kattomaalaus Turku</a></p>
         <p><a href="referenssit.html">Referenssit</a></p>
         <p><a href="arvostelut.html">Arvostelut</a></p>
+        <p><a href="meista.html">Meistä</a></p>
       </div>
 
       <div>
@@ -911,6 +1220,14 @@
         <p>
           <a href="tel:+358400464551">
             040 046 4551
+          </a>
+        </p>
+
+        <p>
+          <a href="https://wa.me/358400464551"
+             target="_blank"
+             rel="noopener noreferrer">
+            WhatsApp
           </a>
         </p>
 
