@@ -1,55 +1,101 @@
 
 # JOPU Rakennus Oy
 
-> JOPU Rakennus Oy on paikallinen rakennus- ja remonttialan yritys, joka tarjoaa remontti- ja maalauspalveluita Turussa ja muualla Varsinais-Suomessa.
+> JOPU Rakennus Oy on Turun seudulla toimiva suomalainen rakennus-, remontti- ja maalausyritys. Yritys tarjoaa sisäremontteja, tasoitustöitä, sisämaalauksia, talojen ulkomaalauksia ja kattomaalauksia.
 
 ## Yrityksen tiedot
 
-- Yritys: JOPU Rakennus Oy
+- Virallinen nimi: JOPU Rakennus Oy
 - Y-tunnus: 3663775-9
-- Puhelin: +358400464551
+- Toimipaikka: Turku, Suomi
 - Verkkosivusto: https://www.jopurakennus.fi/
+- Puhelin: +358400464551
+- Sähköposti: jopurakennus@gmail.com
 - WhatsApp: https://wa.me/358400464551
 - Tarjouspyynnöt ovat maksuttomia ja sitoumuksettomia.
 - Palvelukieli: suomi
 
-## Palvelut
+## Pääpalvelut
 
-- Sisäremontit
-- Huoneistoremontit
-- Pintaremontit
-- Seinien ja kattojen tasoitustyöt
-- Sisämaalaukset
-- Talojen ulkomaalaukset
-- Kattomaalaukset
-- Kattojen pesut
-- Rakennusten korjaustyöt sopimuksen mukaan
+- [Sisäremontit Turku](https://www.jopurakennus.fi/sisaremontit.html): Huoneistoremontit, pintaremontit, keittiöiden remonttityöt, lattioiden uusiminen, seinä- ja kattopinnat sekä listoitukset.
+- [Tasoitustyöt Turku](https://www.jopurakennus.fi/tasoitustyot.html): Seinien ja kattojen tasoitukset, harkkoseinien verkotus, ylitasoitukset, ruiskutasoitukset, käsintasoitukset ja hionta.
+- [Sisämaalaus Turku](https://www.jopurakennus.fi/sisamaalaus.html): Seinien ja kattojen maalaukset, huoneistojen maalausremontit, pohjamaalaukset ja pintamaalaukset.
+- [Talon ulkomaalaus Turku](https://www.jopurakennus.fi/ulkomaalaus.html): Omakotitalojen ja muiden rakennusten ulkomaalaukset, julkisivujen huoltomaalaukset, pesut ja pohjatyöt.
+- [Kattomaalaus Turku](https://www.jopurakennus.fi/kattomaalaus.html): Kattojen pesut, peltikattojen ja soveltuvien betonitiilikattojen huoltomaalaukset sekä tarvittavat pohjatyöt.
+
+## Muut palvelut
+
+- Terassien rakentaminen ja kunnostaminen
+- Ulkoportaat ja aidat
+- Piharakenteet
+- Remontteihin liittyvät purkutyöt
+- Saneeraustyöt
+- Rakennusten kunnossapito
+- Pienet rakennus- ja korjaustyöt
+- Rakennusalan aliurakointi
+
+Muut palvelut toteutetaan sopimuksen ja kohteen tarpeiden mukaan.
 
 ## Palvelualueet
 
-Turku, Kaarina, Raisio, Naantali, Lieto, Rusko, Masku, Nousiainen, Paimio, Parainen, Piikkiö ja Aura.
+- Turku
+- Kaarina
+- Raisio
+- Naantali
+- Lieto
+- Rusko
+- Masku
+- Nousiainen
+- Paimio
+- Parainen
+- Piikkiö
+- Aura
 
 Muu Varsinais-Suomi sopimuksen mukaan.
 
-## Asiakkaat
+## Asiakasryhmät
 
-Palvelut soveltuvat esimerkiksi omakotitalojen ja huoneistojen remontteihin sekä rakennusten kunnossapitoon.
+- Yksityisasiakkaat
+- Omakotitalojen omistajat
+- Huoneistojen omistajat
+- Taloyhtiöt
+- Isännöitsijät
+- Yritykset
+- Rakennusliikkeet
+
+## Hinnoittelu
+
+Työt hinnoitellaan kohdekohtaisesti työn laajuuden, materiaalien, työolosuhteiden ja tarvittavien työvaiheiden perusteella.
+
+Tarjouksen pyytäminen on maksutonta eikä sido tilaamaan työtä.
 
 ## Kotitalousvähennys
 
-Remonttityön osuus voi oikeuttaa kotitalousvähennykseen Verohallinnon ehtojen mukaisesti. Työn osuus eritellään laskulla.
+Yksityisasiakkaiden remontti- ja kunnossapitotöiden työn osuus voi oikeuttaa kotitalousvähennykseen Verohallinnon ehtojen mukaisesti.
+
+Työn osuus ja materiaalit eritellään laskulla.
 
 ## Verkkosivut
 
-- [Etusivu](https://www.jopurakennus.fi/): Yrityksen esittely ja palvelut.
-- [Palvelut](https://www.jopurakennus.fi/palvelut.html): Remontti- ja maalauspalvelut.
-- [Kattomaalaus](https://www.jopurakennus.fi/kattomaalaus.html): Kattojen pesut ja maalaukset.
-- [Referenssit](https://www.jopurakennus.fi/referenssit.html): Yrityksen referenssisivu.
-- [Arvostelut](https://www.jopurakennus.fi/arvostelut.html): Asiakasarvostelut.
+- [Etusivu](https://www.jopurakennus.fi/): Yrityksen ja palveluiden yleisesittely.
+- [Palvelut](https://www.jopurakennus.fi/palvelut.html): Kaikki remontti- ja rakennuspalvelut.
+- [Sisäremontit](https://www.jopurakennus.fi/sisaremontit.html): Sisätilojen remontointi.
+- [Tasoitustyöt](https://www.jopurakennus.fi/tasoitustyot.html): Tasoitukset, verkotukset ja ylitasoitukset.
+- [Sisämaalaus](https://www.jopurakennus.fi/sisamaalaus.html): Sisätilojen maalauspalvelut.
+- [Ulkomaalaus](https://www.jopurakennus.fi/ulkomaalaus.html): Talojen ja julkisivujen maalaukset.
+- [Kattomaalaus](https://www.jopurakennus.fi/kattomaalaus.html): Kattojen pesut ja huoltomaalaukset.
+- [Referenssit](https://www.jopurakennus.fi/referenssit.html): Toteutettuja remontti- ja rakennuskohteita.
+- [Asiakasarvostelut](https://www.jopurakennus.fi/arvostelut.html): Yrityksen asiakasarvostelut.
 - [Meistä](https://www.jopurakennus.fi/meista.html): Tietoa yrityksestä.
 - [Yhteystiedot](https://www.jopurakennus.fi/yhteystiedot.html): Yhteydenotot ja tarjouspyynnöt.
 
-## Muut yritysprofiilit
+## Ulkoiset yritysprofiilit
 
 - [Google-yritysprofiili](https://share.google/8LqddV3fN2uLMQb4i)
 - [Facebook](https://www.facebook.com/profile.php?id=61596050117806)
+
+## Optional
+
+- [Sivukartta](https://www.jopurakennus.fi/sitemap.xml)
+- [Robots.txt](https://www.jopurakennus.fi/robots.txt)
+- [Tietosuoja](https://www.jopurakennus.fi/tietosuoja.html)
