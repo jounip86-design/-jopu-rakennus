@@ -2,202 +2,412 @@
 <!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Referenssit | JOPU Rakennus</title>
-  <meta name="description" content="Tutustu JOPU Rakennuksen rakennus- ja remonttitöihin Turussa ja lähialueilla.">
+<title>Remonttireferenssit Turku | Huoneistoremontti | JOPU Rakennus Oy</title>
 
-  <link rel="stylesheet" href="style.css">
+<meta name="description" content="Tutustu JOPU Rakennus Oy:n toteuttamaan 60 m² huoneistoremonttiin Turussa vuonna 2026. Aidot ennen ja jälkeen -kuvat. 20 vuoden rakennusalan kokemus.">
 
-  <style>
-    /* Uusi referenssisivun kuvallinen yläosa */
-    .references-hero {
-      position: relative;
-      min-height: 370px;
-      display: flex;
-      align-items: flex-end;
-      background-color: #171a1d;
-      background-image:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,.72) 0%,
-          rgba(0,0,0,.38) 55%,
-          rgba(0,0,0,.12) 100%
-        ),
-        url("referenssit-hero.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-bottom: 4px solid #f6bd22;
-      color: #fff;
-    }
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.jopurakennus.fi/referenssit.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="style.css">
 
-    .references-hero .container {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      padding-top: 70px;
-      padding-bottom: 55px;
-    }
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Remonttireferenssit Turku | JOPU Rakennus Oy">
+<meta property="og:description" content="60 m² huoneistoremontti Turussa. Katso aidot ennen ja jälkeen -kuvat.">
+<meta property="og:url" content="https://www.jopurakennus.fi/referenssit.html">
+<meta property="og:image" content="https://www.jopurakennus.fi/turku-jalkeen-02.jpg">
 
-    .references-hero h1 {
-      margin: 0 0 12px;
-      color: #fff;
-      font-size: clamp(42px, 7vw, 68px);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      text-shadow: 0 2px 10px rgba(0,0,0,.3);
-    }
+<style>
+body{
+  background:#0b0e10;
+  color:#f5f5f5;
+}
+.ref-hero{
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.35)),
+  url('referenssit-hero.jpg') center/cover;
+  border-bottom:4px solid #ffcf24;
+}
+.ref-hero .container{
+  padding-top:65px;
+  padding-bottom:65px;
+}
+.ref-hero h1{
+  font-size:clamp(38px,6vw,65px);
+  line-height:1.1;
+  margin:15px 0;
+  color:#fff;
+}
+.ref-hero p{
+  max-width:680px;
+  font-size:19px;
+  color:#eee;
+}
+.ref-yellow{
+  color:#ffcf24;
+}
+.ref-section{
+  padding:60px 0;
+}
+.ref-section h2{
+  font-size:clamp(28px,4vw,42px);
+  margin:12px 0 20px;
+}
+.ref-section p{
+  color:#c7cdd0;
+  line-height:1.7;
+}
+.project{
+  background:#151a1e;
+  border:1px solid #353c42;
+  border-radius:12px;
+  overflow:hidden;
+}
+.project-cover{
+  width:100%;
+  height:480px;
+  object-fit:cover;
+  display:block;
+}
+.project-content{
+  padding:30px;
+}
+.project-info{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:25px 0;
+}
+.project-info div{
+  background:#0d1114;
+  border:1px solid #343b40;
+  padding:18px;
+  border-radius:8px;
+}
+.project-info small{
+  display:block;
+  color:#bfc5c9;
+  margin-bottom:8px;
+}
+.project-info strong{
+  color:#ffcf24;
+  font-size:20px;
+}
+.work-list{
+  padding-left:22px;
+  line-height:1.9;
+  color:#e0e4e7;
+}
+.service-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:25px 0;
+}
+.service-links a{
+  color:#ffcf24;
+  border:1px solid #454c51;
+  border-radius:6px;
+  padding:10px 15px;
+  text-decoration:none;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
+  margin-top:22px;
+}
+.gallery figure{
+  margin:0;
+  overflow:hidden;
+  border:1px solid #353c42;
+  border-radius:9px;
+  background:#151a1e;
+}
+.gallery button{
+  display:block;
+  width:100%;
+  padding:0;
+  border:0;
+  background:none;
+  cursor:zoom-in;
+}
+.gallery img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  transition:transform .2s;
+}
+.gallery button:hover img{
+  transform:scale(1.03);
+}
+.gallery figcaption{
+  padding:12px;
+  color:#d0d4d7;
+  font-size:14px;
+}
+.ref-dark{
+  background:#101518;
+  border-block:1px solid #30363b;
+}
+.other-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.other-card{
+  border:1px solid #343b40;
+  border-radius:10px;
+  overflow:hidden;
+  background:#151a1e;
+}
+.other-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
+.other-card div{
+  padding:22px;
+}
+.other-card a{
+  color:#ffcf24;
+  font-weight:700;
+}
+.ref-cta{
+  padding:65px 0;
+  text-align:center;
+  background:#151a1e;
+  border-top:1px solid #353c42;
+}
+.ref-cta h2{
+  font-size:clamp(28px,4vw,42px);
+}
+.ref-actions{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:25px;
+}
+.ref-outline{
+  border:1px solid #ffcf24;
+  color:#ffcf24;
+  padding:13px 20px;
+  border-radius:7px;
+  font-weight:700;
+  text-decoration:none;
+}
+#lightbox{
+  border:0;
+  padding:0;
+  background:#080a0c;
+  color:white;
+  width:96vw;
+  max-width:1200px;
+  max-height:96vh;
+  border-radius:10px;
+}
+#lightbox::backdrop{
+  background:rgba(0,0,0,.94);
+}
+#lightbox img{
+  display:block;
+  max-width:100%;
+  max-height:78vh;
+  object-fit:contain;
+  margin:auto;
+}
+.lightbox-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  gap:10px;
+}
+.lightbox-controls button{
+  border:1px solid #555;
+  background:#222;
+  color:#fff;
+  border-radius:6px;
+  padding:12px 18px;
+  cursor:pointer;
+  font-size:18px;
+}
+#image-caption{
+  text-align:center;
+  padding:0 15px 15px;
+}
+@media(max-width:800px){
+  .gallery{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .project-info{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .other-grid{
+    grid-template-columns:1fr;
+  }
+  .project-cover{
+    height:350px;
+  }
+}
+@media(max-width:600px){
+  .ref-hero{
+    min-height:320px;
+  }
+  .ref-section{
+    padding:40px 0;
+  }
+  .project-content{
+    padding:20px;
+  }
+  .project-cover{
+    height:300px;
+  }
+  .gallery{
+    gap:9px;
+  }
+  .gallery figcaption{
+    padding:9px;
+    font-size:12px;
+  }
+  .project-info div{
+    padding:12px;
+  }
+  .project-info strong{
+    font-size:17px;
+  }
+  .ref-actions a{
+    width:100%;
+    box-sizing:border-box;
+  }
+}
+</style>
 
-    .references-hero p {
-      margin: 0;
-      color: #f2f2f2;
-      font-size: clamp(16px, 2.5vw, 21px);
-      line-height: 1.5;
-      max-width: 650px;
-      text-shadow: 0 2px 8px rgba(0,0,0,.4);
-    }
-
-    /* Referenssikortit */
-    .references-section {
-      padding: 48px 0 70px;
-      background: #f8f9fa;
-    }
-
-    .references-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .reference-card {
-      background: #fff;
-      border: 1px solid #e5e5e5;
-      border-radius: 13px;
-      overflow: hidden;
-      box-shadow: 0 4px 18px rgba(0,0,0,.06);
-    }
-
-    .reference-card img {
-      display: block;
-      width: 100%;
-      height: 290px;
-      object-fit: cover;
-    }
-
-    .reference-content {
-      padding: 22px;
-    }
-
-    .reference-content h2 {
-      margin: 0 0 10px;
-      color: #141414;
-      font-size: 23px;
-      line-height: 1.3;
-    }
-
-    .reference-content p {
-      margin: 0;
-      color: #555d63;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .reference-card:hover {
-      box-shadow: 0 8px 25px rgba(0,0,0,.1);
-    }
-
-    /* Puhelimen näkymä */
-    @media (max-width: 700px) {
-      .references-hero {
-        min-height: 320px;
-        background-position: center;
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"CollectionPage",
+      "@id":"https://www.jopurakennus.fi/referenssit.html#webpage",
+      "url":"https://www.jopurakennus.fi/referenssit.html",
+      "name":"Remonttireferenssit Turku",
+      "description":"JOPU Rakennus Oy:n toteuttamia remontteja ja rakennustöitä.",
+      "inLanguage":"fi",
+      "isPartOf":{
+        "@id":"https://www.jopurakennus.fi/#website"
+      },
+      "publisher":{
+        "@id":"https://www.jopurakennus.fi/#yritys"
+      },
+      "mainEntity":{
+        "@id":"https://www.jopurakennus.fi/referenssit.html#huoneistoremontti-turku"
       }
-
-      .references-hero .container {
-        padding-top: 65px;
-        padding-bottom: 45px;
+    },
+    {
+      "@type":"CreativeWork",
+      "@id":"https://www.jopurakennus.fi/referenssit.html#huoneistoremontti-turku",
+      "name":"60 m² huoneistoremontti Turussa 2026",
+      "description":"JOPU Rakennus Oy:n toteuttama kokonaisvaltainen 60 neliömetrin huoneistoremontti kylpyhuonetta lukuun ottamatta.",
+      "dateCreated":"2026",
+      "contentLocation":{
+        "@type":"City",
+        "name":"Turku"
+      },
+      "creator":{
+        "@id":"https://www.jopurakennus.fi/#yritys"
+      },
+      "image":[
+        "https://www.jopurakennus.fi/turku-jalkeen-01.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-02.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-03.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-04.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-05.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-06.jpg",
+        "https://www.jopurakennus.fi/turku-jalkeen-07.jpg"
+      ],
+      "keywords":"Huoneistoremontti Turku, sisäremontti, keittiöremontti, tasoitustyöt, maalaustyöt, lattiaremontti"
+    },
+    {
+      "@type":"HomeAndConstructionBusiness",
+      "@id":"https://www.jopurakennus.fi/#yritys",
+      "name":"JOPU Rakennus Oy",
+      "url":"https://www.jopurakennus.fi/",
+      "telephone":"+358400464551",
+      "email":"jopurakennus@gmail.com",
+      "identifier":{
+        "@type":"PropertyValue",
+        "propertyID":"Y-tunnus",
+        "value":"3663775-9"
       }
-
-      .references-hero h1 {
-        font-size: 42px;
-      }
-
-      .references-hero p {
-        font-size: 16px;
-      }
-
-      .references-section {
-        padding: 28px 0 55px;
-      }
-
-      .references-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .reference-card img {
-        height: auto;
-        aspect-ratio: 16 / 10;
-        object-fit: cover;
-      }
-
-      .reference-content {
-        padding: 20px;
-      }
-
-      .reference-content h2 {
-        font-size: 21px;
-      }
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"Etusivu",
+          "item":"https://www.jopurakennus.fi/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"Referenssit",
+          "item":"https://www.jopurakennus.fi/referenssit.html"
+        }
+      ]
     }
-  </style>
+  ]
+}
+</script>
 
-  <!-- Vercel Analytics -->
-  <script>
-    window.va = window.va || function () {
-      (window.vaq = window.vaq || []).push(arguments);
-    };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+<script>
+window.va=window.va||function(){
+  (window.vaq=window.vaq||[]).push(arguments);
+};
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 
 <body>
 
 <header class="topbar">
   <div class="container nav">
-
     <a class="brand" href="index.html">
       <span class="brandmark"></span>
-      <span>
-        JOPU
-        <small>RAKENNUS</small>
-      </span>
+      <span>JOPU<small>RAKENNUS</small></span>
     </a>
 
-    <nav class="links">
+    <nav class="links" aria-label="Päävalikko">
       <a href="index.html">Etusivu</a>
       <a href="palvelut.html">Palvelut</a>
-      <a href="referenssit.html">Referenssit</a>
+      <a href="referenssit.html" aria-current="page">Referenssit</a>
+      <a href="arvostelut.html">Arvostelut</a>
       <a href="meista.html">Meistä</a>
       <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
 
-    <a class="btn" href="yhteystiedot.html">
-      Pyydä tarjous →
-    </a>
+    <a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a>
 
-    <button class="hamb" aria-label="Avaa valikko">
-      ☰
-    </button>
-
+    <button class="hamb" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-menu">☰</button>
   </div>
 
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
     <a href="referenssit.html">Referenssit</a>
+    <a href="arvostelut.html">Arvostelut</a>
     <a href="meista.html">Meistä</a>
     <a href="yhteystiedot.html">Yhteystiedot</a>
   </div>
@@ -205,92 +415,351 @@
 
 <main>
 
-  <!-- Kuvallinen otsake -->
-  <section class="references-hero">
-    <div class="container">
-      <h1>Referenssit</h1>
-      <p>
-        Rakennus- ja remonttitöitä Turun seudulla.
-      </p>
-    </div>
-  </section>
+<section class="ref-hero">
+  <div class="container">
+    <div class="eyebrow">JOPU RAKENNUS OY – TURKU</div>
 
-  <!-- Referenssikortit -->
-  <section class="references-section">
-    <div class="container">
+    <h1>Remonttien <span class="ref-yellow">referenssit</span></h1>
 
-      <div class="references-grid">
+    <p>
+      Tutustu toteuttamiimme remontteihin ja työnjälkeemme.
+      Rakennusalan ammattitaitoa 20 vuoden kokemuksella.
+    </p>
 
-        <article class="reference-card">
-          <img
-            src="before-after.jpg"
-            alt="Huoneistoremontin ennen ja jälkeen -kuvat"
-            loading="lazy"
-          >
+    <a class="btn" href="#huoneistoremontti-turku">
+      Katso toteutettu remontti →
+    </a>
+  </div>
+</section>
 
-          <div class="reference-content">
-            <h2>Huoneistoremontti</h2>
-            <p>
-              Vanhojen pintojen purku, tasoitus,
-              maalaus, lattian uusiminen ja viimeistely.
-            </p>
+<section class="ref-section" id="huoneistoremontti-turku">
+  <div class="container">
+
+    <div class="eyebrow">TOTEUTETTU REMONTTIKOHDE</div>
+
+    <h2>Huoneistoremontti 60 m² – <span class="ref-yellow">Turku</span></h2>
+
+    <article class="project">
+
+      <img class="project-cover"
+        src="turku-jalkeen-02.jpg"
+        alt="JOPU Rakennus Oy:n toteuttama valmis keittiöremontti Turussa vuonna 2026">
+
+      <div class="project-content">
+
+        <div class="project-info">
+          <div>
+            <small>Paikkakunta</small>
+            <strong>Turku</strong>
           </div>
-        </article>
-
-        <article class="reference-card">
-          <img
-            src="service4.jpg"
-            alt="Terassi ja piharakenteet"
-            loading="lazy"
-          >
-
-          <div class="reference-content">
-            <h2>Terassi ja piharakenteet</h2>
-            <p>
-              Terassien rakentaminen, kunnostaminen
-              ja ulkorakenteiden viimeistely.
-            </p>
+          <div>
+            <small>Pinta-ala</small>
+            <strong>60 m²</strong>
           </div>
-        </article>
-
-        <article class="reference-card">
-          <img
-            src="service3.jpg"
-            alt="Ulko- ja kattomaalaus"
-            loading="lazy"
-          >
-
-          <div class="reference-content">
-            <h2>Ulko- ja kattomaalaus</h2>
-            <p>
-              Ulko- ja kattopintojen huolellinen
-              puhdistus, pohjatyöt ja maalaus.
-            </p>
+          <div>
+            <small>Valmistunut</small>
+            <strong>2026</strong>
           </div>
-        </article>
-
-        <article class="reference-card">
-          <img
-            src="service2.jpg"
-            alt="Rakennustyöt"
-            loading="lazy"
-          >
-
-          <div class="reference-content">
-            <h2>Rakennustyöt</h2>
-            <p>
-              Runkotyöt, levytykset ja muut
-              rakennusvaiheet ammattitaidolla.
-            </p>
+          <div>
+            <small>Toteuttaja</small>
+            <strong>JOPU Rakennus Oy</strong>
           </div>
-        </article>
+        </div>
+
+        <h3>Kokonaisvaltainen huoneistoremontti</h3>
+
+        <p>
+          JOPU Rakennus Oy toteutti Turussa sijaitsevan
+          60 neliömetrin huoneiston kokonaisvaltaisen
+          remontin kylpyhuonetta lukuun ottamatta.
+        </p>
+
+        <p>
+          Asunnon sisäpinnat, lattiat, keittiö ja
+          kaapistot uudistettiin. Lopputuloksena
+          syntyi moderni, valoisa ja viihtyisä koti.
+        </p>
+
+        <h3>Remontin sisältö</h3>
+
+        <ul class="work-list">
+          <li>Vanhojen pintojen ja kalusteiden purkaminen</li>
+          <li>Seinien tasoitus ja maalaus</li>
+          <li>Kattojen maalaus</li>
+          <li>Lattioiden uusiminen</li>
+          <li>Keittiön uudistaminen</li>
+          <li>Kaapistojen ja liukuovien asennus</li>
+          <li>Listoitukset ja viimeistelytyöt</li>
+        </ul>
+
+        <div class="service-links">
+          <a href="sisaremontit.html">Sisäremontit →</a>
+          <a href="tasoitustyot.html">Tasoitustyöt →</a>
+          <a href="sisamaalaus.html">Sisämaalaus →</a>
+        </div>
+
+        <a class="btn" href="yhteystiedot.html">
+          Pyydä tarjous omasta remontistasi →
+        </a>
 
       </div>
+    </article>
+  </div>
+</section>
+
+<section class="ref-section ref-dark">
+  <div class="container">
+
+    <div class="eyebrow">LÄHTÖTILANNE</div>
+
+    <h2>Ennen <span class="ref-yellow">remonttia</span></h2>
+
+    <p>
+      Huoneiston vanhat pinnat, kalusteet ja
+      remontin lähtötilanne. Paina kuvaa suurentaaksesi sen.
+    </p>
+
+    <div class="gallery">
+
+      <figure>
+        <button type="button" aria-label="Suurenna vanhan keittiön kuva">
+          <img src="turku-ennen-01.jpg" alt="Vanha keittiö ennen huoneistoremonttia Turussa" loading="lazy">
+        </button>
+        <figcaption>Keittiö ennen remonttia</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna seinäpintojen kuva">
+          <img src="turku-ennen-02.jpg" alt="Huoneiston vanhat seinäpinnat ennen remonttia" loading="lazy">
+        </button>
+        <figcaption>Vanhat seinäpinnat</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna seinän kuva">
+          <img src="turku-ennen-03.jpg" alt="Seinäpinta ennen tasoitusta ja maalausta" loading="lazy">
+        </button>
+        <figcaption>Seinien lähtötilanne</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna olohuoneen kuva">
+          <img src="turku-ennen-04.jpg" alt="Olohuone ennen pintaremonttia Turussa" loading="lazy">
+        </button>
+        <figcaption>Olohuone ennen remonttia</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna makuuhuoneen kuva">
+          <img src="turku-ennen-05.jpg" alt="Makuuhuone ja vanhat kaapistot ennen remonttia" loading="lazy">
+        </button>
+        <figcaption>Makuuhuoneen lähtötilanne</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna vanhojen pintojen kuva">
+          <img src="turku-ennen-06.jpg" alt="Huoneiston lattia ja seinät ennen uusimista" loading="lazy">
+        </button>
+        <figcaption>Vanhat lattia- ja seinäpinnat</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna puretun kaapiston kuva">
+          <img src="turku-ennen-07.jpg" alt="Kaapiston purkaminen huoneistoremontissa" loading="lazy">
+        </button>
+        <figcaption>Kalusteiden purkaminen</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna vanhan kaapiston kuva">
+          <img src="turku-ennen-08.jpg" alt="Vanha makuuhuoneen kaapisto remonttikohteessa" loading="lazy">
+        </button>
+        <figcaption>Vanhat kaapistot</figcaption>
+      </figure>
 
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="ref-section">
+  <div class="container">
+
+    <div class="eyebrow">TYÖVAIHEET</div>
+
+    <h2>Remontin <span class="ref-yellow">aikana</span></h2>
+
+    <p>
+      Huolelliset pohjatyöt ovat tärkeä osa
+      onnistunutta huoneistoremonttia.
+    </p>
+
+    <div class="gallery">
+      <figure>
+        <button type="button" aria-label="Suurenna remontin työvaihe">
+          <img src="turku-remontti-01.jpg" alt="Huoneiston tasoitus- ja maalaustyöt remontin aikana Turussa" loading="lazy">
+        </button>
+        <figcaption>Remontin pohja- ja pintatyöt</figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<section class="ref-section ref-dark">
+  <div class="container">
+
+    <div class="eyebrow">VALMIS LOPPUTULOS</div>
+
+    <h2>Remontin <span class="ref-yellow">jälkeen</span></h2>
+
+    <p>
+      Valmiin huoneiston uudistetut sisäpinnat,
+      keittiö, lattiat ja kaapistot.
+      Kaikki kuvat ovat samasta toteutetusta remonttikohteesta.
+    </p>
+
+    <div class="gallery">
+
+      <figure>
+        <button type="button" aria-label="Suurenna valmis eteinen">
+          <img src="turku-jalkeen-01.jpg" alt="Valmis eteinen ja peililiukuovikaapisto Turun huoneistoremontissa" loading="lazy">
+        </button>
+        <figcaption>Uudistettu eteinen ja liukuovet</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna valmis keittiö">
+          <img src="turku-jalkeen-02.jpg" alt="Valmis moderni keittiö JOPU Rakennus Oy:n remonttikohteessa" loading="lazy">
+        </button>
+        <figcaption>Valmis keittiö</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna keittiön työtasot">
+          <img src="turku-jalkeen-03.jpg" alt="Uudet keittiön työtasot ja kalusteet" loading="lazy">
+        </button>
+        <figcaption>Keittiön työtasot ja kalusteet</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna keittiön kaapistot">
+          <img src="turku-jalkeen-04.jpg" alt="Uudistetut keittiön kaapistot ja lattia" loading="lazy">
+        </button>
+        <figcaption>Keittiön säilytystilat</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna viimeistellyt pinnat">
+          <img src="turku-jalkeen-05.jpg" alt="Viimeistellyt seinä- ja kattopinnat huoneistoremontin jälkeen" loading="lazy">
+        </button>
+        <figcaption>Viimeistellyt seinä- ja kattopinnat</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna makuuhuoneen kaapisto">
+          <img src="turku-jalkeen-06.jpg" alt="Makuuhuoneen uusi liukuovikaapisto ja lattia" loading="lazy">
+        </button>
+        <figcaption>Makuuhuoneen liukuovikaapisto</figcaption>
+      </figure>
+
+      <figure>
+        <button type="button" aria-label="Suurenna valmis makuuhuone">
+          <img src="turku-jalkeen-07.jpg" alt="Valmis makuuhuone 60 neliömetrin huoneistoremontissa Turussa" loading="lazy">
+        </button>
+        <figcaption>Valmis makuuhuone</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section class="ref-section">
+  <div class="container">
+
+    <div class="eyebrow">MUUT PALVELUMME</div>
+
+    <h2>Rakentamista ja <span class="ref-yellow">remontointia</span></h2>
+
+    <div class="other-grid">
+
+      <article class="other-card">
+        <img src="service4.jpg" alt="Terassi- ja piharakentamisen palvelut" loading="lazy">
+        <div>
+          <h3>Terassit ja piharakenteet</h3>
+          <p>Terassien rakentaminen ja kunnostaminen sopimuksen mukaan.</p>
+          <a href="palvelut.html#piharakenteet">Tutustu palveluun →</a>
+        </div>
+      </article>
+
+      <article class="other-card">
+        <img src="service3.jpg" alt="Ulko- ja kattomaalauspalvelut" loading="lazy">
+        <div>
+          <h3>Ulko- ja kattomaalaus</h3>
+          <p>Rakennusten ulkopintojen puhdistus, pohjatyöt ja maalaus.</p>
+          <a href="ulkomaalaus.html">Talon ulkomaalaus →</a>
+          <br><br>
+          <a href="kattomaalaus.html">Kattomaalaus →</a>
+        </div>
+      </article>
+
+      <article class="other-card">
+        <img src="service2.jpg" alt="Rakennus- ja korjaustyöt" loading="lazy">
+        <div>
+          <h3>Rakennustyöt</h3>
+          <p>Erilaiset rakennus- ja korjaustyöt kohteen mukaan.</p>
+          <a href="palvelut.html">Katso palvelut →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="ref-cta">
+  <div class="container">
+
+    <div class="eyebrow">20 VUODEN RAKENNUSALAN KOKEMUS</div>
+
+    <h2>Suunnitteletko <span class="ref-yellow">remonttia?</span></h2>
+
+    <p>
+      JOPU Rakennus Oy palvelee Turussa, Kaarinassa,
+      Raisiossa, Naantalissa, Liedossa, Ruskolla
+      ja muualla Varsinais-Suomessa sopimuksen mukaan.
+    </p>
+
+    <p>Pyydä maksuton tarjous ilman sitoumusta.</p>
+
+    <div class="ref-actions">
+      <a class="btn" href="yhteystiedot.html">Pyydä maksuton tarjous →</a>
+
+      <a class="ref-outline" href="https://wa.me/358400464551" target="_blank" rel="noopener noreferrer">
+        Ota yhteyttä WhatsAppissa
+      </a>
+
+      <a class="ref-outline" href="arvostelut.html">
+        Katso asiakasarvostelut
+      </a>
+    </div>
+
+  </div>
+</section>
 
 </main>
+
+<dialog id="lightbox" aria-label="Suurennettu remonttikuva">
+
+  <div class="lightbox-controls">
+    <button id="prev-image" type="button" aria-label="Edellinen kuva">❮</button>
+    <button id="close-lightbox" type="button" aria-label="Sulje kuva">✕</button>
+    <button id="next-image" type="button" aria-label="Seuraava kuva">❯</button>
+  </div>
+
+  <img id="lightbox-image" alt="">
+
+  <p id="image-caption"></p>
+
+</dialog>
 
 <footer class="footer">
   <div class="container footer-grid">
@@ -298,55 +767,107 @@
     <div>
       <a class="brand" href="index.html">
         <span class="brandmark"></span>
-        <span>
-          JOPU
-          <small>RAKENNUS</small>
-        </span>
+        <span>JOPU<small>RAKENNUS</small></span>
       </a>
 
-      <p>
-        Rakentamista ja remontointia Turun seudulla.
-      </p>
+      <p>JOPU Rakennus Oy</p>
+      <p>Y-tunnus: 3663775-9</p>
+      <p>20 vuoden rakennusalan kokemus.</p>
     </div>
 
     <div>
-      <h4>Yhteys</h4>
-
-      <p>
-        <a href="tel:+358400464551">
-          040 046 4551
-        </a>
-      </p>
-
-      <p>
-        <a href="mailto:jopurakennus@gmail.com">
-          jopurakennus@gmail.com
-        </a>
-      </p>
-    </div>
-
-    <div>
-      <h4>Palvelualue</h4>
+      <h4>Yhteystiedot</h4>
+      <p><a href="tel:+358400464551">040 046 4551</a></p>
+      <p><a href="mailto:jopurakennus@gmail.com">jopurakennus@gmail.com</a></p>
       <p>Turku ja lähialueet</p>
     </div>
 
     <div>
-      <h4>Sivut</h4>
+      <h4>Palvelut</h4>
+      <p><a href="sisaremontit.html">Sisäremontit</a></p>
+      <p><a href="tasoitustyot.html">Tasoitustyöt</a></p>
+      <p><a href="sisamaalaus.html">Sisämaalaus</a></p>
+      <p><a href="ulkomaalaus.html">Ulkomaalaus</a></p>
+      <p><a href="kattomaalaus.html">Kattomaalaus</a></p>
+    </div>
 
-      <p>
-        <a href="palvelut.html">Palvelut</a>
-      </p>
-
-      <p>
-        <a href="referenssit.html">Referenssit</a>
-      </p>
+    <div>
+      <h4>Yritys</h4>
+      <p><a href="meista.html">Meistä</a></p>
+      <p><a href="referenssit.html">Referenssit</a></p>
+      <p><a href="arvostelut.html">Arvostelut</a></p>
+      <p><a href="yhteystiedot.html">Yhteystiedot</a></p>
+      <p><a href="tietosuoja.html">Tietosuoja</a></p>
     </div>
 
   </div>
 </footer>
 
-<!-- Mobiilivalikko ja WhatsApp -->
 <script src="app.js"></script>
+
+<script>
+const galleryButtons = Array.from(
+  document.querySelectorAll('.gallery button')
+);
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const imageCaption = document.getElementById('image-caption');
+
+let currentImage = 0;
+
+function showImage(index){
+  currentImage = (index + galleryButtons.length) % galleryButtons.length;
+
+  const image = galleryButtons[currentImage].querySelector('img');
+  const caption = galleryButtons[currentImage]
+    .closest('figure').querySelector('figcaption');
+
+  lightboxImage.src = image.src;
+  lightboxImage.alt = image.alt;
+
+  imageCaption.textContent =
+    caption.textContent + ' – ' +
+    (currentImage + 1) + ' / ' + galleryButtons.length;
+}
+
+galleryButtons.forEach((button,index)=>{
+  button.addEventListener('click',()=>{
+    showImage(index);
+    lightbox.showModal();
+  });
+});
+
+document.getElementById('close-lightbox').addEventListener('click',()=>{
+  lightbox.close();
+});
+
+document.getElementById('prev-image').addEventListener('click',()=>{
+  showImage(currentImage - 1);
+});
+
+document.getElementById('next-image').addEventListener('click',()=>{
+  showImage(currentImage + 1);
+});
+
+lightbox.addEventListener('click',event=>{
+  if(event.target===lightbox){
+    lightbox.close();
+  }
+});
+
+document.addEventListener('keydown',event=>{
+  if(!lightbox.open)return;
+
+  if(event.key==='ArrowLeft'){
+    showImage(currentImage - 1);
+  }
+
+  if(event.key==='ArrowRight'){
+    showImage(currentImage + 1);
+  }
+});
+</script>
 
 </body>
 </html>
