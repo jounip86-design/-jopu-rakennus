@@ -1,41 +1,485 @@
+
 <!doctype html>
 <html lang="fi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Asiakasarvostelut | JOPU Rakennus Oy</title>
-  <meta name="description" content="Tutustu JOPU Rakennus Oy:n Google-arvosteluihin ja kerro kokemuksestasi. Remontit ja maalaustyöt Turussa ja lähialueilla.">
+
+  <title>Asiakasarvostelut ja kokemuksia | JOPU Rakennus Oy Turku</title>
+
+  <meta name="description" content="Lue asiakkaiden kokemuksia JOPU Rakennus Oy:n remontti- ja maalaustöistä Turussa. Google-arvostelut, ammattitaitoinen työnjälki ja luotettava remonttipalvelu.">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <link rel="canonical" href="https://www.jopurakennus.fi/arvostelut.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:title" content="Asiakasarvostelut | JOPU Rakennus Oy">
+  <meta property="og:description" content="Tutustu asiakkaidemme kokemuksiin remontti- ja maalaustöistä Turun seudulla.">
+  <meta property="og:url" content="https://www.jopurakennus.fi/arvostelut.html">
+  <meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
+
+  <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://www.jopurakennus.fi/#yritys",
+        "name": "JOPU Rakennus Oy",
+        "url": "https://www.jopurakennus.fi/",
+        "telephone": "+358400464551",
+        "email": "jopurakennus@gmail.com",
+        "identifier": "3663775-9",
+        "description": "Remontti- ja maalausalan yritys Turussa. Sisäremontit, tasoitustyöt, sisämaalaukset, ulkomaalaukset ja kattomaalaukset.",
+        "areaServed": [
+          "Turku",
+          "Kaarina",
+          "Raisio",
+          "Naantali",
+          "Lieto",
+          "Rusko",
+          "Masku",
+          "Nousiainen",
+          "Paimio",
+          "Parainen",
+          "Piikkiö",
+          "Aura"
+        ],
+        "sameAs": [
+          "https://share.google/8LqddV3fN2uLMQb4i",
+          "https://www.facebook.com/profile.php?id=61596050117806"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.jopurakennus.fi/arvostelut.html#webpage",
+        "url": "https://www.jopurakennus.fi/arvostelut.html",
+        "name": "JOPU Rakennus Oy – Asiakasarvostelut",
+        "description": "Asiakkaiden kokemuksia JOPU Rakennus Oy:n remontti- ja maalaustöistä Turussa.",
+        "inLanguage": "fi",
+        "about": {
+          "@id": "https://www.jopurakennus.fi/#yritys"
+        },
+        "isPartOf": {
+          "@id": "https://www.jopurakennus.fi/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Etusivu",
+            "item": "https://www.jopurakennus.fi/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Arvostelut",
+            "item": "https://www.jopurakennus.fi/arvostelut.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
-    body{background:#0b0e10;color:#f5f5f5}
-    .review-hero{background:linear-gradient(105deg,rgba(5,8,10,.96),rgba(5,8,10,.7)),url('hero.jpg') center/cover; padding:95px 0 85px;border-bottom:3px solid #f6bd22}
-    .review-hero h1{font-size:clamp(42px,7vw,70px);line-height:1.08;letter-spacing:-1.5px;margin:14px 0}
-    .review-hero h1 span{color:#ffcf24}
-    .review-hero p{max-width:680px;color:#d2d7da;font-size:19px}
-    .review-section{padding:70px 0 85px}
-    .review-panel{max-width:850px;margin:auto;background:#14191d;border:1px solid #343a40;border-radius:16px;padding:clamp(25px,5vw,55px);text-align:center;box-shadow:0 18px 50px rgba(0,0,0,.16)}
-    .review-icon{width:72px;height:72px;margin:0 auto 20px;border-radius:18px;background:#ffcf24;color:#111;display:grid;place-items:center;font-size:38px;font-weight:900}
-    .review-panel h2{font-size:clamp(28px,4vw,39px);margin:0 0 12px}
-    .review-panel p{color:#c5cbd0;font-size:17px;max-width:620px;margin:0 auto 25px}
-    .review-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:13px}
-    .review-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid #858e94;border-radius:7px;padding:14px 22px;color:#fff;font-weight:800}
-    .review-outline:hover{background:#252b2f}
-    .review-note{margin:26px auto 0;max-width:700px;color:#aeb6bb;font-size:14px;text-align:center}
-    .review-cta{padding:55px 0;background:#171d21;border-top:1px solid #343a40}
-    .review-cta .container{display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .review-cta h2{margin:0 0 8px;font-size:30px}
-    .review-cta p{margin:0;color:#c4cbd0}
-    .review-footer{background:#080a0c;border-top:1px solid #292e32;padding:35px 0;color:#bec5ca}
-    .review-footer a{color:#ffcf24}
-    @media(max-width:700px){.review-hero{padding:65px 0}.review-hero p{font-size:17px}.review-section{padding:45px 0 60px}.review-buttons .btn,.review-buttons .review-outline{width:100%}.review-cta .container{flex-direction:column;align-items:flex-start}}
+    body {
+      background: #0b0e10;
+      color: #f5f5f5;
+    }
+
+    .review-hero {
+      background:
+        linear-gradient(105deg,rgba(5,8,10,.96),rgba(5,8,10,.65)),
+        url('hero.jpg') center/cover;
+      padding: 95px 0 85px;
+      border-bottom: 3px solid #ffcf24;
+    }
+
+    .review-hero h1 {
+      font-size: clamp(40px,7vw,70px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin: 14px 0;
+    }
+
+    .review-hero h1 span {
+      color: #ffcf24;
+    }
+
+    .review-hero p {
+      max-width: 720px;
+      color: #d2d7da;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .review-section {
+      padding: 65px 0;
+    }
+
+    .rating-panel {
+      background: #14191d;
+      border: 1px solid #343a40;
+      border-radius: 18px;
+      padding: 40px 20px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .google-label {
+      font-size: 17px;
+      font-weight: 700;
+      color: #d2d7da;
+    }
+
+    .rating-number {
+      font-size: 76px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .rating-stars {
+      color: #ffcf24;
+      font-size: 36px;
+      letter-spacing: 5px;
+    }
+
+    .rating-count {
+      color: #c4cbd0;
+      font-size: 17px;
+      margin: 12px 0;
+    }
+
+    .rating-date {
+      color: #aeb6bb;
+      font-size: 13px;
+    }
+
+    .review-heading {
+      margin: 45px 0 25px;
+      font-size: clamp(27px,4vw,38px);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 22px;
+      align-items: start;
+    }
+
+    .review-card {
+      background: #14191d;
+      border: 1px solid #343a40;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    }
+
+    .review-card:hover {
+      border-color: #ffcf24;
+    }
+
+    .review-person {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 18px;
+    }
+
+    .review-avatar {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #ffcf24;
+      color: #111;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .review-name {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+    }
+
+    .review-source {
+      font-size: 13px;
+      color: #aeb6bb;
+      margin-top: 4px;
+    }
+
+    .card-stars {
+      color: #ffcf24;
+      font-size: 23px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .review-card blockquote {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #e0e4e7;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .review-card blockquote p {
+      margin: 0 0 15px;
+    }
+
+    .review-card blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .review-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 35px;
+    }
+
+    .review-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #858e94;
+      border-radius: 7px;
+      padding: 14px 22px;
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .review-outline:hover {
+      background: #252b2f;
+    }
+
+    .review-note {
+      text-align: center;
+      color: #aeb6bb;
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 25px auto 0;
+    }
+
+    .feedback-panel {
+      background: #14191d;
+      border: 1px solid #ffcf24;
+      border-radius: 16px;
+      padding: 35px 25px;
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    .feedback-panel h2 {
+      font-size: clamp(25px,4vw,34px);
+      margin: 0 0 15px;
+    }
+
+    .feedback-panel p {
+      color: #c4cbd0;
+      max-width: 650px;
+      margin: 0 auto 25px;
+      line-height: 1.7;
+    }
+
+    .trust-section {
+      background: #14191d;
+      padding: 60px 0;
+      border-top: 1px solid #343a40;
+      border-bottom: 1px solid #343a40;
+    }
+
+    .trust-section h2 {
+      font-size: clamp(28px,4vw,38px);
+      margin: 0 0 18px;
+    }
+
+    .trust-section p {
+      max-width: 850px;
+      color: #c4cbd0;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .trust-item {
+      background: #0b0e10;
+      border: 1px solid #343a40;
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .trust-item span {
+      display: block;
+      color: #ffcf24;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .services-section {
+      padding: 55px 0;
+    }
+
+    .services-section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .service-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .service-links a {
+      background: #14191d;
+      border: 1px solid #343a40;
+      border-radius: 8px;
+      padding: 13px 18px;
+      color: #ffcf24;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .service-links a:hover {
+      border-color: #ffcf24;
+    }
+
+    .review-cta {
+      padding: 55px 0;
+      background: #171d21;
+      border-top: 1px solid #343a40;
+    }
+
+    .review-cta .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .review-cta h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+
+    .review-cta p {
+      margin: 0;
+      color: #c4cbd0;
+      line-height: 1.7;
+    }
+
+    .review-footer {
+      background: #080a0c;
+      border-top: 1px solid #292e32;
+      padding: 35px 0;
+      color: #bec5ca;
+    }
+
+    .review-footer a {
+      color: #ffcf24;
+    }
+
+    @media(max-width: 950px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media(max-width: 700px) {
+      .review-hero {
+        padding: 65px 0;
+      }
+
+      .review-hero p {
+        font-size: 17px;
+      }
+
+      .review-section {
+        padding: 35px 0 50px;
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-card {
+        padding: 22px;
+      }
+
+      .rating-number {
+        font-size: 65px;
+      }
+
+      .review-buttons .btn,
+      .review-buttons .review-outline {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .review-cta .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .trust-item {
+        font-size: 14px;
+      }
+    }
   </style>
-  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+
+  <!-- Vercel Analytics -->
+  <script>
+    window.va=window.va||function(){
+      (window.vaq=window.vaq||[]).push(arguments);
+    };
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
+
 </head>
+
 <body>
+
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu"><span class="brandmark"></span><span>JOPU<small>RAKENNUS</small></span></a>
+
+    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu">
+      <span class="brandmark"></span>
+      <span>JOPU<small>RAKENNUS</small></span>
+    </a>
+
     <nav class="links" aria-label="Päävalikko">
       <a href="index.html">Etusivu</a>
       <a href="palvelut.html">Palvelut</a>
@@ -44,10 +488,18 @@
       <a href="meista.html">Meistä</a>
       <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
-    <a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a>
-    <button class="hamb" type="button" aria-label="Avaa valikko" aria-expanded="false">☰</button>
+
+    <a class="btn" href="yhteystiedot.html">
+      Pyydä tarjous →
+    </a>
+
+    <button class="hamb" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-menu">
+      ☰
+    </button>
+
   </div>
-  <div class="mobile-menu">
+
+  <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
     <a href="referenssit.html">Referenssit</a>
@@ -56,38 +508,337 @@
     <a href="yhteystiedot.html">Yhteystiedot</a>
   </div>
 </header>
+
 <main>
-  <section class="review-hero"><div class="container">
-    <div class="eyebrow">ASIAKASKOKEMUKSET</div>
-    <h1>Asiakkaidemme <span>kokemuksia</span></h1>
-    <p>Asiakkaidemme mielipiteet ovat meille tärkeitä. Tutustu JOPU Rakennuksen Google-arvosteluihin tai kerro omasta kokemuksestasi.</p>
-  </div></section>
-  <section class="review-section"><div class="container">
-    <div class="review-panel">
-      <div class="review-icon" aria-hidden="true">★</div>
-      <div class="eyebrow">GOOGLE-ARVOSTELUT</div>
-      <h2>Mitä asiakkaamme sanovat?</h2>
-      <p>Voit lukea JOPU Rakennuksen julkiset asiakasarvostelut suoraan Google-yritysprofiilistamme. Jos olemme tehneet sinulle remontti- tai maalaustöitä, arvostamme palautettasi!</p>
-      <div class="review-buttons">
-        <a class="btn" href="https://share.google/8LqddV3fN2uLMQb4i" target="_blank" rel="noopener noreferrer">Katso arvostelut Googlessa ↗</a>
-        <a class="review-outline" href="https://share.google/8LqddV3fN2uLMQb4i" target="_blank" rel="noopener noreferrer">Anna palautetta Googlessa ↗</a>
-      </div>
+
+  <section class="review-hero">
+    <div class="container">
+
+      <div class="eyebrow">AITOJA ASIAKASKOKEMUKSIA</div>
+
+      <h1>Asiakkaidemme <span>kokemuksia</span></h1>
+
+      <p>
+        Tutustu JOPU Rakennus Oy:n asiakkaiden kokemuksiin.
+        Toteutamme remontti- ja maalaustöitä Turussa ja
+        lähialueilla huolellisesti ja ammattitaidolla.
+      </p>
+
     </div>
-    <p class="review-note">Arvostelut avautuvat Googlen palvelussa. Tällä sivulla ei esitetä automaattisesti haettuja arvosteluja tai tähtikeskiarvoa.</p>
-  </div></section>
-  <section class="review-cta"><div class="container">
-    <div><h2>Suunnitteletko remonttia?</h2><p>Ota yhteyttä ja pyydä maksuton tarjous Turussa tai lähialueilla.</p></div>
-    <a class="btn" href="yhteystiedot.html">Pyydä tarjous →</a>
-  </div></section>
+  </section>
+
+  <section class="review-section">
+    <div class="container">
+
+      <div class="rating-panel">
+
+        <div class="google-label">
+          Google-asiakasarvostelut
+        </div>
+
+        <div class="rating-number">5,0 / 5</div>
+
+        <div class="rating-stars" aria-label="5 tähteä viidestä">
+          ★★★★★
+        </div>
+
+        <p class="rating-count">
+          Perustuu kolmeen Google-arvosteluun
+        </p>
+
+        <p class="rating-date">
+          Tilanne 27.11.2026
+        </p>
+
+        <a class="btn"
+           href="https://share.google/8LqddV3fN2uLMQb4i"
+           target="_blank"
+           rel="noopener noreferrer">
+          Katso Google-arvostelut ↗
+        </a>
+
+      </div>
+
+      <h2 class="review-heading">
+        Mitä asiakkaamme sanovat?
+      </h2>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+
+          <div class="review-person">
+            <div class="review-avatar" aria-hidden="true">AA</div>
+            <div>
+              <h3 class="review-name">Atsede Abebe</h3>
+              <div class="review-source">Google-arvostelu</div>
+            </div>
+          </div>
+
+          <div class="card-stars" aria-label="5 tähteä viidestä">
+            ★★★★★
+          </div>
+
+          <blockquote>
+            <p>
+              Remontista jäi tosi hyvä fiilis! Koko paikka näyttää
+              nyt aivan uudelta, ja olen todella tyytyväinen
+              lopputulokseen. Joni oli mukava, luotettava ja
+              joustava. Hän teki työnsä huolellisesti ja
+              ammattitaidolla. Kommunikointi oli helppoa ja
+              kaikki sujui hyvin alusta loppuun.
+            </p>
+
+            <p>
+              Iso kiitos Jonille onnistuneesta remontista!
+              Voin lämpimästi suositella!
+            </p>
+          </blockquote>
+
+        </article>
+
+        <article class="review-card">
+
+          <div class="review-person">
+            <div class="review-avatar" aria-hidden="true">JP</div>
+            <div>
+              <h3 class="review-name">Jeanita Pikkujämsä</h3>
+              <div class="review-source">Google-arvostelu</div>
+            </div>
+          </div>
+
+          <div class="card-stars" aria-label="5 tähteä viidestä">
+            ★★★★★
+          </div>
+
+          <blockquote>
+            <p>
+              Hyvää ja ammattitaitoista työtä, suosittelen !
+            </p>
+          </blockquote>
+
+        </article>
+
+        <article class="review-card">
+
+          <div class="review-person">
+            <div class="review-avatar" aria-hidden="true">PH</div>
+            <div>
+              <h3 class="review-name">petri haavisto</h3>
+              <div class="review-source">Google-arvostelu</div>
+            </div>
+          </div>
+
+          <div class="card-stars" aria-label="5 tähteä viidestä">
+            ★★★★★
+          </div>
+
+          <blockquote>
+            <p>
+              Työ tehtiin sovitusti ja aikataulut piti.
+              Erittäin siistiä jälkeä ja työn valmistumisen
+              jälkeen paikat oli siistitty.
+              Voin helposti suositella muillekin.
+            </p>
+          </blockquote>
+
+        </article>
+
+      </div>
+
+      <div class="review-buttons">
+
+        <a class="btn"
+           href="https://share.google/8LqddV3fN2uLMQb4i"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue arvostelut Googlessa ↗
+        </a>
+
+        <a class="review-outline"
+           href="https://g.page/r/CecbtLW5gdQGEAE/review"
+           target="_blank"
+           rel="noopener noreferrer">
+          Jätä meille arvostelu ↗
+        </a>
+
+      </div>
+
+      <p class="review-note">
+        Arvostelut ovat peräisin JOPU Rakennus Oy:n
+        julkisesta Google-yritysprofiilista.
+        Arvostelutekstit ja tähtiarvosanat on lisätty
+        sivulle käsin. Ajantasaiset arvostelut ja
+        tähtikeskiarvon voit tarkistaa Googlessa.
+      </p>
+
+      <div class="feedback-panel">
+
+        <div class="eyebrow">PALAUTTEESI ON TÄRKEÄ</div>
+
+        <h2>Oletko ollut asiakkaamme?</h2>
+
+        <p>
+          Olemme kiitollisia jokaisesta asiakaspalautteesta.
+          Kerro rehellisesti kokemuksestasi JOPU Rakennuksen
+          asiakkaana. Palautteesi auttaa meitä kehittämään
+          palveluamme ja muita asiakkaita valitsemaan
+          remonttikumppanin.
+        </p>
+
+        <a class="btn"
+           href="https://g.page/r/CecbtLW5gdQGEAE/review"
+           target="_blank"
+           rel="noopener noreferrer">
+          Kirjoita Google-arvostelu ↗
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="trust-section">
+    <div class="container">
+
+      <div class="eyebrow">LUOTETTAVA REMONTTIKUMPPANI</div>
+
+      <h2>Miksi valita JOPU Rakennus Oy?</h2>
+
+      <p>
+        JOPU Rakennus Oy on Turun seudulla toimiva
+        remontti- ja rakennusalan yritys, jonka taustalla
+        on 20 vuoden kokemus rakennusalalta.
+        Asiakkaidemme palautteissa korostuvat ammattitaito,
+        luotettavuus, siisti työnjälki sekä sovituissa
+        aikatauluissa pysyminen.
+      </p>
+
+      <p>
+        Palvelemme yksityisasiakkaita, taloyhtiöitä,
+        yrityksiä ja rakennusliikkeitä Turussa sekä
+        lähialueilla.
+      </p>
+
+      <div class="trust-grid">
+
+        <div class="trust-item">
+          <span aria-hidden="true">✓</span>
+          Ammattitaitoinen työnjälki
+        </div>
+
+        <div class="trust-item">
+          <span aria-hidden="true">✓</span>
+          Sovitut aikataulut
+        </div>
+
+        <div class="trust-item">
+          <span aria-hidden="true">✓</span>
+          Luotettava palvelu
+        </div>
+
+        <div class="trust-item">
+          <span aria-hidden="true">✓</span>
+          20 vuoden kokemus
+        </div>
+
+      </div>
+
+      <div class="review-buttons">
+
+        <a class="btn" href="referenssit.html">
+          Katso toteutettuja remontteja →
+        </a>
+
+        <a class="review-outline" href="meista.html">
+          Tutustu yritykseemme →
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+
+      <h2>Remontti- ja maalauspalvelumme</h2>
+
+      <div class="service-links">
+        <a href="sisaremontit.html">Sisäremontit</a>
+        <a href="tasoitustyot.html">Tasoitustyöt</a>
+        <a href="sisamaalaus.html">Sisämaalaus</a>
+        <a href="ulkomaalaus.html">Talon ulkomaalaus</a>
+        <a href="kattomaalaus.html">Kattomaalaus</a>
+        <a href="palvelut.html">Kaikki palvelut →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="review-cta">
+    <div class="container">
+
+      <div>
+        <h2>Suunnitteletko remonttia?</h2>
+        <p>
+          Ota yhteyttä ja pyydä maksuton tarjous.
+          Palvelemme Turussa ja lähialueilla.
+        </p>
+      </div>
+
+      <a class="btn" href="yhteystiedot.html">
+        Pyydä maksuton tarjous →
+      </a>
+
+    </div>
+  </section>
+
 </main>
-<footer class="review-footer"><div class="container">
-  <p><strong>JOPU Rakennus Oy</strong> · Turku ja lähialueet</p>
-  <p><a href="tel:+358400464551">040 046 4551</a> · <a href="yhteystiedot.html">Yhteystiedot</a> · <a href="tietosuoja.html">Tietosuoja</a></p>
-  <p style="font-size:13px">Y-tunnus: 3663775-9</p>
-</div></footer>
-<script>
-const hamb=document.querySelector('.hamb');const menu=document.querySelector('.mobile-menu');
-if(hamb&&menu){hamb.addEventListener('click',()=>{const open=menu.classList.toggle('open');hamb.setAttribute('aria-expanded',String(open));});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');hamb.setAttribute('aria-expanded','false');}));}
-</script>
+
+<footer class="review-footer">
+  <div class="container">
+
+    <p>
+      <strong>JOPU Rakennus Oy</strong>
+      · Turku ja lähialueet
+    </p>
+
+    <p>
+      <a href="tel:+358400464551">040 046 4551</a>
+      ·
+      <a href="mailto:jopurakennus@gmail.com">
+        jopurakennus@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <a href="palvelut.html">Palvelut</a>
+      ·
+      <a href="referenssit.html">Referenssit</a>
+      ·
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+      ·
+      <a href="tietosuoja.html">Tietosuoja</a>
+    </p>
+
+    <p>
+      <a href="https://g.page/r/CecbtLW5gdQGEAE/review"
+         target="_blank"
+         rel="noopener noreferrer">
+        Jätä Google-arvostelu
+      </a>
+    </p>
+
+    <p style="font-size:13px">
+      Y-tunnus: 3663775-9
+    </p>
+
+  </div>
+</footer>
+
+<!-- Mobiilivalikko ja WhatsApp -->
+<script src="app.js"></script>
+
 </body>
 </html>
