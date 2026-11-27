@@ -1,21 +1,414 @@
+
 <!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Meistä | JOPU Rakennus</title>
-  <meta name="description" content="JOPU Rakennus – luotettava rakennusalan kumppani Turun seudulla.">
+<title>Meistä | 20 vuoden rakennusalan kokemus | JOPU Rakennus Oy Turku</title>
 
-  <link rel="stylesheet" href="style.css">
+<meta name="description" content="JOPU Rakennus Oy on paikallinen remonttiyritys Turussa. Yrittäjällä on 20 vuoden kokemus rakennusalalta. Sisäremontit, tasoitustyöt ja maalauspalvelut Turun seudulla.">
 
-  <script>
-    window.va = window.va || function () {
-      (window.vaq = window.vaq || []).push(arguments);
-    };
-  </script>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0b0e10">
 
-  <script defer src="/_vercel/insights/script.js"></script>
+<link rel="canonical" href="https://www.jopurakennus.fi/meista.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="style.css">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="JOPU Rakennus Oy">
+<meta property="og:title" content="JOPU Rakennus Oy – 20 vuoden rakennusalan kokemuksella">
+<meta property="og:description" content="Paikallinen remonttiyritys Turussa. Yrittäjällä 20 vuoden kokemus rakennusalalta.">
+<meta property="og:url" content="https://www.jopurakennus.fi/meista.html">
+<meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
+
+<style>
+
+body {
+  background:#0b0e10;
+  color:#f5f5f5;
+}
+
+.a-hero {
+  padding:90px 0;
+  background:
+    linear-gradient(90deg,rgba(6,9,12,.96),rgba(6,9,12,.55)),
+    url('hero.jpg') center/cover;
+}
+
+.a-hero h1 {
+  font-size:clamp(36px,5vw,62px);
+  line-height:1.1;
+  max-width:850px;
+  margin:15px 0;
+}
+
+.a-hero p {
+  max-width:750px;
+  color:#d9dde0;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.a-hero em,
+.a-section em {
+  color:#ffcf24;
+  font-style:normal;
+}
+
+.a-experience {
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  padding:18px 25px;
+  background:#14191d;
+  border:1px solid #ffcf24;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.a-experience strong {
+  font-size:48px;
+  line-height:1;
+  color:#ffcf24;
+}
+
+.a-experience span {
+  font-size:16px;
+  font-weight:800;
+}
+
+.a-section {
+  padding:65px 0;
+}
+
+.a-section h2 {
+  font-size:clamp(28px,3.5vw,42px);
+  margin:10px 0 20px;
+}
+
+.a-section p {
+  color:#c5cbd0;
+  line-height:1.8;
+}
+
+.a-dark {
+  background:#101518;
+  border-block:1px solid #30363b;
+}
+
+.a-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+
+.a-card {
+  background:#13191d;
+  border:1px solid #343b40;
+  border-radius:12px;
+  padding:28px;
+}
+
+.a-card h3 {
+  color:#ffcf24;
+  margin:0 0 15px;
+  font-size:24px;
+}
+
+.a-card p {
+  margin:10px 0;
+}
+
+.a-card ul {
+  color:#d5dade;
+  line-height:1.9;
+  padding-left:22px;
+}
+
+.a-card a {
+  color:#ffcf24;
+  font-weight:700;
+}
+
+.a-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:25px;
+}
+
+.a-outline {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 22px;
+  border:1px solid #c5c9cc;
+  border-radius:7px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  background:#111619;
+}
+
+.a-outline:hover {
+  background:#25292c;
+}
+
+.a-values {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.a-value {
+  background:#13191d;
+  border:1px solid #343b40;
+  border-radius:10px;
+  padding:25px;
+}
+
+.a-value strong {
+  color:#ffcf24;
+  font-size:30px;
+}
+
+.a-value h3 {
+  margin:12px 0;
+}
+
+.a-area-list {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  list-style:none;
+  padding:0;
+  margin:25px 0;
+}
+
+.a-area-list li {
+  background:#151b1f;
+  border:1px solid #353d42;
+  border-radius:6px;
+  padding:9px 16px;
+}
+
+.a-service-links {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+  margin-top:25px;
+}
+
+.a-service-links a {
+  display:block;
+  background:#151b1f;
+  border:1px solid #353d42;
+  border-radius:8px;
+  padding:20px;
+  color:#ffcf24;
+  font-weight:800;
+  text-decoration:none;
+}
+
+.a-service-links a:hover {
+  border-color:#ffcf24;
+}
+
+.a-faq details {
+  max-width:900px;
+  border-bottom:1px solid #343b40;
+  padding:20px 0;
+}
+
+.a-faq summary {
+  cursor:pointer;
+  font-weight:800;
+}
+
+.a-faq a {
+  color:#ffcf24;
+}
+
+.a-info {
+  margin:0;
+}
+
+.a-info dt {
+  color:#aeb7be;
+  margin-top:16px;
+  font-size:14px;
+}
+
+.a-info dd {
+  margin:5px 0 0;
+  font-size:17px;
+  overflow-wrap:anywhere;
+}
+
+.a-cta {
+  padding:75px 0;
+  background:
+    linear-gradient(90deg,rgba(4,7,9,.94),rgba(4,7,9,.6)),
+    url('cta.jpg') center/cover;
+}
+
+.a-cta h2 {
+  font-size:clamp(30px,4vw,45px);
+  margin:0 0 15px;
+}
+
+.a-cta p {
+  color:#dce0e3;
+  font-size:18px;
+}
+
+@media(max-width:800px) {
+  .a-values {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+
+  .a-grid,
+  .a-values,
+  .a-service-links {
+    grid-template-columns:1fr;
+  }
+
+  .a-hero {
+    padding:65px 0;
+  }
+
+  .a-section {
+    padding:48px 0;
+  }
+
+  .a-card {
+    padding:22px;
+  }
+
+  .a-actions .btn,
+  .a-actions .a-outline {
+    width:100%;
+    box-sizing:border-box;
+    text-align:center;
+  }
+
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"AboutPage",
+      "@id":"https://www.jopurakennus.fi/meista.html#webpage",
+      "url":"https://www.jopurakennus.fi/meista.html",
+      "name":"Meistä – JOPU Rakennus Oy",
+      "description":"Turun seudulla toimiva remonttiyritys, jonka yrittäjällä on 20 vuoden kokemus rakennusalalta.",
+      "inLanguage":"fi",
+      "isPartOf":{
+        "@id":"https://www.jopurakennus.fi/#website"
+      },
+      "mainEntity":{
+        "@id":"https://www.jopurakennus.fi/#yritys"
+      }
+    },
+    {
+      "@type":"HomeAndConstructionBusiness",
+      "@id":"https://www.jopurakennus.fi/#yritys",
+      "name":"JOPU Rakennus Oy",
+      "legalName":"JOPU Rakennus Oy",
+      "url":"https://www.jopurakennus.fi/",
+      "description":"Turun seudulla toimiva rakennus- ja remonttiyritys. Yrittäjällä on 20 vuoden kokemus rakennusalalta. Palveluihin kuuluvat sisäremontit, tasoitustyöt, sisämaalaukset, talojen ulkomaalaukset ja kattomaalaukset.",
+      "telephone":"+358400464551",
+      "email":"jopurakennus@gmail.com",
+      "identifier":{
+        "@type":"PropertyValue",
+        "propertyID":"Y-tunnus",
+        "value":"3663775-9"
+      },
+      "areaServed":[
+        "Turku",
+        "Kaarina",
+        "Raisio",
+        "Naantali",
+        "Lieto",
+        "Rusko",
+        "Masku",
+        "Nousiainen",
+        "Paimio",
+        "Parainen",
+        "Piikkiö",
+        "Aura",
+        "Varsinais-Suomi"
+      ],
+      "knowsAbout":[
+        "Rakentaminen",
+        "Sisäremontit",
+        "Huoneistoremontit",
+        "Pintaremontit",
+        "Tasoitustyöt",
+        "Harkkoseinien verkotus",
+        "Ylitasoitukset",
+        "Sisämaalaus",
+        "Talon ulkomaalaus",
+        "Kattomaalaus",
+        "Rakennusten kunnossapito"
+      ],
+      "hasOfferCatalog":{
+        "@id":"https://www.jopurakennus.fi/palvelut.html#palvelut"
+      },
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "telephone":"+358400464551",
+        "email":"jopurakennus@gmail.com",
+        "contactType":"customer service",
+        "availableLanguage":"Finnish",
+        "url":"https://www.jopurakennus.fi/yhteystiedot.html"
+      },
+      "sameAs":[
+        "https://www.facebook.com/profile.php?id=61596050117806",
+        "https://share.google/8LqddV3fN2uLMQb4i"
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"Etusivu",
+          "item":"https://www.jopurakennus.fi/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"Meistä",
+          "item":"https://www.jopurakennus.fi/meista.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+window.va = window.va || function () {
+  (window.vaq = window.vaq || []).push(arguments);
+};
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+
 </head>
 
 <body>
@@ -23,19 +416,17 @@
 <header class="topbar">
   <div class="container nav">
 
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu">
       <span class="brandmark"></span>
-      <span>
-        JOPU
-        <small>RAKENNUS</small>
-      </span>
+      <span>JOPU<small>RAKENNUS</small></span>
     </a>
 
-    <nav class="links">
+    <nav class="links" aria-label="Päävalikko">
       <a href="index.html">Etusivu</a>
       <a href="palvelut.html">Palvelut</a>
       <a href="referenssit.html">Referenssit</a>
-      <a href="meista.html">Meistä</a>
+      <a href="arvostelut.html">Arvostelut</a>
+      <a href="meista.html" aria-current="page">Meistä</a>
       <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
 
@@ -43,108 +434,720 @@
       Pyydä tarjous →
     </a>
 
-    <button class="hamb" aria-label="Avaa valikko">☰</button>
+    <button class="hamb"
+            type="button"
+            aria-label="Avaa valikko"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+      ☰
+    </button>
 
   </div>
 
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
     <a href="referenssit.html">Referenssit</a>
-    <a href="meista.html">Meistä</a>
+    <a href="arvostelut.html">Arvostelut</a>
+    <a href="meista.html" aria-current="page">Meistä</a>
     <a href="yhteystiedot.html">Yhteystiedot</a>
   </div>
-</header>
 
+</header>
 
 <main>
 
-<section class="subhero">
+<section class="a-hero">
   <div class="container">
 
     <div class="eyebrow">
-      JOPU Rakennus
+      JOPU RAKENNUS OY – TURKU
     </div>
 
-    <h1>Meistä</h1>
+    <h1>
+      Paikallinen remonttiyritys
+      <em>20 vuoden rakennusalan kokemuksella</em>
+    </h1>
 
-    <p class="lead">
-      Luotettava rakennusalan kumppani Turun seudulla.
+    <p>
+      JOPU Rakennus Oy on Turun seudulla toimiva
+      suomalainen rakennus- ja remonttiyritys.
+      Yrityksen toiminnan perustana on yrittäjän
+      20 vuoden kokemus rakennusalalta.
+    </p>
+
+    <p>
+      Tarjoamme remontointi-, tasoitus- ja
+      maalauspalveluita yksityisasiakkaille,
+      taloyhtiöille ja yrityksille.
+    </p>
+
+    <div class="a-experience">
+      <strong>20</strong>
+      <span>VUOTTA KOKEMUSTA<br>RAKENNUSALALTA</span>
+    </div>
+
+    <div class="a-actions">
+
+      <a class="btn" href="yhteystiedot.html">
+        Pyydä maksuton tarjous →
+      </a>
+
+      <a class="a-outline" href="referenssit.html">
+        Tutustu töihimme →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section">
+  <div class="container">
+
+    <div class="eyebrow">TUTUSTU YRITYKSEEMME</div>
+
+    <h2>
+      Pitkä kokemus ja
+      <em>huolellinen työnjälki</em>
+    </h2>
+
+    <div class="a-grid">
+
+      <article class="a-card">
+
+        <h3>20 vuoden ammattikokemus</h3>
+
+        <p>
+          JOPU Rakennus Oy:n toiminnan perustana
+          on yrittäjän 20 vuoden kokemus
+          rakennusalalta.
+        </p>
+
+        <p>
+          Pitkä käytännön kokemus erilaisista
+          rakennusalan työtehtävistä ja
+          työmaakohteista antaa vahvan pohjan
+          laadukkaalle työnjäljelle ja
+          toimiville rakennusratkaisuille.
+        </p>
+
+        <p>
+          Yhdistämme pitkän ammattikokemuksen,
+          henkilökohtaisen palvelun ja
+          huolellisen toteutuksen.
+          Jokainen remontti suunnitellaan
+          kohteen tarpeiden mukaan.
+        </p>
+
+        <p>
+          Asiakkaana asioit suoraan yrittäjän
+          kanssa. Tämä helpottaa yhteydenpitoa
+          ja työn yksityiskohdista sopimista.
+        </p>
+
+      </article>
+
+      <article class="a-card">
+
+        <h3>Yrityksen viralliset tiedot</h3>
+
+        <dl class="a-info">
+
+          <dt>Yrityksen nimi</dt>
+          <dd>JOPU Rakennus Oy</dd>
+
+          <dt>Y-tunnus</dt>
+          <dd>3663775-9</dd>
+
+          <dt>Yritysmuoto</dt>
+          <dd>Osakeyhtiö</dd>
+
+          <dt>Yrittäjän kokemus</dt>
+          <dd>20 vuotta rakennusalalta</dd>
+
+          <dt>Toiminta-alue</dt>
+          <dd>Turku ja Varsinais-Suomi</dd>
+
+          <dt>Puhelin</dt>
+          <dd>
+            <a href="tel:+358400464551">
+              040 046 4551
+            </a>
+          </dd>
+
+          <dt>Sähköposti</dt>
+          <dd>
+            <a href="mailto:jopurakennus@gmail.com">
+              jopurakennus@gmail.com
+            </a>
+          </dd>
+
+          <dt>Verkkosivusto</dt>
+          <dd>
+            <a href="https://www.jopurakennus.fi/">
+              www.jopurakennus.fi
+            </a>
+          </dd>
+
+        </dl>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section a-dark">
+  <div class="container">
+
+    <div class="eyebrow">TOIMINTAPERIAATTEEMME</div>
+
+    <h2>Miksi valita <em>JOPU Rakennus?</em></h2>
+
+    <div class="a-values">
+
+      <article class="a-value">
+        <strong>01</strong>
+        <h3>20 vuoden kokemus</h3>
+        <p>
+          Pitkä rakennusalan kokemus antaa
+          vahvan pohjan erilaisten remonttien
+          suunnittelulle ja toteuttamiselle.
+        </p>
+      </article>
+
+      <article class="a-value">
+        <strong>02</strong>
+        <h3>Huolellinen työnjälki</h3>
+        <p>
+          Panostamme pohjatöihin,
+          työn toteutukseen ja viimeistelyyn.
+          Tavoitteena on siisti ja
+          käyttötarkoitukseen sopiva lopputulos.
+        </p>
+      </article>
+
+      <article class="a-value">
+        <strong>03</strong>
+        <h3>Selkeä hinnoittelu</h3>
+        <p>
+          Työn sisältö ja hinnoitteluperusteet
+          sovitaan ennen työn aloittamista.
+          Mahdollisista lisätöistä sovitaan
+          asiakkaan kanssa erikseen.
+        </p>
+      </article>
+
+      <article class="a-value">
+        <strong>04</strong>
+        <h3>Sovitut aikataulut</h3>
+        <p>
+          Työn aikataulu suunnitellaan
+          yhdessä asiakkaan kanssa.
+          Mahdollisista muutoksista
+          tiedotetaan asiakkaalle.
+        </p>
+      </article>
+
+      <article class="a-value">
+        <strong>05</strong>
+        <h3>Siisti työmaa</h3>
+        <p>
+          Huomioimme työskentelyssä
+          kohteen suojaamisen, järjestyksen
+          ja sovitun loppusiivouksen.
+        </p>
+      </article>
+
+      <article class="a-value">
+        <strong>06</strong>
+        <h3>Paikallinen ja henkilökohtainen palvelu</h3>
+        <p>
+          Toimimme Turussa ja lähialueilla.
+          Asiakas voi keskustella työn
+          etenemisestä suoraan yrittäjän kanssa.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section">
+  <div class="container">
+
+    <div class="eyebrow">AMMATTITAITO JA PALVELUT</div>
+
+    <h2>
+      Rakentamisen ja remontoinnin
+      <em>monipuolinen tekijä</em>
+    </h2>
+
+    <p>
+      JOPU Rakennus Oy toteuttaa niin
+      pienempiä korjaustöitä kuin
+      laajempia remonttikokonaisuuksia.
+      Työmenetelmät ja materiaalit
+      valitaan kohteen tarpeiden mukaan.
+    </p>
+
+    <div class="a-service-links">
+
+      <a href="sisaremontit.html">
+        Sisäremontit ja pintaremontit →
+      </a>
+
+      <a href="tasoitustyot.html">
+        Tasoitustyöt ja verkotukset →
+      </a>
+
+      <a href="sisamaalaus.html">
+        Seinien ja kattojen sisämaalaukset →
+      </a>
+
+      <a href="ulkomaalaus.html">
+        Talojen ulkomaalaukset →
+      </a>
+
+      <a href="kattomaalaus.html">
+        Kattojen pesut ja maalaukset →
+      </a>
+
+      <a href="palvelut.html">
+        Kaikki rakennuspalvelut →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section a-dark">
+  <div class="container">
+
+    <div class="eyebrow">ASIAKKAAMME</div>
+
+    <h2>
+      Palveluita yksityisille
+      <em>ja yrityksille</em>
+    </h2>
+
+    <div class="a-grid">
+
+      <article class="a-card">
+
+        <h3>Yksityisasiakkaat</h3>
+
+        <p>
+          Autamme omakotitalojen,
+          huoneistojen ja vapaa-ajan
+          asuntojen remontoinnissa
+          sekä kunnossapidossa.
+        </p>
+
+        <ul>
+          <li>Huoneistojen pintaremontit</li>
+          <li>Seinien ja kattojen kunnostukset</li>
+          <li>Sisä- ja ulkomaalaukset</li>
+          <li>Rakennusten korjaustyöt</li>
+        </ul>
+
+      </article>
+
+      <article class="a-card">
+
+        <h3>Taloyhtiöt ja isännöitsijät</h3>
+
+        <p>
+          Tarjoamme taloyhtiöille
+          kohdekohtaisesti sovittavia
+          remontti-, maalaus- ja
+          kunnossapitopalveluita.
+        </p>
+
+        <ul>
+          <li>Yhteisten tilojen kunnostukset</li>
+          <li>Maalaus- ja tasoitustyöt</li>
+          <li>Rakennusten kunnossapito</li>
+          <li>Erilaiset korjaustyöt</li>
+        </ul>
+
+      </article>
+
+      <article class="a-card">
+
+        <h3>Yritykset</h3>
+
+        <p>
+          Toteutamme yritysten toimitilojen
+          remontti- ja maalaustöitä
+          sovitun työn laajuuden mukaan.
+        </p>
+
+        <ul>
+          <li>Toimitilojen pintaremontit</li>
+          <li>Maalaustyöt</li>
+          <li>Tasoitustyöt</li>
+          <li>Korjaus- ja viimeistelytyöt</li>
+        </ul>
+
+      </article>
+
+      <article class="a-card">
+
+        <h3>Rakennusliikkeet</h3>
+
+        <p>
+          Tarjoamme rakennusalan yrityksille
+          aliurakointipalveluita erikseen
+          sovittaviin työkokonaisuuksiin.
+        </p>
+
+        <ul>
+          <li>Rakennustyöt</li>
+          <li>Tasoitus- ja maalaustyöt</li>
+          <li>Remonttityöt</li>
+          <li>Viimeistelytyöt</li>
+        </ul>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section">
+  <div class="container">
+
+    <div class="eyebrow">PALVELUALUE</div>
+
+    <h2>
+      Paikallista palvelua
+      <em>Turun seudulla</em>
+    </h2>
+
+    <p>
+      JOPU Rakennus Oy palvelee seuraavilla
+      paikkakunnilla ja alueilla:
+    </p>
+
+    <ul class="a-area-list">
+
+      <li>Turku</li>
+      <li>Kaarina</li>
+      <li>Raisio</li>
+      <li>Naantali</li>
+      <li>Lieto</li>
+      <li>Rusko</li>
+      <li>Masku</li>
+      <li>Nousiainen</li>
+      <li>Paimio</li>
+      <li>Parainen</li>
+      <li>Piikkiö</li>
+      <li>Aura</li>
+
+    </ul>
+
+    <p>
+      Palvelemme myös muualla
+      Varsinais-Suomessa sopimuksen mukaan.
     </p>
 
   </div>
 </section>
 
+<section class="a-section a-dark">
+  <div class="container">
 
-<section class="section">
-
-  <div class="container projects">
-
-    <div>
-
-      <div class="eyebrow">
-        Paikallinen tekijä
-      </div>
-
-      <h2>
-        Työ tehdään niin kuin on sovittu
-      </h2>
-
-      <p class="lead">
-        JOPU Rakennus palvelee yksityisiä ja yrityksiä
-        Turussa ja lähikunnissa. Tavoitteena on selkeä
-        yhteydenpito, hyvä työnjälki ja siisti työmaa.
-      </p>
-
+    <div class="eyebrow">
+      REFERENSSIT JA ASIAKASKOKEMUKSET
     </div>
 
+    <h2>
+      Tutustu töihimme ja
+      <em>asiakasarvosteluihin</em>
+    </h2>
 
-    <div class="feature">
+    <p>
+      Remonttiyritystä valittaessa kannattaa
+      tutustua aikaisempiin työkohteisiin,
+      asiakaskokemuksiin ja yrityksen
+      toimintatapoihin.
+    </p>
 
-      <h3>Miksi valita meidät?</h3>
+    <div class="a-grid">
 
-      <p>✓ Selkeä tarjous ja sovittu hinta</p>
-      <p>✓ Aikatauluista pidetään kiinni</p>
-      <p>✓ Ammattimainen työnjälki</p>
-      <p>✓ Paikallinen palvelu</p>
+      <article class="a-card">
+
+        <h3>Toteutetut työkohteet</h3>
+
+        <p>
+          Tutustu JOPU Rakennus Oy:n
+          toteuttamiin remontti- ja
+          rakennustöihin referenssisivullamme.
+        </p>
+
+        <a href="referenssit.html">
+          Katso referenssit →
+        </a>
+
+      </article>
+
+      <article class="a-card">
+
+        <h3>Asiakkaiden kokemukset</h3>
+
+        <p>
+          Asiakasarvosteluihin voit tutustua
+          verkkosivuillamme ja
+          Google-yritysprofiilissamme.
+        </p>
+
+        <p>
+          <a href="arvostelut.html">
+            Lue asiakasarvostelut →
+          </a>
+        </p>
+
+        <p>
+          <a href="https://share.google/8LqddV3fN2uLMQb4i"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google-yritysprofiili ↗
+          </a>
+        </p>
+
+      </article>
 
     </div>
 
   </div>
+</section>
 
+<section class="a-section">
+  <div class="container">
+
+    <div class="eyebrow">KOTITALOUSVÄHENNYS</div>
+
+    <h2>
+      Remontoi ja hyödynnä
+      <em>kotitalousvähennys</em>
+    </h2>
+
+    <p>
+      Kotona tai vapaa-ajan asunnolla
+      tehtävä remontti- ja kunnossapitotyö
+      voi oikeuttaa kotitalousvähennykseen
+      Verohallinnon ehtojen mukaisesti.
+    </p>
+
+    <p>
+      JOPU Rakennus Oy erittelee työn
+      osuuden ja materiaalit laskulla.
+      Materiaalit eivät oikeuta
+      kotitalousvähennykseen.
+    </p>
+
+    <div class="a-actions">
+
+      <a class="a-outline"
+         href="https://www.vero.fi/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Tarkista Verohallinnon ehdot ↗
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="a-section a-dark a-faq">
+  <div class="container">
+
+    <div class="eyebrow">USEIN KYSYTTYÄ</div>
+
+    <h2>
+      Usein kysytyt kysymykset
+      <em>yrityksestämme</em>
+    </h2>
+
+    <details>
+      <summary>Mikä yritys JOPU Rakennus Oy on?</summary>
+      <p>
+        JOPU Rakennus Oy on Turun seudulla
+        toimiva suomalainen rakennus- ja
+        remonttiyritys, joka tarjoaa
+        remontointi-, tasoitus- ja
+        maalauspalveluita.
+      </p>
+    </details>
+
+    <details>
+      <summary>Kuinka paljon yrittäjällä on kokemusta rakennusalalta?</summary>
+      <p>
+        JOPU Rakennus Oy:n yrittäjällä
+        on 20 vuoden kokemus rakennusalalta.
+        Yrityksen toiminta perustuu pitkään
+        käytännön ammattikokemukseen.
+      </p>
+    </details>
+
+    <details>
+      <summary>Missä JOPU Rakennus toimii?</summary>
+      <p>
+        Turussa, Kaarinassa, Raisiossa,
+        Naantalissa, Liedossa, Ruskolla,
+        Maskussa, Nousiaisissa, Paimiossa,
+        Paraisilla, Piikkiössä ja Aurassa
+        sekä muualla Varsinais-Suomessa
+        sopimuksen mukaan.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mitä palveluita yritys tarjoaa?</summary>
+      <p>
+        Pääpalveluitamme ovat
+        <a href="sisaremontit.html">sisäremontit</a>,
+        <a href="tasoitustyot.html">tasoitustyöt</a>,
+        <a href="sisamaalaus.html">sisämaalaukset</a>,
+        <a href="ulkomaalaus.html">ulkomaalaukset</a>
+        ja
+        <a href="kattomaalaus.html">kattomaalaukset</a>.
+      </p>
+    </details>
+
+    <details>
+      <summary>Palveletteko myös taloyhtiöitä?</summary>
+      <p>
+        Kyllä. Palvelemme yksityisasiakkaita,
+        taloyhtiöitä, isännöitsijöitä,
+        yrityksiä ja rakennusliikkeitä
+        sovittujen työkokonaisuuksien mukaan.
+      </p>
+    </details>
+
+    <details>
+      <summary>Onko tarjouspyyntö maksuton?</summary>
+      <p>
+        Kyllä. Tarjouksen pyytäminen
+        on maksutonta eikä sido
+        tilaamaan työtä.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mikä on yrityksen Y-tunnus?</summary>
+      <p>
+        JOPU Rakennus Oy:n Y-tunnus
+        on 3663775-9.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mistä löydän aikaisempia työkohteita?</summary>
+      <p>
+        Tutustu
+        <a href="referenssit.html">referenssisivuumme</a>,
+        jossa esitellään toteutettuja työkohteita.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mistä löydän asiakasarvostelut?</summary>
+      <p>
+        Asiakasarvostelut löydät
+        <a href="arvostelut.html">arvostelusivultamme</a>
+        ja Google-yritysprofiilistamme.
+      </p>
+    </details>
+
+    <details>
+      <summary>Miten saan yhteyden yritykseen?</summary>
+      <p>
+        Voit soittaa numeroon
+        <a href="tel:+358400464551">040 046 4551</a>,
+        lähettää sähköpostia tai ottaa
+        yhteyttä WhatsAppissa.
+        Voit myös käyttää
+        <a href="yhteystiedot.html">tarjouspyyntölomaketta</a>.
+      </p>
+    </details>
+
+  </div>
+</section>
+
+<section class="a-cta">
+  <div class="container">
+
+    <h2>
+      Etsitkö kokenutta remonttitekijää Turun seudulta?
+    </h2>
+
+    <p>
+      Kerro meille kohteestasi.
+      Suunnitellaan yhdessä tarpeisiisi
+      sopiva remontti 20 vuoden
+      rakennusalan kokemuksella.
+    </p>
+
+    <div class="a-actions">
+
+      <a class="btn" href="yhteystiedot.html">
+        Pyydä maksuton tarjous →
+      </a>
+
+      <a class="a-outline" href="tel:+358400464551">
+        Soita 040 046 4551
+      </a>
+
+      <a class="a-outline"
+         href="https://wa.me/358400464551"
+         target="_blank"
+         rel="noopener noreferrer">
+        WhatsApp ↗
+      </a>
+
+    </div>
+
+  </div>
 </section>
 
 </main>
 
-
 <footer class="footer">
-
   <div class="container footer-grid">
 
     <div>
 
       <a class="brand" href="index.html">
         <span class="brandmark"></span>
-        <span>
-          JOPU
-          <small>RAKENNUS</small>
-        </span>
+        <span>JOPU<small>RAKENNUS</small></span>
       </a>
 
+      <p>JOPU Rakennus Oy</p>
+      <p>Y-tunnus: 3663775-9</p>
+
       <p>
-        Rakentamista ja remontointia Turun seudulla.
+        Rakentamista, remontointia ja
+        maalaustöitä Turun seudulla
+        20 vuoden rakennusalan kokemuksella.
       </p>
 
     </div>
 
-
     <div>
 
-      <h4>Yhteys</h4>
+      <h4>Yhteystiedot</h4>
 
       <p>
         <a href="tel:+358400464551">
-          0400464551
+          040 046 4551
         </a>
       </p>
 
@@ -154,42 +1157,56 @@
         </a>
       </p>
 
-    </div>
-
-
-    <div>
-
-      <h4>Palvelualue</h4>
-
       <p>
-        Turku ja lähialueet
+        <a href="https://wa.me/358400464551">
+          WhatsApp
+        </a>
       </p>
 
     </div>
 
+    <div>
+
+      <h4>Palvelut</h4>
+
+      <p><a href="sisaremontit.html">Sisäremontit</a></p>
+      <p><a href="tasoitustyot.html">Tasoitustyöt</a></p>
+      <p><a href="sisamaalaus.html">Sisämaalaus</a></p>
+      <p><a href="ulkomaalaus.html">Ulkomaalaus</a></p>
+      <p><a href="kattomaalaus.html">Kattomaalaus</a></p>
+      <p><a href="palvelut.html">Kaikki palvelut</a></p>
+
+    </div>
 
     <div>
 
-      <h4>Sivut</h4>
+      <h4>Yritys</h4>
+
+      <p><a href="meista.html">Meistä</a></p>
+      <p><a href="referenssit.html">Referenssit</a></p>
+      <p><a href="arvostelut.html">Arvostelut</a></p>
+      <p><a href="tietosuoja.html">Tietosuoja</a></p>
 
       <p>
-        <a href="palvelut.html">
-          Palvelut
+        <a href="https://www.facebook.com/profile.php?id=61596050117806"
+           target="_blank"
+           rel="noopener noreferrer">
+          Facebook
         </a>
       </p>
 
       <p>
-        <a href="referenssit.html">
-          Referenssit
+        <a href="https://share.google/8LqddV3fN2uLMQb4i"
+           target="_blank"
+           rel="noopener noreferrer">
+          Google-yritysprofiili
         </a>
       </p>
 
     </div>
 
   </div>
-
 </footer>
-
 
 <script src="app.js"></script>
 
