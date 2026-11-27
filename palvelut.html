@@ -1,13 +1,412 @@
+
 <!doctype html>
 <html lang="fi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Palvelut | JOPU Rakennus</title>
-  <meta name="description" content="Rakennus- ja remonttipalvelut Turussa.">
+  <title>Remontti- ja maalauspalvelut Turku | JOPU Rakennus Oy</title>
 
+  <meta name="description" content="JOPU Rakennus Oy tarjoaa sisäremontit, tasoitustyöt, sisämaalaukset, talon ulkomaalaukset, kattomaalaukset ja rakennustyöt Turussa ja lähialueilla. Pyydä maksuton tarjous.">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0b0e10">
+
+  <link rel="canonical" href="https://www.jopurakennus.fi/palvelut.html">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
   <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:site_name" content="JOPU Rakennus Oy">
+  <meta property="og:title" content="Remontti- ja maalauspalvelut Turussa">
+  <meta property="og:description" content="Sisäremontit, tasoitustyöt, maalaukset ja rakennustyöt Turun seudulla.">
+  <meta property="og:url" content="https://www.jopurakennus.fi/palvelut.html">
+  <meta property="og:image" content="https://www.jopurakennus.fi/hero.jpg">
+
+  <style>
+    body {
+      background:#0b0e10;
+      color:#f5f5f5;
+    }
+
+    .p-hero {
+      padding:90px 0;
+      background:
+        linear-gradient(90deg,rgba(6,9,12,.96),rgba(6,9,12,.55)),
+        url('hero.jpg') center/cover;
+    }
+
+    .p-hero h1 {
+      font-size:clamp(36px,5vw,62px);
+      line-height:1.1;
+      max-width:850px;
+      margin:15px 0;
+    }
+
+    .p-hero em,
+    .p-section em {
+      color:#ffcf24;
+      font-style:normal;
+    }
+
+    .p-hero p {
+      max-width:750px;
+      color:#d9dde0;
+      font-size:18px;
+      line-height:1.7;
+    }
+
+    .p-section {
+      padding:65px 0;
+    }
+
+    .p-section h2 {
+      font-size:clamp(28px,3.5vw,42px);
+      margin:10px 0 20px;
+    }
+
+    .p-section p {
+      color:#c5cbd0;
+      line-height:1.7;
+    }
+
+    .p-grid {
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:24px;
+      margin-top:30px;
+    }
+
+    .p-service {
+      background:#13191d;
+      border:1px solid #343b40;
+      border-radius:12px;
+      overflow:hidden;
+      scroll-margin-top:100px;
+    }
+
+    .p-service img {
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .p-service-body {
+      padding:28px;
+    }
+
+    .p-service h2 {
+      font-size:27px;
+      margin:0 0 15px;
+    }
+
+    .p-service ul {
+      color:#d5dade;
+      padding-left:22px;
+      line-height:1.9;
+    }
+
+    .p-service a {
+      color:#ffcf24;
+      font-weight:800;
+    }
+
+    .p-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:25px;
+    }
+
+    .p-outline {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 22px;
+      border:1px solid #c5c9cc;
+      border-radius:7px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:800;
+      background:#111619;
+    }
+
+    .p-outline:hover {
+      background:#25292c;
+    }
+
+    .p-area {
+      background:#101518;
+      border-block:1px solid #30363b;
+    }
+
+    .p-area-list {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      list-style:none;
+      padding:0;
+      margin:25px 0;
+    }
+
+    .p-area-list li {
+      background:#151b1f;
+      border:1px solid #353d42;
+      border-radius:6px;
+      padding:9px 16px;
+    }
+
+    .p-steps {
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+      margin-top:30px;
+    }
+
+    .p-step {
+      background:#13191d;
+      border:1px solid #343b40;
+      padding:22px;
+      border-radius:10px;
+    }
+
+    .p-step strong {
+      color:#ffcf24;
+      font-size:28px;
+    }
+
+    .p-step h3 {
+      margin:12px 0;
+    }
+
+    .p-faq details {
+      max-width:900px;
+      border-bottom:1px solid #343b40;
+      padding:20px 0;
+    }
+
+    .p-faq summary {
+      font-weight:800;
+      cursor:pointer;
+    }
+
+    .p-section a:not(.btn):not(.p-outline) {
+      color:#ffcf24;
+    }
+
+    .p-cta {
+      padding:75px 0;
+      background:
+        linear-gradient(90deg,rgba(4,7,9,.94),rgba(4,7,9,.6)),
+        url('cta.jpg') center/cover;
+    }
+
+    .p-cta h2 {
+      font-size:clamp(30px,4vw,45px);
+      margin:0 0 15px;
+    }
+
+    .p-cta p {
+      color:#dce0e3;
+      font-size:18px;
+    }
+
+    @media(max-width:800px) {
+      .p-steps {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+      .p-grid,
+      .p-steps {
+        grid-template-columns:1fr;
+      }
+
+      .p-hero {
+        padding:65px 0;
+      }
+
+      .p-section {
+        padding:48px 0;
+      }
+
+      .p-service img {
+        height:210px;
+      }
+
+      .p-service-body {
+        padding:22px;
+      }
+
+      .p-actions .btn,
+      .p-actions .p-outline {
+        width:100%;
+        box-sizing:border-box;
+        text-align:center;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"https://www.jopurakennus.fi/palvelut.html#webpage",
+        "url":"https://www.jopurakennus.fi/palvelut.html",
+        "name":"Remontti- ja maalauspalvelut Turussa",
+        "inLanguage":"fi",
+        "about":{
+          "@id":"https://www.jopurakennus.fi/#yritys"
+        },
+        "isPartOf":{
+          "@id":"https://www.jopurakennus.fi/#website"
+        },
+        "mainEntity":{
+          "@id":"https://www.jopurakennus.fi/palvelut.html#palvelut"
+        }
+      },
+      {
+        "@type":"HomeAndConstructionBusiness",
+        "@id":"https://www.jopurakennus.fi/#yritys",
+        "name":"JOPU Rakennus Oy",
+        "url":"https://www.jopurakennus.fi/",
+        "telephone":"+358400464551",
+        "email":"jopurakennus@gmail.com",
+        "identifier":{
+          "@type":"PropertyValue",
+          "propertyID":"Y-tunnus",
+          "value":"3663775-9"
+        },
+        "areaServed":[
+          "Turku",
+          "Kaarina",
+          "Raisio",
+          "Naantali",
+          "Lieto",
+          "Rusko",
+          "Masku",
+          "Nousiainen",
+          "Paimio",
+          "Parainen",
+          "Piikkiö",
+          "Aura",
+          "Varsinais-Suomi"
+        ],
+        "hasOfferCatalog":{
+          "@id":"https://www.jopurakennus.fi/palvelut.html#palvelut"
+        }
+      },
+      {
+        "@type":"OfferCatalog",
+        "@id":"https://www.jopurakennus.fi/palvelut.html#palvelut",
+        "name":"Rakennus- ja remonttipalvelut",
+        "itemListElement":[
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Sisäremontit",
+              "description":"Huoneistojen ja omakotitalojen pintaremontit, lattiat, seinät, katot ja viimeistelytyöt.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#sisaremontit",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Tasoitustyöt",
+              "description":"Seinien ja kattojen tasoitukset, ylitasoitukset ja pohjatyöt.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#tasoitustyot",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Sisämaalaus",
+              "description":"Seinien ja kattojen sisämaalaukset ja tarvittavat pohjatyöt.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#sisamaalaus",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Talon ulkomaalaus",
+              "description":"Rakennusten ulkomaalaukset, pintojen puhdistukset ja pohjatyöt.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#ulkomaalaus",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Kattomaalaus",
+              "description":"Kattojen pesut ja huoltomaalaukset kohteen materiaalin ja kunnon mukaan.",
+              "url":"https://www.jopurakennus.fi/kattomaalaus.html",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Terassit ja piharakenteet",
+              "description":"Terassit, aidat, portaat ja muut ulkorakenteet.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#piharakenteet",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Purku ja saneeraus",
+              "description":"Remontteihin liittyvät purku- ja saneeraustyöt sopimuksen mukaan.",
+              "url":"https://www.jopurakennus.fi/palvelut.html#purkutyot",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"Muut rakennus- ja korjaustyöt",
+              "url":"https://www.jopurakennus.fi/palvelut.html#rakennustyot",
+              "provider":{"@id":"https://www.jopurakennus.fi/#yritys"}
+            }
+          }
+        ]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {
+            "@type":"ListItem",
+            "position":1,
+            "name":"Etusivu",
+            "item":"https://www.jopurakennus.fi/"
+          },
+          {
+            "@type":"ListItem",
+            "position":2,
+            "name":"Palvelut",
+            "item":"https://www.jopurakennus.fi/palvelut.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <script>
     window.va = window.va || function () {
@@ -23,18 +422,16 @@
 <header class="topbar">
   <div class="container nav">
 
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="JOPU Rakennus etusivu">
       <span class="brandmark"></span>
-      <span>
-        JOPU
-        <small>RAKENNUS</small>
-      </span>
+      <span>JOPU<small>RAKENNUS</small></span>
     </a>
 
-    <nav class="links">
+    <nav class="links" aria-label="Päävalikko">
       <a href="index.html">Etusivu</a>
-      <a href="palvelut.html">Palvelut</a>
+      <a href="palvelut.html" aria-current="page">Palvelut</a>
       <a href="referenssit.html">Referenssit</a>
+      <a href="arvostelut.html">Arvostelut</a>
       <a href="meista.html">Meistä</a>
       <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
@@ -43,144 +440,592 @@
       Pyydä tarjous →
     </a>
 
-    <button class="hamb" aria-label="Avaa valikko">
+    <button class="hamb"
+            type="button"
+            aria-label="Avaa valikko"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
       ☰
     </button>
 
   </div>
 
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
     <a href="referenssit.html">Referenssit</a>
+    <a href="arvostelut.html">Arvostelut</a>
     <a href="meista.html">Meistä</a>
     <a href="yhteystiedot.html">Yhteystiedot</a>
   </div>
 </header>
 
-
 <main>
 
-<section class="subhero">
+<section class="p-hero">
   <div class="container">
 
     <div class="eyebrow">
-      JOPU Rakennus
+      JOPU RAKENNUS OY – TURKU JA LÄHIALUEET
     </div>
 
-    <h1>Palvelut</h1>
+    <h1>
+      Remontti- ja <em>maalauspalvelut Turussa</em>
+    </h1>
 
-    <p class="lead">
-      Monipuoliset rakennuspalvelut pienistä korjauksista kokonaisiin remontteihin.
+    <p>
+      JOPU Rakennus Oy tarjoaa monipuolisia remontti-,
+      maalaus- ja rakennuspalveluita Turussa ja
+      Varsinais-Suomessa. Toteutamme niin pienet
+      korjaustyöt kuin laajemmat sisäremontit
+      kohteen tarpeiden mukaan.
+    </p>
+
+    <div class="p-actions">
+
+      <a class="btn" href="yhteystiedot.html">
+        Pyydä maksuton tarjous →
+      </a>
+
+      <a class="p-outline"
+         href="https://wa.me/358400464551"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ota yhteyttä WhatsAppissa ↗
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="container">
+
+    <div class="eyebrow">PALVELUMME</div>
+
+    <h2>Rakentaminen ja <em>remontointi</em></h2>
+
+    <p>
+      Tutustu palveluihimme ja kysy tarjousta
+      omaan kohteeseesi. Työn sisältö, materiaalit
+      ja aikataulu sovitaan aina kohdekohtaisesti.
+    </p>
+
+    <div class="p-grid">
+
+      <article class="p-service" id="sisaremontit">
+
+        <img src="service1.jpg"
+             alt="Sisäremonttien havainnekuva"
+             loading="lazy"
+             width="640" height="420">
+
+        <div class="p-service-body">
+
+          <h2>Sisäremontit Turussa</h2>
+
+          <p>
+            Toteutamme huoneistojen ja omakotitalojen
+            sisäremontit asiakkaan tarpeiden mukaan.
+            Palvelu soveltuu pieniin pintaremontteihin
+            ja laajempiin sisätilojen uudistuksiin.
+          </p>
+
+          <ul>
+            <li>Huoneistojen pintaremontit</li>
+            <li>Keittiöiden remonttityöt</li>
+            <li>Seinä- ja kattopintojen uudistaminen</li>
+            <li>Lattioiden uusiminen</li>
+            <li>Listoitukset ja viimeistelytyöt</li>
+            <li>Erilaiset sisätilojen korjaustyöt</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Pyydä tarjous sisäremontista →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="tasoitustyot">
+
+        <img src="service2.jpg"
+             alt="Tasoitus- ja maalaustöiden havainnekuva"
+             loading="lazy"
+             width="640" height="420">
+
+        <div class="p-service-body">
+
+          <h2>Tasoitustyöt Turussa</h2>
+
+          <p>
+            Huolellinen tasoitustyö on laadukkaan
+            maalipinnan perusta. Toteutamme seinien
+            ja kattojen tasoitukset sekä tarvittavat
+            pohjatyöt kohteen mukaan.
+          </p>
+
+          <ul>
+            <li>Seinien tasoitukset</li>
+            <li>Kattojen tasoitukset</li>
+            <li>Ylitasoitukset</li>
+            <li>Tasoitusverkotus tarvittaessa</li>
+            <li>Paikkatasoitukset</li>
+            <li>Hionta ja maalauspinnan valmistelu</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Pyydä tarjous tasoitustöistä →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="sisamaalaus">
+
+        <div class="p-service-body">
+
+          <h2>Sisämaalaus Turussa</h2>
+
+          <p>
+            Uudistamme kodin sisäpinnat
+            huolellisilla maalaustöillä.
+            Maalaus suunnitellaan pintojen
+            kunnon ja asiakkaan toiveiden mukaan.
+          </p>
+
+          <ul>
+            <li>Seinien maalaus</li>
+            <li>Sisäkattojen maalaus</li>
+            <li>Huoneistojen maalausremontit</li>
+            <li>Pintojen suojaaminen</li>
+            <li>Pohjamaalaukset</li>
+            <li>Pintamaalaukset</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Pyydä tarjous sisämaalauksesta →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="ulkomaalaus">
+
+        <div class="p-service-body">
+
+          <h2>Talon ulkomaalaus Turussa</h2>
+
+          <p>
+            Oikein toteutettu ulkomaalaus suojaa
+            rakennuksen ulkopintoja ja uudistaa
+            talon ilmettä. Työmenetelmät ja maalit
+            valitaan rakennuksen materiaalin,
+            kunnon ja aikaisemman maalipinnan mukaan.
+          </p>
+
+          <ul>
+            <li>Omakotitalojen ulkomaalaus</li>
+            <li>Julkisivujen huoltomaalaus</li>
+            <li>Pintojen puhdistaminen</li>
+            <li>Irtoavan maalin poistaminen</li>
+            <li>Tarvittavat pohjatyöt</li>
+            <li>Pohja- ja pintamaalaukset</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Pyydä tarjous talon maalauksesta →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="kattomaalaus">
+
+        <img src="service3.jpg"
+             alt="Ulko- ja kattomaalaustöiden havainnekuva"
+             loading="lazy"
+             width="640" height="420">
+
+        <div class="p-service-body">
+
+          <h2>Kattomaalaus Turussa</h2>
+
+          <p>
+            Toteutamme kattojen pesuja ja
+            huoltomaalauksia katon materiaalin
+            ja kunnon mukaan. Kohteen soveltuvuus
+            maalaukseen arvioidaan ennen työn aloittamista.
+          </p>
+
+          <ul>
+            <li>Katon pesu</li>
+            <li>Pintojen puhdistaminen</li>
+            <li>Tarvittavat pohjatyöt</li>
+            <li>Katon huoltomaalaus</li>
+          </ul>
+
+          <a href="kattomaalaus.html">
+            Lue lisää kattomaalauksista →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="piharakenteet">
+
+        <div class="p-service-body">
+
+          <h2>Terassit ja piharakenteet</h2>
+
+          <p>
+            Rakennamme ja kunnostamme erilaisia
+            pihan puurakenteita asiakkaan
+            suunnitelmien ja tarpeiden mukaan.
+          </p>
+
+          <ul>
+            <li>Terassien rakentaminen</li>
+            <li>Terassien kunnostaminen</li>
+            <li>Ulkoportaat</li>
+            <li>Aidat</li>
+            <li>Muut piharakenteet</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Pyydä tarjous piharakenteista →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="purkutyot">
+
+        <div class="p-service-body">
+
+          <h2>Purku ja saneeraus</h2>
+
+          <p>
+            Toteutamme remontteihin liittyviä
+            purku- ja saneeraustöitä sovitun
+            työn laajuuden mukaan.
+            Tarvittavat kartoitukset ja
+            luvanvaraiset työt huomioidaan
+            ennen purkutöiden aloittamista.
+          </p>
+
+          <ul>
+            <li>Sisätilojen purkutyöt</li>
+            <li>Vanhojen pintojen poistaminen</li>
+            <li>Remonttien valmistelutyöt</li>
+            <li>Tilojen saneeraus</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Kysy purku- ja saneeraustöistä →
+          </a>
+
+        </div>
+      </article>
+
+      <article class="p-service" id="rakennustyot">
+
+        <div class="p-service-body">
+
+          <h2>Muut rakennus- ja korjaustyöt</h2>
+
+          <p>
+            Autamme myös pienemmissä rakennus-
+            ja korjaustöissä. Kerro meille
+            kohteestasi, niin arvioimme työn
+            toteutusmahdollisuudet.
+          </p>
+
+          <ul>
+            <li>Pienet korjaustyöt</li>
+            <li>Rakennusten kunnossapito</li>
+            <li>Puurakenteiden korjaaminen</li>
+            <li>Viimeistelytyöt</li>
+            <li>Muut rakennustyöt sopimuksen mukaan</li>
+          </ul>
+
+          <a href="yhteystiedot.html">
+            Kysy tarjousta →
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="p-section p-area">
+  <div class="container">
+
+    <div class="eyebrow">PALVELUALUE</div>
+
+    <h2>Remonttipalvelut <em>Turun seudulla</em></h2>
+
+    <p>
+      JOPU Rakennus Oy palvelee seuraavilla
+      paikkakunnilla ja alueilla:
+    </p>
+
+    <ul class="p-area-list">
+      <li>Turku</li>
+      <li>Kaarina</li>
+      <li>Raisio</li>
+      <li>Naantali</li>
+      <li>Lieto</li>
+      <li>Rusko</li>
+      <li>Masku</li>
+      <li>Nousiainen</li>
+      <li>Paimio</li>
+      <li>Parainen</li>
+      <li>Piikkiö</li>
+      <li>Aura</li>
+    </ul>
+
+    <p>
+      Palvelemme myös muualla Varsinais-Suomessa
+      sopimuksen mukaan.
     </p>
 
   </div>
 </section>
 
-
-<section class="section">
+<section class="p-section">
   <div class="container">
 
-    <div class="content-grid">
+    <div class="eyebrow">NÄIN REMONTTI ETENEE</div>
 
-      <div class="feature">
-        <h3>Sisäremontit</h3>
-        <p>
-          Huoneistot, keittiöt, seinät, katot, listoitukset,
-          lattiat ja viimeistelytyöt.
-        </p>
-      </div>
+    <h2>Yhteydenotosta <em>valmiiseen työhön</em></h2>
 
-      <div class="feature">
-        <h3>Ulko- ja kattomaalaukset</h3>
-        <p>
-          Ulko- ja kattomaalaukset suunnitellusti ja
-          huolellisella toteutuksella.
-        </p>
-      </div>
+    <div class="p-steps">
 
-      <div class="feature">
-        <h3>Tasoitus- ja maalaustyöt</h3>
+      <article class="p-step">
+        <strong>01</strong>
+        <h3>Yhteydenotto</h3>
         <p>
-          Seinien ja kattojen tasoitukset sekä
-          sisämaalaustyöt huolellisella viimeistelyllä.
+          Kerro kohteestasi puhelimitse,
+          WhatsAppissa tai tarjouslomakkeella.
         </p>
-      </div>
+      </article>
 
-      <div class="feature">
-        <h3>Terassit ja piharakenteet</h3>
+      <article class="p-step">
+        <strong>02</strong>
+        <h3>Työn arviointi</h3>
         <p>
-          Terassit, aidat, portaat ja muut ulkorakenteet.
+          Selvitetään kohteen tarpeet ja
+          tarvittavat työvaiheet.
         </p>
-      </div>
+      </article>
 
-      <div class="feature">
-        <h3>Purku ja saneeraus</h3>
+      <article class="p-step">
+        <strong>03</strong>
+        <h3>Tarjous</h3>
         <p>
-          Hallittu purku sekä vanhojen tilojen saneeraus
-          uuteen käyttöön.
+          Sovitaan työn sisältö, hinnoittelu
+          ja aikataulu ennen aloittamista.
         </p>
-      </div>
+      </article>
 
-      <div class="feature">
-        <h3>Muut rakennustyöt</h3>
+      <article class="p-step">
+        <strong>04</strong>
+        <h3>Toteutus</h3>
         <p>
-          Myös pienemmät korjaukset ja yksittäiset
-          rakennustyöt sopimuksen mukaan.
+          Työ toteutetaan sovitusti ja
+          huolelliseen työnjälkeen panostaen.
         </p>
-      </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-
-<section class="cta">
+<section class="p-section p-area">
   <div class="container">
 
-    <div>
-      <h2>Tarvitsetko tekijää?</h2>
-      <p>Pyydä arvio työstä ja aikataulusta.</p>
-    </div>
+    <div class="eyebrow">KOTITALOUSVÄHENNYS</div>
 
-    <a class="btn" href="yhteystiedot.html">
-      Pyydä tarjous →
+    <h2>Hyödynnä <em>kotitalousvähennys</em></h2>
+
+    <p>
+      Kotona tai vapaa-ajan asunnolla tehtävä
+      remontti- ja kunnossapitotyö voi oikeuttaa
+      kotitalousvähennykseen Verohallinnon
+      ehtojen mukaisesti.
+    </p>
+
+    <p>
+      JOPU Rakennus Oy erittelee työn osuuden
+      ja materiaalit laskulla. Materiaalit eivät
+      oikeuta kotitalousvähennykseen.
+    </p>
+
+    <a href="https://www.vero.fi/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Tarkista ajantasaiset ehdot Verohallinnosta →
     </a>
 
   </div>
 </section>
 
+<section class="p-section p-faq">
+  <div class="container">
+
+    <div class="eyebrow">USEIN KYSYTTYÄ</div>
+
+    <h2>Remonttipalvelut – usein kysytyt kysymykset</h2>
+
+    <details>
+      <summary>Mitä remonttipalveluita JOPU Rakennus tarjoaa?</summary>
+      <p>
+        Sisäremontteja, tasoitustöitä, sisämaalauksia,
+        talojen ulkomaalauksia, kattomaalauksia,
+        terasseja, piharakenteita sekä muita
+        rakennus- ja korjaustöitä.
+      </p>
+    </details>
+
+    <details>
+      <summary>Paljonko sisäremontti maksaa Turussa?</summary>
+      <p>
+        Hinta riippuu kohteen koosta, kunnosta,
+        materiaaleista ja työn laajuudesta.
+        Annamme kohdekohtaisen tarjouksen.
+      </p>
+    </details>
+
+    <details>
+      <summary>Voiko tilata pelkän seinien tasoituksen?</summary>
+      <p>
+        Kyllä. Tasoitustyöt voidaan toteuttaa
+        erillisenä urakkana ilman maalausta.
+      </p>
+    </details>
+
+    <details>
+      <summary>Voiko tilata pienen remonttityön?</summary>
+      <p>
+        Kyllä. Toteutamme myös pienempiä
+        korjaus- ja viimeistelytöitä
+        sopimuksen mukaan.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mitä talon ulkomaalaus sisältää?</summary>
+      <p>
+        Työ voi sisältää pintojen puhdistamisen,
+        irtoavan maalin poistamisen, pohjatyöt
+        ja maalauksen. Tarkka sisältö sovitaan
+        kohdekohtaisesti.
+      </p>
+    </details>
+
+    <details>
+      <summary>Saako remontista kotitalousvähennystä?</summary>
+      <p>
+        Remonttityön osuus voi oikeuttaa
+        kotitalousvähennykseen Verohallinnon
+        ehtojen mukaisesti.
+      </p>
+    </details>
+
+    <details>
+      <summary>Onko tarjouspyyntö maksuton?</summary>
+      <p>
+        Kyllä. Voit pyytää tarjouksen
+        maksutta ja ilman sitoumusta.
+      </p>
+    </details>
+
+    <details>
+      <summary>Millä alueella JOPU Rakennus toimii?</summary>
+      <p>
+        Turussa, Kaarinassa, Raisiossa,
+        Naantalissa, Liedossa, Ruskolla,
+        Maskussa, Nousiaisissa, Paimiossa,
+        Paraisilla, Piikkiössä ja Aurassa
+        sekä muualla Varsinais-Suomessa
+        sopimuksen mukaan.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mistä löydän asiakasarvostelut?</summary>
+      <p>
+        Tutustu
+        <a href="arvostelut.html">asiakasarvosteluihimme</a>
+        tai Google-yritysprofiiliimme.
+      </p>
+    </details>
+
+  </div>
+</section>
+
+<section class="p-cta">
+  <div class="container">
+
+    <h2>Tarvitsetko luotettavaa remonttitekijää?</h2>
+
+    <p>
+      Kerro meille kohteestasi ja pyydä
+      maksuton tarjous.
+    </p>
+
+    <div class="p-actions">
+
+      <a class="btn" href="yhteystiedot.html">
+        Pyydä tarjous →
+      </a>
+
+      <a class="p-outline" href="tel:+358400464551">
+        Soita 040 046 4551
+      </a>
+
+      <a class="p-outline"
+         href="https://wa.me/358400464551"
+         target="_blank"
+         rel="noopener noreferrer">
+        WhatsApp ↗
+      </a>
+
+    </div>
+  </div>
+</section>
+
 </main>
 
-
 <footer class="footer">
-
   <div class="container footer-grid">
 
     <div>
 
       <a class="brand" href="index.html">
         <span class="brandmark"></span>
-        <span>
-          JOPU
-          <small>RAKENNUS</small>
-        </span>
+        <span>JOPU<small>RAKENNUS</small></span>
       </a>
 
+      <p>JOPU Rakennus Oy</p>
+      <p>Y-tunnus: 3663775-9</p>
+
       <p>
-        Rakentamista ja remontointia Turun seudulla.
+        Remontointi ja maalaustyöt
+        Turussa ja lähialueilla.
       </p>
 
     </div>
 
-
     <div>
-
-      <h4>Yhteys</h4>
+      <h4>Yhteystiedot</h4>
 
       <p>
         <a href="tel:+358400464551">
-          0400464551
+          040 046 4551
         </a>
       </p>
 
@@ -190,42 +1035,50 @@
         </a>
       </p>
 
-    </div>
-
-
-    <div>
-
-      <h4>Palvelualue</h4>
-
       <p>
-        Turku ja lähialueet
+        <a href="https://wa.me/358400464551">
+          WhatsApp
+        </a>
       </p>
-
     </div>
 
+    <div>
+      <h4>Palvelut</h4>
+
+      <p><a href="#sisaremontit">Sisäremontit</a></p>
+      <p><a href="#tasoitustyot">Tasoitustyöt</a></p>
+      <p><a href="#sisamaalaus">Sisämaalaus</a></p>
+      <p><a href="#ulkomaalaus">Ulkomaalaus</a></p>
+      <p><a href="kattomaalaus.html">Kattomaalaus</a></p>
+    </div>
 
     <div>
+      <h4>Yritys</h4>
 
-      <h4>Sivut</h4>
+      <p><a href="meista.html">Meistä</a></p>
+      <p><a href="referenssit.html">Referenssit</a></p>
+      <p><a href="arvostelut.html">Arvostelut</a></p>
+      <p><a href="tietosuoja.html">Tietosuoja</a></p>
 
       <p>
-        <a href="palvelut.html">
-          Palvelut
+        <a href="https://www.facebook.com/profile.php?id=61596050117806"
+           target="_blank"
+           rel="noopener noreferrer">
+          Facebook
         </a>
       </p>
 
       <p>
-        <a href="referenssit.html">
-          Referenssit
+        <a href="https://share.google/8LqddV3fN2uLMQb4i"
+           target="_blank"
+           rel="noopener noreferrer">
+          Google-yritysprofiili
         </a>
       </p>
-
     </div>
 
   </div>
-
 </footer>
-
 
 <script src="app.js"></script>
 
